@@ -374,7 +374,7 @@ export default function Home() {
 
             {phase === 1 && currentBattle && (
               <div className="w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
-                <header className="mx-auto max-w-2xl space-y-4 text-center mb-16">
+                <header className="mx-auto max-w-2xl space-y-4 text-center mb-8">
                   <p className="text-xs font-mono uppercase tracking-[0.2em] text-[#787774]">
                     Local Culture Archive
                   </p>
@@ -384,16 +384,16 @@ export default function Home() {
                   <p className="text-xs font-mono tracking-wide text-[#A0A09E]">
                     인기순이 아닌 발견의 순서로 지역 문화를 이어간다
                   </p>
-                  <p className="text-sm leading-[1.6] text-[#787774] sm:text-base max-w-lg mx-auto">
+                  <p className="text-sm leading-[1.6] text-[#787774] sm:text-base max-w-sm mx-auto text-balance break-keep">
                     두 지역의 고유한 문화를 대조하며, 오늘 더 깊이 탐구하고 싶은 곳을 골라보세요.
                   </p>
                 </header>
 
-                <div className="mx-auto mb-12 max-w-2xl border-y border-[#EAEAEA] py-8 text-center">
+                <div className="mx-auto mb-12 max-w-2xl border-y border-[#EAEAEA] py-6 text-center">
                   <p className="text-xs font-mono uppercase tracking-widest text-[#787774] mb-3">
                     Algorithmic Match
                   </p>
-                  <p className="text-base font-medium leading-[1.6] text-[#2F3437]">
+                  <p className="text-base font-medium leading-[1.6] text-[#2F3437] max-w-sm mx-auto text-balance break-keep">
                     {currentBattle.matchReason}
                   </p>
                 </div>
