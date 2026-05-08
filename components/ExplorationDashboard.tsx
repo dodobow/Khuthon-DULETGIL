@@ -1,3 +1,4 @@
+import { analyzeTaste } from '@/data/tasteProfile'
 import type { ExplorationLog } from '@/types'
 
 interface ExplorationDashboardProps {
@@ -37,6 +38,7 @@ export default function ExplorationDashboard({
   const recentRoutes = explorationLogs.slice(0, 3)
   const topTags = getTopTags(explorationLogs)
   const earnedBadges = badges.filter(b => discoveredRegions.length >= b.min)
+  const tasteProfile = analyzeTaste(topTags)
 
   return (
     <section className="rounded-2xl border border-white/20 bg-white/10 p-5 shadow-2xl shadow-cyan-500/10 backdrop-blur-md">
@@ -113,14 +115,18 @@ export default function ExplorationDashboard({
           </div>
         )}
 
-        {topTags.length > 0 && (
-          <div className="space-y-2">
-            <p className="text-sm font-bold text-white">당신은 이런 문화를 자주 탐험했어요</p>
-            <div className="flex flex-wrap gap-2">
-              {topTags.map(tag => (
-                <span key={tag} className="rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-cyan-200">{tag}</span>
-              ))}
-            </div>
+        {tasteProfile && (
+          <div className="space-y-2 rounded-2xl border border-violet-400/30 bg-gradient-to-br from-violet-400/10 to-cyan-400/10 p-4">
+            <p className="text-xs font-bold uppercase tracking-widest text-cyan-300">취향 분석</p>
+            <p className="text-lg font-black text-white">{tasteProfile.title}</p>
+            <p className="text-sm leading-6 text-white/70">{tasteProfile.description}</p>
+            {topTags.length > 0 && (
+              <div className="flex flex-wrap gap-2 pt-1">
+                {topTags.map(tag => (
+                  <span key={tag} className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-cyan-200">{tag}</span>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>
