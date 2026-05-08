@@ -297,7 +297,7 @@ export default function Home() {
         selectedRelayTags: routePath.flatMap(card => card.tags),
         routePath,
         routeConnectionReasons,
-        discoveredRegions: newRegions,
+        discoveredRegions: [...new Set(newRegions)],
         summary: `${selectedRegion} ${selectedTitle}에서 출발해 ${routePath.map(card => card.region).join(' → ')}로 문화 탐험 루트를 만들었어요.`,
       },
       ...prev,
