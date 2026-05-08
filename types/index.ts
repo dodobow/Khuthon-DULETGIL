@@ -1,6 +1,31 @@
 // 지역 규모 분류
 export type RegionScale = 'metropolitan' | 'city' | 'small-city' | 'town'
 
+export type CultureTag =
+  | 'nature'
+  | 'food'
+  | 'history'
+  | 'tradition'
+  | 'art'
+  | 'market'
+  | 'walk'
+  | 'night'
+  | 'local-life'
+  | 'festival'
+
+export const cultureTagLabels = {
+  nature: '자연',
+  food: '음식',
+  history: '역사',
+  tradition: '전통',
+  art: '예술',
+  market: '시장',
+  walk: '산책',
+  night: '야경',
+  'local-life': '생활문화',
+  festival: '축제',
+} as const
+
 // 개별 문화 콘텐츠
 export interface Culture {
   id: string
@@ -8,7 +33,7 @@ export interface Culture {
   title: string           // 예: "한옥마을 야경"
   description: string     // 2~3문장 설명
   imageUrl: string        // picsum URL (encodeURIComponent 적용된 string)
-  tags: string[]          // 예: ["전통", "야경", "도보여행"]
+  tags: CultureTag[]      // 예: ['tradition', 'night', 'walk']
   regionScale: RegionScale
   diversityWeight: number // 1(기본) | 2(저노출 지역) | 3(소멸위기 지역)
 }
