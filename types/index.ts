@@ -2,29 +2,16 @@
 export type RegionScale = 'metropolitan' | 'city' | 'small-city' | 'town'
 
 export type CultureTag =
-  | 'nature'
-  | 'food'
-  | 'history'
-  | 'tradition'
-  | 'art'
-  | 'market'
-  | 'walk'
-  | 'night'
-  | 'local-life'
-  | 'festival'
-
-export const cultureTagLabels = {
-  nature: '자연',
-  food: '음식',
-  history: '역사',
-  tradition: '전통',
-  art: '예술',
-  market: '시장',
-  walk: '산책',
-  night: '야경',
-  'local-life': '생활문화',
-  festival: '축제',
-} as const
+  | '자연'
+  | '음식'
+  | '역사'
+  | '전통'
+  | '예술'
+  | '시장'
+  | '산책'
+  | '야경'
+  | '생활문화'
+  | '축제'
 
 // 개별 문화 콘텐츠
 export interface Culture {

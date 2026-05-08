@@ -8,7 +8,6 @@ import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle, generatedBattles, extraStoryCards } from '@/data/generatedTourData'
-import { cultureTagLabels } from '@/types'
 import type { Battle, ExplorationLog, ExplorationMission, RelayCard, StoryCard } from '@/types'
 
 type ViewMode = 'battle' | 'dashboard'
@@ -103,11 +102,10 @@ const getSimilarTasteCandidates = (
   battle: Battle,
   excludeKeys: Set<string>
 ): RelayCard[] => {
-  const battleTagLabels: Set<string> = new Set(
-    [...battle.leftCulture.tags, ...battle.rightCulture.tags].map(
-      t => cultureTagLabels[t]
-    )
-  )
+  const battleTagLabels: Set<string> = new Set([
+    ...battle.leftCulture.tags,
+    ...battle.rightCulture.tags,
+  ])
 
   const seen = new Set<string>(excludeKeys)
   const result: RelayCard[] = []

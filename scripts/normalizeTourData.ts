@@ -72,22 +72,22 @@ const DIVERSITY_WEIGHT_BY_REGION: Record<string, DiversityWeight> = {
 }
 
 const TAG_RULES: Array<{ tag: CultureTag; keywords: string[] }> = [
-  { tag: 'nature', keywords: ['바다', '숲', '산', '호수', '강', '해변', '공원', '해수욕', '계곡', '폭포', '생태', '자연'] },
-  { tag: 'food', keywords: ['음식', '맛집', '국수', '시장', '먹거리', '카페', '빵', '막걸리', '한정식', '갈비', '비빔밥'] },
-  { tag: 'history', keywords: ['유적', '역사', '근대', '박물관', '성곽', '고분', '문화재', '성지', '유물', '왕릉'] },
-  { tag: 'tradition', keywords: ['한옥', '전통', '사찰', '민속', '아리랑', '풍물', '판소리', '한복', '서원'] },
-  { tag: 'art', keywords: ['미술', '공연', '전시', '예술', '문화관', '갤러리', '뮤지엄', '조각', '창작'] },
-  { tag: 'market', keywords: ['시장', '장터', '상설시장', '오일장', '야시장'] },
-  { tag: 'walk', keywords: ['골목', '거리', '길', '산책', '둘레길', '마을길', '올레'] },
-  { tag: 'night', keywords: ['야경', '밤', '조명', '불빛', '야간'] },
-  { tag: 'local-life', keywords: ['마을', '원도심', '생활', '주민', '지역민', '동네'] },
-  { tag: 'festival', keywords: ['축제', '행사', '제전', '페스티벌', '한마당', '대회', '이벤트'] },
+  { tag: '자연', keywords: ['바다', '숲', '산', '호수', '강', '해변', '공원', '해수욕', '계곡', '폭포', '생태', '자연'] },
+  { tag: '음식', keywords: ['음식', '맛집', '국수', '시장', '먹거리', '카페', '빵', '막걸리', '한정식', '갈비', '비빔밥'] },
+  { tag: '역사', keywords: ['유적', '역사', '근대', '박물관', '성곽', '고분', '문화재', '성지', '유물', '왕릉'] },
+  { tag: '전통', keywords: ['한옥', '전통', '사찰', '민속', '아리랑', '풍물', '판소리', '한복', '서원'] },
+  { tag: '예술', keywords: ['미술', '공연', '전시', '예술', '문화관', '갤러리', '뮤지엄', '조각', '창작'] },
+  { tag: '시장', keywords: ['시장', '장터', '상설시장', '오일장', '야시장'] },
+  { tag: '산책', keywords: ['골목', '거리', '길', '산책', '둘레길', '마을길', '올레'] },
+  { tag: '야경', keywords: ['야경', '밤', '조명', '불빛', '야간'] },
+  { tag: '생활문화', keywords: ['마을', '원도심', '생활', '주민', '지역민', '동네'] },
+  { tag: '축제', keywords: ['축제', '행사', '제전', '페스티벌', '한마당', '대회', '이벤트'] },
 ]
 
 // contentTypeId별 기본 태그: 키워드 매칭 실패 시 fallback
 const CONTENT_TYPE_DEFAULT_TAG: Record<string, CultureTag> = {
-  '14': 'art',     // 문화시설
-  '15': 'festival', // 축제/행사
+  '14': '예술',   // 문화시설
+  '15': '축제',   // 축제/행사
 }
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -139,22 +139,22 @@ const truncateDescription = (overview: string) => {
 const createFallbackDescription = (item: RawTourItem, tags: CultureTag[]) => {
   const location = item.addr1 ? ` ${item.addr1} 일대에서` : ''
 
-  if (tags.includes('nature')) {
+  if (tags.includes('자연')) {
     return `${item.region} 지역에서 ${item.title}을(를) 중심으로 자연 풍경과 산책 문화를${location} 경험할 수 있는 장소입니다.`
   }
-  if (tags.includes('history')) {
+  if (tags.includes('역사')) {
     return `${item.region} 지역에서 ${item.title}을(를) 통해 역사적 흔적과 생활권의 맥락을${location} 살펴볼 수 있는 장소입니다.`
   }
-  if (tags.includes('tradition')) {
+  if (tags.includes('전통')) {
     return `${item.region} 지역에서 ${item.title}을(를) 중심으로 전통 문화와 지역 정체성을${location} 느낄 수 있는 장소입니다.`
   }
-  if (tags.includes('art')) {
+  if (tags.includes('예술')) {
     return `${item.region} 지역에서 ${item.title}을(를) 통해 전시와 예술 활동을${location} 만날 수 있는 문화 공간입니다.`
   }
-  if (tags.includes('festival')) {
+  if (tags.includes('축제')) {
     return `${item.region} 지역에서 ${item.title}을(를) 중심으로 지역 축제와 행사 문화를${location} 경험할 수 있는 장소입니다.`
   }
-  if (tags.includes('market')) {
+  if (tags.includes('시장')) {
     return `${item.region} 지역에서 ${item.title}을(를) 통해 시장과 장터 문화를${location} 탐험할 수 있는 공간입니다.`
   }
 
