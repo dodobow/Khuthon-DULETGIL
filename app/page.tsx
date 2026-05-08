@@ -8,6 +8,8 @@ import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle, routeCandidates } from '@/data/mockData'
+import { generatedBattles } from '@/data/generatedTourData'
+import { cultureTagLabels } from '@/types'
 import type { Battle, ExplorationLog, ExplorationMission, RelayCard } from '@/types'
 
 type ViewMode = 'battle' | 'dashboard'
@@ -41,6 +43,36 @@ const explorationMissions: ExplorationMission[] = [
 
 const getRandomMission = () =>
   explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
+
+// 현재 배틀 태그 기반으로 유사 취향 relay card 수집
+// nearbyCandidates와 중복되지 않도록 제외 처리
+const getSimilarTasteCandidates = (
+  battle: Battle,
+  excludeIds: Set<string>
+): RelayCard[] => {
+  const battleTagLabels: Set<string> = new Set(
+    [...battle.leftCulture.tags, ...battle.rightCulture.tags].map(
+      t => cultureTagLabels[t]
+    )
+  )
+
+  const seen = new Set<string>()
+  const result: RelayCard[] = []
+
+  for (const b of generatedBattles) {
+    if (b.id === battle.id) continue
+    for (const card of b.relayCards) {
+      if (excludeIds.has(card.id) || seen.has(card.id)) continue
+      if (card.tags.some(tag => battleTagLabels.has(tag))) {
+        seen.add(card.id)
+        result.push(card)
+      }
+    }
+    if (result.length >= 6) break
+  }
+
+  return result
+}
 
 const isMissionCleared = (
   mission: ExplorationMission | null,
@@ -334,7 +366,13 @@ export default function Home() {
                     ...currentBattle.relayCards,
                     ...routeCandidates.nearbyCandidates,
                   ]}
-                  similarTasteCandidates={routeCandidates.similarTasteCandidates}
+                  similarTasteCandidates={getSimilarTasteCandidates(
+                    currentBattle,
+                    new Set([
+                      ...currentBattle.relayCards.map(c => c.id),
+                      ...routeCandidates.nearbyCandidates.map(c => c.id),
+                    ])
+                  )}
                   onSelectRelay={handleSelectRouteCandidate}
                   onNext={() => setPhase(4)}
                 />
