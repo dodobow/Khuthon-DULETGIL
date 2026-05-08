@@ -47,13 +47,15 @@ export default function DiscoveryReason({
           </p>
         )}
 
-        <p
-          className={`text-sm font-semibold leading-6 ${
-            isWeighted ? 'text-cyan-300' : 'text-white/60'
-          }`}
-        >
-          {weightMessage}
-        </p>
+        {!diversityNote && (
+          <p
+            className={`text-sm font-semibold leading-6 ${
+              isWeighted ? 'text-cyan-300' : 'text-white/60'
+            }`}
+          >
+            {weightMessage}
+          </p>
+        )}
 
         <p className="text-xs leading-5 text-white/50">
           승패보다 새로운 지역 발견을 더 중요하게 보기 때문에, 이 배틀은 단순 인기순으로 고른 것이 아닙니다.
