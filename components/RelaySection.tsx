@@ -31,9 +31,8 @@ export default function RelaySection({
       <header className="space-y-3 border-b border-[#EAEAEA] pb-6">
         <p className="font-mono text-xs uppercase tracking-widest text-[#787774]">Phase 03 · Route Construction</p>
         <h2 className="font-serif text-3xl tracking-tight text-[#111111] sm:text-4xl">답사 일정 설계</h2>
-        <p className="text-sm leading-[1.6] text-[#787774] max-w-lg">
-          이전 여정과 이어지는 다음 목적지를 선택하세요.<br/>
-          지리적 인접성이나 문화적 유사성을 기준으로 최대 5곳의 경로를 구축할 수 있습니다.
+        <p className="text-sm leading-[1.6] text-[#787774] max-w-xl break-keep">
+          이전 여정과 이어지는 다음 목적지를 선택하세요. 지리적 인접성이나 문화적 유사성을 기준으로 최대 5곳의 경로를 구축할 수 있습니다.
         </p>
       </header>
 

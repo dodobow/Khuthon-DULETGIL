@@ -25,6 +25,7 @@ export default function BattleCard({
   return (
     <article className="group flex h-full w-full flex-col overflow-hidden rounded-xl border border-[#EAEAEA] bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(0,0,0,0.04)]">
       <div className="relative h-56 border-b border-[#EAEAEA] bg-[#F7F6F3] overflow-hidden sm:h-64 md:h-72">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={culture.imageUrl}
           alt={culture.title}

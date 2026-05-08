@@ -88,6 +88,18 @@ const computeConnectionReasons = (
 // region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
 const cardKey = (card: RelayCard) => `${card.region}|${card.title}`
 
+// 두 후보 목록을 계산하고 카드 수가 동일하도록 균형 맞춤
+const computeRelayCandidates = (battle: Battle) => {
+  const excludeKeys = new Set(battle.relayCards.map(cardKey))
+  const nearby = [
+    ...battle.relayCards,
+    ...getNearbyCandiates(battle, excludeKeys),
+  ].slice(0, 6)
+  const similar = getSimilarTasteCandidates(battle, excludeKeys).slice(0, 6)
+  const count = Math.min(nearby.length, similar.length)
+  return { nearby: nearby.slice(0, count), similar: similar.slice(0, count) }
+}
+
 // 현재 배틀과 같은 regionScale의 다른 배틀 relay card를 근처 후보로 수집
 const getNearbyCandiates = (
   battle: Battle,
@@ -394,8 +406,8 @@ export default function Home() {
                     Algorithmic Match
                   </p>
                   <p className="text-base font-medium leading-[1.6] text-[#2F3437] max-w-sm mx-auto text-balance break-keep">
-                    {currentBattle.matchReason}
                   </p>
+                    {currentBattle.matchReason}
                 </div>
 
                 <div className="grid items-stretch gap-6 md:grid-cols-[1fr_auto_1fr] md:gap-8">
@@ -447,17 +459,8 @@ export default function Home() {
                   }
                   routePath={routePath}
                   routeStep={routeStep}
-                  nearbyCandidates={[
-                    ...currentBattle.relayCards,
-                    ...getNearbyCandiates(
-                      currentBattle,
-                      new Set(currentBattle.relayCards.map(cardKey))
-                    ),
-                  ].slice(0, 6)}
-                  similarTasteCandidates={getSimilarTasteCandidates(
-                    currentBattle,
-                    new Set(currentBattle.relayCards.map(cardKey))
-                  )}
+                  nearbyCandidates={computeRelayCandidates(currentBattle).nearby}
+                  similarTasteCandidates={computeRelayCandidates(currentBattle).similar}
                   onSelectRelay={(card, source) => handleSelectRouteCandidate(card, source)}
                   onNext={() => setPhase(4)}
                 />
