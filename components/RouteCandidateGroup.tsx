@@ -5,7 +5,8 @@ interface RouteCandidateGroupProps {
   description: string
   candidates: RelayCard[]
   routePath: RelayCard[]
-  onSelect: (card: RelayCard) => void
+  source: 'nearby' | 'similar'
+  onSelect: (card: RelayCard, source: 'nearby' | 'similar') => void
 }
 
 const fallbackImg = (region: string) =>
@@ -16,6 +17,7 @@ export default function RouteCandidateGroup({
   description,
   candidates,
   routePath,
+  source,
   onSelect,
 }: RouteCandidateGroupProps) {
   return (
@@ -34,7 +36,7 @@ export default function RouteCandidateGroup({
             <button
               key={card.id}
               type="button"
-              onClick={() => onSelect(card)}
+              onClick={() => onSelect(card, source)}
               disabled={isDisabled}
               className={`w-full rounded-2xl border text-left transition ${
                 isSelected

@@ -9,7 +9,7 @@ interface RelaySectionProps {
   routeStep: number
   nearbyCandidates: RelayCard[]
   similarTasteCandidates: RelayCard[]
-  onSelectRelay: (card: RelayCard) => void
+  onSelectRelay: (card: RelayCard, source: 'nearby' | 'similar') => void
   onNext: () => void
 }
 
@@ -64,6 +64,7 @@ export default function RelaySection({
             description="설계상 가까운 문화 흐름을 따라 이동합니다"
             candidates={nearbyCandidates}
             routePath={routePath}
+            source="nearby"
             onSelect={onSelectRelay}
           />
 
@@ -72,6 +73,7 @@ export default function RelaySection({
             description="비슷한 감성·취향의 문화로 연결합니다"
             candidates={similarTasteCandidates}
             routePath={routePath}
+            source="similar"
             onSelect={onSelectRelay}
           />
         </div>

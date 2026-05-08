@@ -70,18 +70,19 @@ const getExplorationStoryCards = (
     .filter((s): s is StoryCard => s !== undefined)
 }
 
-// 각 릴레이 카드가 이전 카드(또는 시작 문화)와 어떻게 연결되는지 이유 계산
+// 각 릴레이 카드가 어느 그룹(nearby/similar)에서 선택됐는지 기반으로 이유 계산
 const computeConnectionReasons = (
   startTags: string[],
-  path: RelayCard[]
+  path: RelayCard[],
+  sources: ('nearby' | 'similar')[]
 ): string[] =>
   path.map((card, i) => {
+    if (sources[i] === 'nearby') return '지역 흐름'
     const prevTags = i === 0 ? startTags : path[i - 1].tags
     const overlap = prevTags.filter(t => card.tags.includes(t))
     if (overlap.length >= 2) return `${overlap[0]} · ${overlap[1]}`
     if (overlap.length === 1) return overlap[0]
-    if (i > 0 && path[i - 1].region === card.region) return `${card.region}`
-    return '지역 흐름'
+    return card.tags[0] ?? '취향'
   })
 
 // region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
@@ -209,6 +210,9 @@ export default function Home() {
   // 사용자가 현재까지 연결한 문화 탐험 루트
   const [routePath, setRoutePath] = useState<RelayCard[]>([])
 
+  // 각 relay card를 어느 그룹에서 선택했는지 (nearby: 지역 흐름 / similar: 취향)
+  const [routePathSources, setRoutePathSources] = useState<('nearby' | 'similar')[]>([])
+
   // 현재 문화 연결 단계
   const [routeStep, setRouteStep] = useState(0)
 
@@ -228,10 +232,12 @@ export default function Home() {
     setPhase(2)
   }
 
-  const handleSelectRouteCandidate = (card: RelayCard) => {
+  const handleSelectRouteCandidate = (card: RelayCard, source: 'nearby' | 'similar') => {
     if (routePath.some(route => route.id === card.id)) {
+      const idx = routePath.findIndex(route => route.id === card.id)
       const nextPath = routePath.filter(route => route.id !== card.id)
       setRoutePath(nextPath)
+      setRoutePathSources(prev => prev.filter((_, i) => i !== idx))
       setRouteStep(nextPath.length)
       setSelectedRelayCard(nextPath[nextPath.length - 1] ?? null)
       return
@@ -240,6 +246,7 @@ export default function Home() {
     if (routePath.length >= 5) return
     setSelectedRelayCard(card)
     setRoutePath(prev => [...prev, card])
+    setRoutePathSources(prev => [...prev, source])
     setRouteStep(prev => Math.min(prev + 1, 5))
   }
 
@@ -262,7 +269,7 @@ export default function Home() {
     const newRegions = [selectedRegion, ...routePath.map(card => card.region)]
     const votedCulture =
       votedSide === 'left' ? currentBattle.leftCulture : currentBattle.rightCulture
-    const routeConnectionReasons = computeConnectionReasons(votedCulture.tags, routePath)
+    const routeConnectionReasons = computeConnectionReasons(votedCulture.tags, routePath, routePathSources)
     const clearedMission =
       isMissionCleared(
         currentMission,
@@ -307,6 +314,7 @@ export default function Home() {
     setSelectedRelayCard(null)
     setLastEarnedScore(0)
     setRoutePath([])
+    setRoutePathSources([])
     setRouteStep(0)
     setVotedSide(null)
     setPhase(1)
@@ -443,7 +451,7 @@ export default function Home() {
                     currentBattle,
                     new Set(currentBattle.relayCards.map(cardKey))
                   )}
-                  onSelectRelay={handleSelectRouteCandidate}
+                  onSelectRelay={(card, source) => handleSelectRouteCandidate(card, source)}
                   onNext={() => setPhase(4)}
                 />
               </div>
