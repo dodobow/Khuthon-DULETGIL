@@ -354,6 +354,7 @@ export default function Home() {
               score={explorerScore}
               discoveredRegions={discoveredRegions}
               explorationLogs={explorationLogs}
+              currentMission={currentMission}
               onStartExplore={() => setViewMode('battle')}
             />
           </div>
@@ -419,7 +420,6 @@ export default function Home() {
                 <BattleResult
                   battle={currentBattle}
                   votedSide={votedSide}
-                  mission={currentMission}
                   onNext={() => setPhase(3)}
                 />
               </div>

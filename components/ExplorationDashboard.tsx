@@ -1,10 +1,12 @@
+import ExplorationMission from '@/components/ExplorationMission'
 import { analyzeTaste } from '@/data/tasteProfile'
-import type { ExplorationLog } from '@/types'
+import type { ExplorationLog, ExplorationMission } from '@/types'
 
 interface ExplorationDashboardProps {
   score: number
   discoveredRegions: string[]
   explorationLogs: ExplorationLog[]
+  currentMission?: ExplorationMission | null
   onStartExplore?: () => void
 }
 
@@ -33,6 +35,7 @@ export default function ExplorationDashboard({
   score,
   discoveredRegions,
   explorationLogs,
+  currentMission,
   onStartExplore,
 }: ExplorationDashboardProps) {
   const recentRoutes = explorationLogs.slice(0, 3)
@@ -60,6 +63,14 @@ export default function ExplorationDashboard({
               </button>
             )}
           </div>
+        )}
+
+        {currentMission && (
+          <ExplorationMission
+            title={currentMission.title}
+            description={currentMission.description}
+            reward={currentMission.reward}
+          />
         )}
 
         <div className="grid grid-cols-3 gap-3">
