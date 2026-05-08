@@ -25,7 +25,7 @@ export default function StorySection({
             내가 만든 루트에 남은 지역 메모
           </h2>
           <p className="max-w-xl text-sm leading-[1.7] text-[#787774]">
-            안내 문구보다 사람들의 말이 오래 남는 경우가 있습니다.
+            안내 문구보다 사람들의 말이 오래 남는 경우가 있습니다.<br />
             지금 고른 지역을 어떤 장면으로 기억하는지 차분히 읽어보세요.
           </p>
         </header>

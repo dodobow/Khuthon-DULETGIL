@@ -397,7 +397,7 @@ export default function Home() {
                     인기순이 아닌 발견의 순서로 지역 문화를 이어간다
                   </p>
                   <p className="text-sm leading-[1.6] text-[#787774] sm:text-base max-w-sm mx-auto text-balance break-keep">
-                    두 지역의 고유한 문화를 대조하며, 오늘 더 깊이 탐구하고 싶은 곳을 골라보세요.
+                    두 지역의 고유한 문화를 대조하며,<br />오늘 더 깊이 탐구하고 싶은 곳을 골라보세요.
                   </p>
                 </header>
 
