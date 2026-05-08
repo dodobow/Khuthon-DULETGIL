@@ -19,9 +19,9 @@ export default function BattleResult({
     <article className="w-full rounded-xl border border-[#EAEAEA] bg-white p-8 shadow-sm sm:p-10">
       <div className="space-y-8">
         <header className="space-y-3 border-b border-[#EAEAEA] pb-6">
-          <p className="font-mono text-xs uppercase tracking-widest text-[#787774]">Selection Complete</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-[#787774]">첫 답사 지점 확정</p>
           <h2 className="font-serif text-3xl tracking-tight text-[#111111] sm:text-4xl">
-            당신은 {selectedCulture.region}을 선택했어요
+            {selectedCulture.region}에서 답사를 시작합니다
           </h2>
           <p className="rounded-lg border border-[#EAEAEA] bg-[#F7F6F3] p-5 text-sm leading-[1.6] text-[#2F3437]">
             이 선택은 순위 경쟁이 아니라 문화 탐험의 출발점입니다.

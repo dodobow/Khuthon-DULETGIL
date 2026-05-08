@@ -72,7 +72,7 @@ export default function BattleCard({
             disabled={disabled}
             className="min-h-[48px] w-full rounded-md border border-[#111111] bg-[#111111] px-5 py-3 text-sm font-medium text-white transition-all hover:bg-[#2F3437] active:scale-[0.98] disabled:cursor-not-allowed disabled:border-[#EAEAEA] disabled:bg-[#F7F6F3] disabled:text-[#A09F9C]"
           >
-            이 지역에 투표
+            이곳에서 답사 시작
           </button>
         </div>
       </div>
