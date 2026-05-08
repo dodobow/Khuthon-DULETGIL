@@ -108,7 +108,15 @@ export default function ExplorationDashboard({
             <div className="space-y-2">
               {recentRoutes.map(route => (
                 <div key={route.id} className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/80">
-                  {route.selectedRegion} → {route.routePath.map(card => card.region).join(' → ')}
+                  <span>{route.selectedRegion}</span>
+                  {route.routePath.map((card, i) => (
+                    <span key={card.id}>
+                      <span className="mx-1 text-xs text-white/40">
+                        → {route.routeConnectionReasons?.[i] ?? '→'}
+                      </span>
+                      <span>{card.region}</span>
+                    </span>
+                  ))}
                 </div>
               ))}
             </div>

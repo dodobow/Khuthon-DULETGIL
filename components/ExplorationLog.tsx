@@ -33,10 +33,17 @@ export default function ExplorationLog({ logs }: ExplorationLogProps) {
                 <p className="text-xs text-white/60">
                   이어간 문화: {log.selectedRelayRegion} · {log.selectedRelayTitle}
                 </p>
-                <p className="text-xs text-cyan-200">
-                  루트: {log.selectedRegion} →{' '}
-                  {log.routePath.map(card => card.region).join(' → ')}
-                </p>
+                <div className="text-xs text-cyan-200">
+                  <span className="font-bold">{log.selectedRegion}</span>
+                  {log.routePath.map((card, i) => (
+                    <span key={card.id}>
+                      <span className="mx-1 text-white/40">
+                        → {log.routeConnectionReasons?.[i] ? `[${log.routeConnectionReasons[i]}]` : '→'}
+                      </span>
+                      <span className="font-bold">{card.region}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
 
               <p className="text-sm leading-6 text-white/70">{log.summary}</p>

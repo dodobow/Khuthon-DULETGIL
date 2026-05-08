@@ -79,6 +79,7 @@ export default function ExplorerScore({
           <CultureRoute
             selectedRegion={latestLog.selectedRegion}
             routePath={routePath.length > 0 ? routePath : latestLog.routePath}
+            connectionReasons={latestLog.routeConnectionReasons}
           />
         )}
         <ExplorationLogList logs={explorationLogs} />

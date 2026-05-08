@@ -70,6 +70,20 @@ const getExplorationStoryCards = (
     .filter((s): s is StoryCard => s !== undefined)
 }
 
+// 각 릴레이 카드가 이전 카드(또는 시작 문화)와 어떻게 연결되는지 이유 계산
+const computeConnectionReasons = (
+  startTags: string[],
+  path: RelayCard[]
+): string[] =>
+  path.map((card, i) => {
+    const prevTags = i === 0 ? startTags : path[i - 1].tags
+    const overlap = prevTags.filter(t => card.tags.includes(t))
+    if (overlap.length >= 2) return `'${overlap[0]}', '${overlap[1]}' 태그가 겹쳐요`
+    if (overlap.length === 1) return `'${overlap[0]}' 태그가 겹쳐요`
+    if (i > 0 && path[i - 1].region === card.region) return `${card.region} 지역 문화 이어가기`
+    return '지역 문화 흐름이에요'
+  })
+
 // region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
 const cardKey = (card: RelayCard) => `${card.region}|${card.title}`
 
@@ -246,6 +260,9 @@ export default function Home() {
         ? currentBattle.leftCulture.title
         : currentBattle.rightCulture.title
     const newRegions = [selectedRegion, ...routePath.map(card => card.region)]
+    const votedCulture =
+      votedSide === 'left' ? currentBattle.leftCulture : currentBattle.rightCulture
+    const routeConnectionReasons = computeConnectionReasons(votedCulture.tags, routePath)
     const clearedMission =
       isMissionCleared(
         currentMission,
@@ -272,6 +289,7 @@ export default function Home() {
         selectedRelayRegion: selectedRelayCard.region,
         selectedRelayTags: routePath.flatMap(card => card.tags),
         routePath,
+        routeConnectionReasons,
         discoveredRegions: newRegions,
         summary: `${selectedRegion} ${selectedTitle}에서 출발해 ${routePath.map(card => card.region).join(' → ')}로 문화 탐험 루트를 만들었어요.`,
       },
