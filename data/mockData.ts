@@ -1,4 +1,8 @@
 import type { Battle, RelayCard } from '@/types'
+import {
+  generatedBattles,
+  getWeightedRandomBattle as getGeneratedBattle,
+} from '@/data/generatedTourData'
 
 // 내부 전용 helper: 한글 seed 인코딩 처리
 const img = (region: string) =>
@@ -393,21 +397,18 @@ export const routeCandidates: {
   ],
 }
 
-// 다양성 가중치 기반 랜덤 배틀 선택
-// diversityWeight가 높을수록 선택 확률이 높다
+// generatedBattles가 있으면 우선 사용, 없으면 mock battles로 fallback
 export function getWeightedRandomBattle(excludeId?: string): Battle {
-  const validBattles = battles.filter(
-    b => b.leftCulture.regionScale === b.rightCulture.regionScale
-  )
-  const source = validBattles.length > 0 ? validBattles : battles
-  const filtered = source.filter(b => b.id !== excludeId)
-  // 후보가 없으면 동일 규모 검증을 통과한 전체 후보에서 선택
-  const candidates = filtered.length > 0 ? filtered : source
+  if (generatedBattles.length > 0) {
+    return getGeneratedBattle(excludeId)
+  }
+
+  const filtered = battles.filter(b => b.id !== excludeId)
+  const candidates = filtered.length > 0 ? filtered : battles
 
   const weights = candidates.map(b =>
     Math.max(b.leftCulture.diversityWeight, b.rightCulture.diversityWeight)
   )
-
   const totalWeight = weights.reduce((a, b) => a + b, 0)
   let random = Math.random() * totalWeight
 
