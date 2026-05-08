@@ -44,6 +44,7 @@ export interface RelayCard {
   region: string
   title: string
   description: string
+  imageUrl?: string       // TourAPI 실제 이미지 URL (없으면 region 기반 fallback)
   tags: string[]
   category: string        // 예: "공연" | "음식" | "거리" | "전통" | "자연"
 }

@@ -316,7 +316,7 @@ export default function Home() {
             )}
 
             {phase === 3 && currentBattle && (
-              <div className="mx-auto max-w-xl">
+              <div className="w-full">
                 <RelaySection
                   startRegion={
                     votedSide === 'left'

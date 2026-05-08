@@ -33,6 +33,7 @@ export const generatedBattles: Battle[] = [
         description: '부산 강서구 가덕도 끝자락에 서 있는 등대로, 남해 바다와 섬 풍경을 함께 볼 수 있는 장소입니다.',
         tags: ['자연', '바다', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/81/3342781_image2_1.jpg',
       },
       {
         id: 'relay-gen-busan-catholic-street',
@@ -41,6 +42,7 @@ export const generatedBattles: Battle[] = [
         description: '부산 금정구 일대에 형성된 특색 있는 골목으로, 지역 문화와 종교 문화가 섞인 독특한 거리 분위기를 가집니다.',
         tags: ['거리', '산책', '지역문화'],
         category: '거리',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/44/3552344_image2_1.jpg',
       },
       {
         id: 'relay-gen-gwangju-tteokgalbi',
@@ -49,6 +51,7 @@ export const generatedBattles: Battle[] = [
         description: '광주 송정 지역의 오래된 떡갈비 음식 거리로, 지역 주민들의 생활 식문화를 대표하는 골목입니다.',
         tags: ['음식', '골목', '지역음식'],
         category: '음식',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/89/3367489_image2_1.jpg',
       },
       {
         id: 'relay-gen-gwangju-lake-park',
@@ -57,6 +60,7 @@ export const generatedBattles: Battle[] = [
         description: '광주 광산구 수완지구에 조성된 호수 공원으로, 도심 산책과 가족 나들이 문화가 형성된 시민 공간입니다.',
         tags: ['자연', '산책', '공원'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/65/2822565_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -107,6 +111,7 @@ export const generatedBattles: Battle[] = [
         description: '광주 외곽에 남아 있는 전통 생활 마을로, 오래된 돌담길과 마을 공동체 문화를 경험할 수 있는 장소입니다.',
         tags: ['마을', '산책', '생활문화'],
         category: '거리',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/88/3367188_image2_1.jpg',
       },
       {
         id: 'relay-gen-gwangju-willow',
@@ -115,6 +120,7 @@ export const generatedBattles: Battle[] = [
         description: '광주 충효동에 자리한 수백 년 된 왕버들 나무 군락지로, 고목의 생명력과 고요한 자연 분위기가 인상적인 장소입니다.',
         tags: ['자연', '산책', '고목'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/50/3350350_image2_1.jpg',
       },
       {
         id: 'relay-gen-daejeon-gilchi-park',
@@ -123,6 +129,7 @@ export const generatedBattles: Battle[] = [
         description: '대전 유성구에 위치한 도심 문화 공원으로, 산책로와 소규모 문화 행사가 열리는 시민 공간입니다.',
         tags: ['공원', '산책', '문화'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/54/3565054_image2_1.jpg',
       },
       {
         id: 'relay-gen-daejeon-geumgang-park',
@@ -131,6 +138,7 @@ export const generatedBattles: Battle[] = [
         description: '대전 서구 금강변에 조성된 생태 공원으로, 수변 산책과 자연 관찰이 가능한 도심 속 휴식 공간입니다.',
         tags: ['자연', '강변', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/25/2913025_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -181,6 +189,7 @@ export const generatedBattles: Battle[] = [
         description: '부산 강서구 끝자락에서 남해 바다를 내려다보는 등대로, 섬 트레킹 코스의 종점이기도 합니다.',
         tags: ['자연', '바다', '트레킹'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/81/3342781_image2_1.jpg',
       },
       {
         id: 'relay-gen-busan-chorangwae',
@@ -189,6 +198,7 @@ export const generatedBattles: Battle[] = [
         description: '조선시대 일본과의 교역 공간이었던 초량왜관 터 주변을 탐험하는 역사 골목 코스입니다.',
         tags: ['역사', '골목', '근대'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/24/3049224_image2_1.JPG',
       },
       {
         id: 'relay-gen-daejeon-gwangsa',
@@ -197,6 +207,7 @@ export const generatedBattles: Battle[] = [
         description: '대전 유성구 산자락에 자리한 사찰로, 고즈넉한 사찰 문화와 산책을 함께 즐길 수 있는 공간입니다.',
         tags: ['전통', '사찰', '산책'],
         category: '전통',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/62/3564962_image2_1.jpg',
       },
       {
         id: 'relay-gen-daejeon-daecheong-park',
@@ -205,6 +216,7 @@ export const generatedBattles: Battle[] = [
         description: '대청호 주변의 넓은 생태 공원으로, 암석식물원과 수변 산책로가 조성된 대전의 자연 탐험 공간입니다.',
         tags: ['자연', '호수', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/06/3336206_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -257,6 +269,7 @@ export const generatedBattles: Battle[] = [
         description: '전라북도의 역사와 문화를 체계적으로 전시하는 국립 박물관으로, 전주 한옥마을 탐험의 연장선에서 방문하기 좋은 곳입니다.',
         tags: ['역사', '박물관', '전통'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/30/3442230_image2_1.jpg',
       },
       {
         id: 'relay-gen-jeonju-gaeksagil',
@@ -265,6 +278,7 @@ export const generatedBattles: Battle[] = [
         description: '전주 구도심의 중심 골목으로, 오래된 건물 사이에 작은 카페와 독립 상점이 자리 잡은 생활 역사 거리입니다.',
         tags: ['골목', '역사', '산책'],
         category: '거리',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/59/3351559_image2_1.jpg',
       },
       {
         id: 'relay-gen-gangneung-art-museum',
@@ -273,6 +287,7 @@ export const generatedBattles: Battle[] = [
         description: '강릉 교동에 자리한 시립미술관으로, 한옥 분위기 건물 안에서 지역 작가와 기획 전시가 열립니다.',
         tags: ['예술', '전시', '산책'],
         category: '예술',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/31/3577531_image2_1.jpg',
       },
       {
         id: 'relay-gen-gangneung-coffee-festival',
@@ -281,6 +296,7 @@ export const generatedBattles: Battle[] = [
         description: '바다 도시 강릉의 커피 문화를 주제로 매년 열리는 축제로, 전국에서 모인 바리스타와 로스터리 부스가 함께합니다.',
         tags: ['축제', '카페', '바다'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/24/3546224_image2_1.JPG',
       },
     ],
     storyCards: [
@@ -331,6 +347,7 @@ export const generatedBattles: Battle[] = [
         description: '전라감영을 배경으로 조선 지방 통치 문화를 체험할 수 있는 역사 체험형 행사 콘텐츠입니다.',
         tags: ['역사', '전통', '체험'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/08/3546908_image2_1.jpg',
       },
       {
         id: 'relay-gen-jeonju-heritage',
@@ -339,6 +356,7 @@ export const generatedBattles: Battle[] = [
         description: '전주 무형유산원에서 운영하는 체험 프로그램으로, 전통 공예와 무형문화재 관련 활동을 가까이 경험할 수 있습니다.',
         tags: ['전통', '체험', '공예'],
         category: '전통',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/57/3533457_image2_1.jpg',
       },
       {
         id: 'relay-gen-suwon-kimchi',
@@ -347,6 +365,7 @@ export const generatedBattles: Battle[] = [
         description: '경기도 수원에서 열리는 김치 문화 축제로, 지역 음식 문화와 체험 프로그램이 함께 구성됩니다.',
         tags: ['축제', '음식', '체험'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/26/3553726_image2_1.jpg',
       },
       {
         id: 'relay-gen-suwon-history-hall',
@@ -355,6 +374,7 @@ export const generatedBattles: Battle[] = [
         description: '경기도의 행정 역사와 지방 자치 발전 과정을 기록한 전시관으로, 수원 장안구에 위치합니다.',
         tags: ['역사', '전시', '지역문화'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/91/3427291_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -406,6 +426,7 @@ export const generatedBattles: Battle[] = [
         description: '강릉 죽헌동 대학 캠퍼스 내 박물관으로, 강원 지역 고고·역사 유물을 전시하는 지역 특화 전시 공간입니다.',
         tags: ['역사', '박물관', '유물'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/40/3383840_image2_1.JPG',
       },
       {
         id: 'relay-gen-gangneung-beach-beer',
@@ -414,6 +435,7 @@ export const generatedBattles: Battle[] = [
         description: '강릉 해변을 배경으로 열리는 맥주·음악 축제로, 여름 바다 문화와 결합된 강릉의 대표 계절 행사입니다.',
         tags: ['축제', '바다', '음악'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/43/2607443_image2_1.JPG',
       },
       {
         id: 'relay-gen-cheongju-chungnam-festival',
@@ -422,6 +444,7 @@ export const generatedBattles: Battle[] = [
         description: '전직 대통령 별장이었던 청남대에서 열리는 가을 축제로, 단풍 명소와 역사 문화 공간이 함께 어우러집니다.',
         tags: ['축제', '자연', '역사'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/56/3552356_image2_1.JPG',
       },
       {
         id: 'relay-gen-cheongju-observatory',
@@ -430,6 +453,7 @@ export const generatedBattles: Battle[] = [
         description: '청주 서원구 산 위에 위치한 독특한 형태의 천문대로, 별 관측과 함께 지역 자연 문화를 경험할 수 있습니다.',
         tags: ['자연', '체험', '야간'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/12/2769612_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -482,6 +506,7 @@ export const generatedBattles: Battle[] = [
         description: '군산의 근대 항구 도시 역사를 전시하는 박물관으로, 해망로 항구 근처에 위치해 주변 역사 거리와 동선을 이을 수 있습니다.',
         tags: ['역사', '근대', '박물관'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/14/3304814_image2_1.jpg',
       },
       {
         id: 'relay-gen-gunsan-gogunsando',
@@ -490,6 +515,7 @@ export const generatedBattles: Battle[] = [
         description: '군산 앞바다에 펼쳐진 섬 군락으로, 바다 풍경과 섬 생활 문화를 함께 탐험할 수 있는 자연 공간입니다.',
         tags: ['자연', '바다', '섬'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/89/3588689_image2_1.jpg',
       },
       {
         id: 'relay-gen-gyeongju-culture-1918',
@@ -498,6 +524,7 @@ export const generatedBattles: Battle[] = [
         description: '1918년 건립된 경주역 구 역사를 리모델링한 문화 공간으로, 열차가 서던 공간 안에서 지역 문화 전시와 행사가 이어집니다.',
         tags: ['역사', '예술', '전시'],
         category: '예술',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/13/3006813_image2_1.jpg',
       },
       {
         id: 'relay-gen-gyeongju-heritage-night',
@@ -506,6 +533,7 @@ export const generatedBattles: Battle[] = [
         description: '경주 교동 일대에서 밤에 열리는 국가 유산 탐방 행사로, 낮과 다른 경주의 역사 문화 분위기를 경험할 수 있습니다.',
         tags: ['역사', '야간', '산책'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/05/3529605_image2_1.JPG',
       },
     ],
     storyCards: [
@@ -557,6 +585,7 @@ export const generatedBattles: Battle[] = [
         description: '동국사 인근에 위치한 평화 관련 역사 박물관으로, 군산의 근대 역사 탐험 코스와 연결되는 장소입니다.',
         tags: ['역사', '박물관', '평화'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/89/3573289_image2_1.jpg',
       },
       {
         id: 'relay-gen-gunsan-time-festival',
@@ -565,6 +594,7 @@ export const generatedBattles: Battle[] = [
         description: '군산 근대 역사 거리를 배경으로 열리는 시간여행 테마 축제로, 1930년대 생활 문화를 체험할 수 있습니다.',
         tags: ['축제', '역사', '체험'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/48/3561448_image2_1.jpg',
       },
       {
         id: 'relay-gen-mokpo-maritime',
@@ -573,6 +603,7 @@ export const generatedBattles: Battle[] = [
         description: '목포에 위치한 해양 문화재 전문 연구 및 전시 기관으로, 수중 발굴 유물과 해양 역사 자료를 관람할 수 있습니다.',
         tags: ['역사', '해양', '유물'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/10/3533710_image2_1.jpg',
       },
       {
         id: 'relay-gen-mokpo-heritage-night',
@@ -581,6 +612,7 @@ export const generatedBattles: Battle[] = [
         description: '목포 원도심의 문화유산을 밤에 탐방하는 야간 행사로, 낮과 다른 목포 역사 건축물의 분위기를 경험합니다.',
         tags: ['역사', '야간', '원도심'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/16/3546816_image2_1.jpeg',
       },
     ],
     storyCards: [
@@ -631,6 +663,7 @@ export const generatedBattles: Battle[] = [
         description: '경주 보문 단지에 위치한 컨벤션 센터로, 문화 전시와 행사가 정기적으로 열리는 지역 문화 거점 공간입니다.',
         tags: ['예술', '전시', '문화'],
         category: '예술',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/95/3405895_image2_1.jpg',
       },
       {
         id: 'relay-gen-gyeongju-gampo-port',
@@ -639,6 +672,7 @@ export const generatedBattles: Battle[] = [
         description: '경주 동해안에 자리한 작은 어항으로, 신선한 해산물과 어촌 생활 문화를 경험할 수 있는 감포 지역의 생활 공간입니다.',
         tags: ['자연', '바다', '어촌'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/78/3537978_image2_1.jpg',
       },
       {
         id: 'relay-gen-ansan-park',
@@ -647,6 +681,7 @@ export const generatedBattles: Battle[] = [
         description: '안산 상록구에 조성된 도심 공원으로, 주민들의 일상 산책 문화와 지역 생활 분위기를 느낄 수 있는 장소입니다.',
         tags: ['자연', '공원', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/69/2863969_image2_1.JPG',
       },
       {
         id: 'relay-gen-cheonan-gakwonsa',
@@ -655,6 +690,7 @@ export const generatedBattles: Battle[] = [
         description: '천안 동남구 산자락에 자리한 사찰로, 대형 청동 아미타불 좌상과 조용한 사찰 문화를 경험할 수 있는 공간입니다.',
         tags: ['전통', '사찰', '산책'],
         category: '전통',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/30/3535030_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -707,6 +743,7 @@ export const generatedBattles: Battle[] = [
         description: '담양 담주길 일대에서 열리는 야시장으로, 지역 막걸리와 음식 문화를 중심으로 한 저녁 생활 축제 공간입니다.',
         tags: ['음식', '야시장', '막걸리'],
         category: '음식',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/17/3559417_image2_1.jpg',
       },
       {
         id: 'relay-gen-jeongseon-cablecar',
@@ -715,6 +752,7 @@ export const generatedBattles: Battle[] = [
         description: '가리왕산 능선을 연결하는 케이블카로, 강원 산간 지역의 하늘과 계곡 풍경을 한눈에 내려다볼 수 있습니다.',
         tags: ['자연', '케이블카', '전망'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/30/3533330_image2_1.jpg',
       },
       {
         id: 'relay-gen-yeongwol-raft-festival',
@@ -723,6 +761,7 @@ export const generatedBattles: Battle[] = [
         description: '영월 동강에서 뗏목 문화를 재현한 여름 축제로, 강변 생활 문화와 체험 행사가 함께 열립니다.',
         tags: ['축제', '강', '체험'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/12/3513812_image2_1.jpg',
       },
       {
         id: 'relay-gen-yeongwol-kimsakgat',
@@ -731,6 +770,7 @@ export const generatedBattles: Battle[] = [
         description: '방랑 시인 김삿갓의 연고지 영월에서 열리는 문화 행사로, 시와 전통 문화를 주제로 한 지역 축제입니다.',
         tags: ['축제', '전통', '문학'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/56/3541356_image2_1.JPG',
       },
     ],
     storyCards: [
@@ -782,6 +822,7 @@ export const generatedBattles: Battle[] = [
         description: '담양 용면에 위치한 숲속 계곡으로, 야시장 탐험과 이어 다음 날 아침 자연 산책 코스로 연결하기 좋은 장소입니다.',
         tags: ['자연', '계곡', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/35/3027135_image2_1.jpg',
       },
       {
         id: 'relay-gen-yeongwol-kimsakgat-2',
@@ -790,6 +831,7 @@ export const generatedBattles: Battle[] = [
         description: '방랑 시인 김삿갓의 연고지 영월에서 열리는 지역 문화 행사로, 동강뗏목축제와 함께 영월의 두 가지 문화 얼굴을 보여 줍니다.',
         tags: ['축제', '전통', '문학'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/56/3541356_image2_1.JPG',
       },
       {
         id: 'relay-gen-jeongseon-mountain-2',
@@ -798,6 +840,7 @@ export const generatedBattles: Battle[] = [
         description: '정선의 고산 자연 탐험 코스로, 마을 음식·강변 축제 문화와 대비되는 강원 산간의 조용한 자연 경험을 이어 갑니다.',
         tags: ['자연', '산', '트레킹'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/68/2987668_image2_1.png',
       },
       {
         id: 'relay-gen-namhae-turtle',
@@ -806,6 +849,7 @@ export const generatedBattles: Battle[] = [
         description: '남해 노량 바다를 내려다보는 거북선 전시관으로, town 권역의 역사 문화 탐험 루트를 이을 수 있는 콘텐츠입니다.',
         tags: ['역사', '해양', '전시'],
         category: '역사',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/99/3561899_image2_1.jpg',
       },
     ],
     storyCards: [
@@ -857,6 +901,7 @@ export const generatedBattles: Battle[] = [
         description: '케이블카 대신 직접 걸어 오르는 가리왕산 트레킹 코스로, 산간 원시림 문화를 온몸으로 경험할 수 있습니다.',
         tags: ['자연', '산', '트레킹'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/68/2987668_image2_1.png',
       },
       {
         id: 'relay-gen-damyang-gamagol-3',
@@ -865,6 +910,7 @@ export const generatedBattles: Battle[] = [
         description: '담양 산골 계곡 탐험 코스로, 정선·남해의 자연·역사 문화와 유사한 조용한 지방 문화 감수성을 이어갑니다.',
         tags: ['자연', '계곡', '산책'],
         category: '자연',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/35/3027135_image2_1.jpg',
       },
       {
         id: 'relay-gen-yeongwol-kimsakgat-3',
@@ -873,6 +919,7 @@ export const generatedBattles: Battle[] = [
         description: '영월 김삿갓면에서 열리는 문화 행사로, 강원 산간 마을의 문학·전통 문화를 주제로 한 지역 축제입니다.',
         tags: ['축제', '전통', '문학'],
         category: '축제',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/56/3541356_image2_1.JPG',
       },
       {
         id: 'relay-gen-damyang-market-2',
@@ -881,6 +928,7 @@ export const generatedBattles: Battle[] = [
         description: '담양 읍내에서 열리는 저녁 야시장으로, 마을 단위 음식 문화와 지역 주민 생활이 어우러지는 공간입니다.',
         tags: ['음식', '야시장', '마을'],
         category: '음식',
+        imageUrl: 'http://tong.visitkorea.or.kr/cms/resource/17/3559417_image2_1.jpg',
       },
     ],
     storyCards: [
