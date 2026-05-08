@@ -72,17 +72,23 @@ const DIVERSITY_WEIGHT_BY_REGION: Record<string, DiversityWeight> = {
 }
 
 const TAG_RULES: Array<{ tag: CultureTag; keywords: string[] }> = [
-  { tag: 'nature', keywords: ['바다', '숲', '산', '호수', '강', '해변', '공원'] },
-  { tag: 'food', keywords: ['음식', '맛집', '국수', '시장', '먹거리', '카페'] },
-  { tag: 'history', keywords: ['유적', '역사', '근대', '박물관', '성곽', '고분'] },
-  { tag: 'tradition', keywords: ['한옥', '전통', '사찰', '문화재', '민속', '아리랑'] },
-  { tag: 'art', keywords: ['미술', '공연', '전시', '예술', '문화관', '갤러리'] },
-  { tag: 'market', keywords: ['시장', '장터', '상설시장'] },
-  { tag: 'walk', keywords: ['골목', '거리', '길', '산책', '둘레길', '마을'] },
-  { tag: 'night', keywords: ['야경', '밤', '조명', '불빛'] },
-  { tag: 'local-life', keywords: ['마을', '원도심', '생활', '골목', '거리'] },
-  { tag: 'festival', keywords: ['축제', '행사', '제전', '페스티벌'] },
+  { tag: 'nature', keywords: ['바다', '숲', '산', '호수', '강', '해변', '공원', '해수욕', '계곡', '폭포', '생태', '자연'] },
+  { tag: 'food', keywords: ['음식', '맛집', '국수', '시장', '먹거리', '카페', '빵', '막걸리', '한정식', '갈비', '비빔밥'] },
+  { tag: 'history', keywords: ['유적', '역사', '근대', '박물관', '성곽', '고분', '문화재', '성지', '유물', '왕릉'] },
+  { tag: 'tradition', keywords: ['한옥', '전통', '사찰', '민속', '아리랑', '풍물', '판소리', '한복', '서원'] },
+  { tag: 'art', keywords: ['미술', '공연', '전시', '예술', '문화관', '갤러리', '뮤지엄', '조각', '창작'] },
+  { tag: 'market', keywords: ['시장', '장터', '상설시장', '오일장', '야시장'] },
+  { tag: 'walk', keywords: ['골목', '거리', '길', '산책', '둘레길', '마을길', '올레'] },
+  { tag: 'night', keywords: ['야경', '밤', '조명', '불빛', '야간'] },
+  { tag: 'local-life', keywords: ['마을', '원도심', '생활', '주민', '지역민', '동네'] },
+  { tag: 'festival', keywords: ['축제', '행사', '제전', '페스티벌', '한마당', '대회', '이벤트'] },
 ]
+
+// contentTypeId별 기본 태그: 키워드 매칭 실패 시 fallback
+const CONTENT_TYPE_DEFAULT_TAG: Record<string, CultureTag> = {
+  '14': 'art',     // 문화시설
+  '15': 'festival', // 축제/행사
+}
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
   Boolean(value) && typeof value === 'object' && !Array.isArray(value)
@@ -103,11 +109,19 @@ const isRawTourItem = (value: unknown): value is RawTourItem => {
 
 const getTags = (item: RawTourItem): CultureTag[] => {
   const text = `${item.title} ${item.addr1} ${item.overview ?? ''}`
-  const tags = TAG_RULES.flatMap(rule =>
+  const matched = TAG_RULES.flatMap(rule =>
     rule.keywords.some(keyword => text.includes(keyword)) ? [rule.tag] : []
   )
+  const deduplicated = [...new Set(matched)].slice(0, 3)
 
-  return [...new Set(tags)].slice(0, 3)
+  // 키워드 매칭으로 태그가 없으면 contentTypeId 기반 기본 태그 부여
+  if (deduplicated.length === 0) {
+    const fallback: CultureTag =
+      CONTENT_TYPE_DEFAULT_TAG[item.contenttypeid] ?? 'local-life'
+    return [fallback]
+  }
+
+  return deduplicated
 }
 
 const truncateDescription = (overview: string) => {
@@ -121,25 +135,34 @@ const truncateDescription = (overview: string) => {
   return sentences.length > 160 ? `${sentences.slice(0, 157)}...` : sentences
 }
 
+// title과 region을 반드시 포함하는 구체적인 fallback 설명 생성
 const createFallbackDescription = (item: RawTourItem, tags: CultureTag[]) => {
+  const location = item.addr1 ? ` ${item.addr1} 일대에서` : ''
+
   if (tags.includes('nature')) {
-    return `${item.region} 지역의 자연 풍경과 산책 문화를 ${item.addr1} 일대에서 경험할 수 있는 장소입니다.`
+    return `${item.region} 지역에서 ${item.title}을(를) 중심으로 자연 풍경과 산책 문화를${location} 경험할 수 있는 장소입니다.`
   }
   if (tags.includes('history')) {
-    return `${item.region} 지역의 역사적 흔적과 생활권의 맥락을 ${item.addr1}에서 살펴볼 수 있는 장소입니다.`
+    return `${item.region} 지역에서 ${item.title}을(를) 통해 역사적 흔적과 생활권의 맥락을${location} 살펴볼 수 있는 장소입니다.`
   }
   if (tags.includes('tradition')) {
-    return `${item.region} 지역의 전통 문화와 지역 정체성을 ${item.addr1} 일대에서 느낄 수 있는 장소입니다.`
+    return `${item.region} 지역에서 ${item.title}을(를) 중심으로 전통 문화와 지역 정체성을${location} 느낄 수 있는 장소입니다.`
   }
   if (tags.includes('art')) {
-    return `${item.region} 지역의 전시와 예술 활동을 ${item.addr1}에서 만날 수 있는 문화 공간입니다.`
+    return `${item.region} 지역에서 ${item.title}을(를) 통해 전시와 예술 활동을${location} 만날 수 있는 문화 공간입니다.`
+  }
+  if (tags.includes('festival')) {
+    return `${item.region} 지역에서 ${item.title}을(를) 중심으로 지역 축제와 행사 문화를${location} 경험할 수 있는 장소입니다.`
+  }
+  if (tags.includes('market')) {
+    return `${item.region} 지역에서 ${item.title}을(를) 통해 시장과 장터 문화를${location} 탐험할 수 있는 공간입니다.`
   }
 
-  return `${item.region} 지역의 생활 문화와 지역 분위기를 ${item.addr1} 일대에서 탐험할 수 있는 장소입니다.`
+  return `${item.region} 지역에서 ${item.title}을(를) 중심으로 지역 생활 문화와 분위기를${location} 탐험할 수 있는 장소입니다.`
 }
 
 const normalizeItem = (item: RawTourItem): NormalizedTourItem | null => {
-  if (!item.firstimage || !item.title || !item.addr1) return null
+  if (!item.firstimage || !item.title) return null
 
   const tags = getTags(item)
   const description = item.overview
@@ -169,7 +192,15 @@ const main = () => {
     ? rawPayload.filter(isRawTourItem)
     : []
 
-  const normalized = rawItems
+  // 중복 contentId 제거 (먼저 등장한 항목 유지)
+  const seenContentIds = new Set<string>()
+  const deduped = rawItems.filter(item => {
+    if (seenContentIds.has(item.contentid)) return false
+    seenContentIds.add(item.contentid)
+    return true
+  })
+
+  const normalized = deduped
     .map(normalizeItem)
     .filter((item): item is NormalizedTourItem => item !== null)
 
@@ -177,7 +208,21 @@ const main = () => {
     'scripts/tourapi-normalized.json',
     `${JSON.stringify(normalized, null, 2)}\n`
   )
-  console.log(`TourAPI normalized 데이터 ${normalized.length}개 저장 완료`)
+
+  // 지역별 개수 요약
+  const byRegion: Record<string, number> = {}
+  normalized.forEach(item => {
+    byRegion[item.region] = (byRegion[item.region] ?? 0) + 1
+  })
+
+  console.log(`\nTourAPI normalized 데이터 ${normalized.length}개 저장 완료 → scripts/tourapi-normalized.json`)
+  console.log(`(raw ${rawItems.length}개 중 중복 제거 후 ${deduped.length}개 정제)`)
+  console.log('\n지역별 개수:')
+  Object.entries(byRegion)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([region, count]) => {
+      console.log(`  ${region}: ${count}개`)
+    })
 }
 
 main()

@@ -1,1 +1,3697 @@
-[]
+[
+  {
+    "id": "tour-129156",
+    "source": "tourapi",
+    "contentId": "129156",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "가덕도 등대",
+    "description": "부산 지역에서 가덕도 등대을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 강서구 외양포로 10 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/81/3342781_image2_1.jpg",
+    "address": "부산광역시 강서구 외양포로 10",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1935608",
+    "source": "tourapi",
+    "contentId": "1935608",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "가톨릭 특성화 거리",
+    "description": "부산 지역에서 가톨릭 특성화 거리을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 부곡동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/44/3552344_image2_1.jpg",
+    "address": "부산광역시 금정구 부곡동",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-294452",
+    "source": "tourapi",
+    "contentId": "294452",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "감천사(부산)",
+    "description": "부산 지역에서 감천사(부산)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 연제구 묘봉산로 40 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/20/3476820_image2_1.jpg",
+    "address": "부산광역시 연제구 묘봉산로 40",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-129631",
+    "source": "tourapi",
+    "contentId": "129631",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "경상좌수영성지",
+    "description": "부산 지역에서 경상좌수영성지을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 수영성로 43 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/02/3476802_image2_1.jpg",
+    "address": "부산광역시 수영구 수영성로 43",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2782765",
+    "source": "tourapi",
+    "contentId": "2782765",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "곰내연밭",
+    "description": "부산 지역에서 곰내연밭을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 철마면 웅천리 254-4 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/58/2794158_image2_1.jpg",
+    "address": "부산광역시 기장군 철마면 웅천리 254-4",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-128610",
+    "source": "tourapi",
+    "contentId": "128610",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "공수어촌체험마을",
+    "description": "부산 지역에서 공수어촌체험마을을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 기장읍 공수해안길 13-2 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/32/2504632_image2_1.jpg",
+    "address": "부산광역시 기장군 기장읍 공수해안길 13-2",
+    "tags": [
+      "nature",
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1942348",
+    "source": "tourapi",
+    "contentId": "1942348",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "관수옥과 초량왜관 터",
+    "description": "부산 지역에서 관수옥과 초량왜관 터을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 용두산길 37-55 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/24/3049224_image2_1.JPG",
+    "address": "부산광역시 중구 용두산길 37-55",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2785265",
+    "source": "tourapi",
+    "contentId": "2785265",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "관음사(부산)",
+    "description": "부산 지역에서 관음사(부산)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 사하구 제석로79번길 33 (당리동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/10/2790710_image2_1.JPG",
+    "address": "부산광역시 사하구 제석로79번길 33 (당리동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-126857",
+    "source": "tourapi",
+    "contentId": "126857",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "광복로패션거리",
+    "description": "부산 지역에서 광복로패션거리을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 광복로 72-1 (광복동2가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/11/3049611_image2_1.JPG",
+    "address": "부산광역시 중구 광복로 72-1 (광복동2가)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127925",
+    "source": "tourapi",
+    "contentId": "127925",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "광안리해변 테마거리",
+    "description": "부산 지역에서 광안리해변 테마거리을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 민락동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/42/3071042_image2_1.JPG",
+    "address": "부산광역시 수영구 민락동",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-126078",
+    "source": "tourapi",
+    "contentId": "126078",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "광안리해수욕장",
+    "description": "부산 지역에서 광안리해수욕장을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 광안해변로 219 (광안동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/45/3311245_image2_1.jpg",
+    "address": "부산광역시 수영구 광안해변로 219 (광안동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2744597",
+    "source": "tourapi",
+    "contentId": "2744597",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "구덕문화공원",
+    "description": "부산 지역에서 구덕문화공원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 서구 꽃마을로163번길 73 (서대신동3가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/40/3369140_image2_1.jpg",
+    "address": "부산광역시 서구 꽃마을로163번길 73 (서대신동3가)",
+    "tags": [
+      "nature",
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2755676",
+    "source": "tourapi",
+    "contentId": "2755676",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "구포 어린이교통공원",
+    "description": "부산 지역에서 구포 어린이교통공원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 북구 낙동북로 687 (구포동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/17/3397217_image2_1.jpg",
+    "address": "부산광역시 북구 낙동북로 687 (구포동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1018702",
+    "source": "tourapi",
+    "contentId": "1018702",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "국제시장 먹자골목",
+    "description": "부산 지역에서 국제시장 먹자골목을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 중구로 36 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3476830_image2_1.jpg",
+    "address": "부산광역시 중구 중구로 36",
+    "tags": [
+      "nature",
+      "food",
+      "market"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-298099",
+    "source": "tourapi",
+    "contentId": "298099",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "국청사(부산)",
+    "description": "부산 지역에서 국청사(부산)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 북문로 42 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/82/3552382_image2_1.jpg",
+    "address": "부산광역시 금정구 북문로 42",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3421909",
+    "source": "tourapi",
+    "contentId": "3421909",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "그런고로",
+    "description": "부산 지역에서 그런고로을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 부산진구 서전로 40 (전포동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/96/3421696_image2_1.jpg",
+    "address": "부산광역시 부산진구 서전로 40 (전포동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127445",
+    "source": "tourapi",
+    "contentId": "127445",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "금강공원",
+    "description": "부산 지역에서 금강공원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동래구 우장춘로 155 (온천동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/3336512_image2_1.jpg",
+    "address": "부산광역시 동래구 우장춘로 155 (온천동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1607440",
+    "source": "tourapi",
+    "contentId": "1607440",
+    "contentTypeId": "12",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "금강사(부산)",
+    "description": "부산 지역에서 금강사(부산)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동래구 우장춘로 211 (온천동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/14/3561514_image2_1.jpg",
+    "address": "부산광역시 동래구 우장춘로 211 (온천동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2834026",
+    "source": "tourapi",
+    "contentId": "2834026",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "갤러리이알디 부산",
+    "description": "부산 지역에서 갤러리이알디 부산을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 해운대해변로 302 (중동, 대림맨션) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/60/2836060_image2_1.jpg",
+    "address": "부산광역시 해운대구 해운대해변로 302 (중동, 대림맨션)",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130200",
+    "source": "tourapi",
+    "contentId": "130200",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "구덕민속예술관",
+    "description": "부산 지역에서 구덕민속예술관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 서구 대신공원로 34-91 (서대신동3가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/42/2649742_image2_1.jpg",
+    "address": "부산광역시 서구 대신공원로 34-91 (서대신동3가)",
+    "tags": [
+      "nature",
+      "tradition",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2551424",
+    "source": "tourapi",
+    "contentId": "2551424",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "국립일제강제동원역사관",
+    "description": "부산 지역에서 국립일제강제동원역사관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 남구 홍곡로320번길 100 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/78/3530178_image2_1.jpg",
+    "address": "부산광역시 남구 홍곡로320번길 100",
+    "tags": [
+      "nature",
+      "history",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130383",
+    "source": "tourapi",
+    "contentId": "130383",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "금정문화원",
+    "description": "부산 지역에서 금정문화원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 중앙대로1826번길 10-4 (구서동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/52/3336552_image2_1.jpg",
+    "address": "부산광역시 금정구 중앙대로1826번길 10-4 (구서동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130380",
+    "source": "tourapi",
+    "contentId": "130380",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "기장문화원",
+    "description": "부산 지역에서 기장문화원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 기장읍 청강로74번길 35-6 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/82/3476682_image2_1.jpg",
+    "address": "부산광역시 기장군 기장읍 청강로74번길 35-6",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2763856",
+    "source": "tourapi",
+    "contentId": "2763856",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "놀이마루",
+    "description": "부산 지역에서 놀이마루을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 부산진구 전포대로209번길 26 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/77/3343377_image2_1.jpg",
+    "address": "부산광역시 부산진구 전포대로209번길 26",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1918263",
+    "source": "tourapi",
+    "contentId": "1918263",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "누리마루 APEC하우스",
+    "description": "부산 지역에서 누리마루 APEC하우스을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 동백로 116 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/20/3334420_image2_1.jpg",
+    "address": "부산광역시 해운대구 동백로 116",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3416331",
+    "source": "tourapi",
+    "contentId": "3416331",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "도모헌",
+    "description": "부산 지역에서 도모헌을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 황령산로7번길 60 (남천동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/19/3416319_image2_1.jpg",
+    "address": "부산광역시 수영구 황령산로7번길 60 (남천동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130381",
+    "source": "tourapi",
+    "contentId": "130381",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "동래문화원",
+    "description": "부산 지역에서 동래문화원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동래구 문화로 80 (명륜동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/41/3476741_image2_1.jpg",
+    "address": "부산광역시 동래구 문화로 80 (명륜동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3017112",
+    "source": "tourapi",
+    "contentId": "3017112",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "동래읍성 임진왜란 역사관",
+    "description": "부산 지역에서 동래읍성 임진왜란 역사관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동래구 충렬대로 지하223 (수안동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/82/3017082_image2_1.JPG",
+    "address": "부산광역시 동래구 충렬대로 지하223 (수안동)",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130774",
+    "source": "tourapi",
+    "contentId": "130774",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "동삼동패총전시관",
+    "description": "부산 지역에서 동삼동패총전시관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 영도구 태종로 729 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/85/3031985_image2_1.JPG",
+    "address": "부산광역시 영도구 태종로 729",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3023734",
+    "source": "tourapi",
+    "contentId": "3023734",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "동서대학교 소향씨어터 신한카드홀",
+    "description": "부산 지역에서 동서대학교 소향씨어터 신한카드홀을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 센텀중앙로 55 (우동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/09/3023709_image2_1.JPG",
+    "address": "부산광역시 해운대구 센텀중앙로 55 (우동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3017067",
+    "source": "tourapi",
+    "contentId": "3017067",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "망양로 산복도로 전시관",
+    "description": "부산 지역에서 망양로 산복도로 전시관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동구 망양로 488 (초량동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/46/3017046_image2_1.JPG",
+    "address": "부산광역시 동구 망양로 488 (초량동)",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2823059",
+    "source": "tourapi",
+    "contentId": "2823059",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "박태준기념관",
+    "description": "부산 지역에서 박태준기념관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 임랑해안길 1 박태준기념관 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/2823056_image2_1.jpg",
+    "address": "부산광역시 기장군 임랑해안길 1 박태준기념관",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130796",
+    "source": "tourapi",
+    "contentId": "130796",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "반여도서관",
+    "description": "부산 지역에서 반여도서관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 재반로282번길 38 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3081430_image2_1.JPG",
+    "address": "부산광역시 해운대구 재반로282번길 38",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2554111",
+    "source": "tourapi",
+    "contentId": "2554111",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "범어사 성보박물관",
+    "description": "부산 지역에서 범어사 성보박물관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 범어사로 250 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/18/3342818_image2_1.jpg",
+    "address": "부산광역시 금정구 범어사로 250",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130668",
+    "source": "tourapi",
+    "contentId": "130668",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "벡스코(BEXCO)",
+    "description": "부산 지역에서 벡스코(BEXCO)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 APEC로 55 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/55/3020355_image2_1.jpg",
+    "address": "부산광역시 해운대구 APEC로 55",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130216",
+    "source": "tourapi",
+    "contentId": "130216",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산 강서문화원",
+    "description": "부산 지역에서 부산 강서문화원을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 강서구 낙동북로 477 강서구청 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/88/3336488_image2_1.jpg",
+    "address": "부산광역시 강서구 낙동북로 477 강서구청",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130798",
+    "source": "tourapi",
+    "contentId": "130798",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산 동구도서관",
+    "description": "부산 지역에서 부산 동구도서관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 동구 성북로36번길 54 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/48/3343348_image2_1.jpg",
+    "address": "부산광역시 동구 성북로36번길 54",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130799",
+    "source": "tourapi",
+    "contentId": "130799",
+    "contentTypeId": "14",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산광역시 기장도서관",
+    "description": "부산 지역에서 부산광역시 기장도서관을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 기장읍 차성동로126번길 13-5 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/87/3476687_image2_1.jpg",
+    "address": "부산광역시 기장군 기장읍 차성동로126번길 13-5",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3422647",
+    "source": "tourapi",
+    "contentId": "3422647",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "게임 체험 팝업 전시 ‘Game-Playground’",
+    "description": "부산 지역에서 게임 체험 팝업 전시 ‘Game-Playground’을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 광남로 96 (광안동, 광안 포디움프레스티지 1) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/58/3579258_image2_1.jpg",
+    "address": "부산광역시 수영구 광남로 96 (광안동, 광안 포디움프레스티지 1)",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3576410",
+    "source": "tourapi",
+    "contentId": "3576410",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "광복로 겨울빛 트리축제",
+    "description": "부산 지역에서 광복로 겨울빛 트리축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 광복로 72-1 (광복동2가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/05/3576405_image2_1.JPG",
+    "address": "부산광역시 중구 광복로 72-1 (광복동2가)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2786391",
+    "source": "tourapi",
+    "contentId": "2786391",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "광안리 M(Marvelous) 드론 라이트쇼",
+    "description": "부산 지역에서 광안리 M(Marvelous) 드론 라이트쇼을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 수영구 광안해변로 219 (광안동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/3518612_image2_1.jpeg",
+    "address": "부산광역시 수영구 광안해변로 219 (광안동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3020552",
+    "source": "tourapi",
+    "contentId": "3020552",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "글로컬 문화 in(人) 남산 페스티벌",
+    "description": "부산 지역에서 글로컬 문화 in(人) 남산 페스티벌을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 남산로 27 (남산동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/48/3552448_image2_1.jpg",
+    "address": "부산광역시 금정구 남산로 27 (남산동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1275743",
+    "source": "tourapi",
+    "contentId": "1275743",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "금정산성축제",
+    "description": "부산 지역에서 금정산성축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 산성로 501-2 (금성동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/3487556_image2_1.jpg",
+    "address": "부산광역시 금정구 산성로 501-2 (금성동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3493864",
+    "source": "tourapi",
+    "contentId": "3493864",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "기장군반려동물문화축제",
+    "description": "부산 지역에서 기장군반려동물문화축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 정관읍 구연3로 27 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/63/3493863_image2_1.JPG",
+    "address": "부산광역시 기장군 정관읍 구연3로 27",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2860868",
+    "source": "tourapi",
+    "contentId": "2860868",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "기장붕장어축제in칠암",
+    "description": "부산 지역에서 기장붕장어축제in칠암을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 일광읍 칠암리 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/29/3553829_image2_1.JPG",
+    "address": "부산광역시 기장군 일광읍 칠암리",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2614130",
+    "source": "tourapi",
+    "contentId": "2614130",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "기장임랑썸머뮤직페스티벌",
+    "description": "부산 지역에서 기장임랑썸머뮤직페스티벌을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 기장군 장안읍 임랑리 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/82/3516182_image2_1.png",
+    "address": "부산광역시 기장군 장안읍 임랑리",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3383748",
+    "source": "tourapi",
+    "contentId": "3383748",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "다대포 선셋 영화 축제",
+    "description": "부산 지역에서 다대포 선셋 영화 축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 사하구 다대로 지하692 (다대동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/05/3502005_image2_1.jpg",
+    "address": "부산광역시 사하구 다대로 지하692 (다대동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2019366",
+    "source": "tourapi",
+    "contentId": "2019366",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "대한민국 국제해양레저위크(KIMA WEEK)",
+    "description": "부산 지역에서 대한민국 국제해양레저위크(KIMA WEEK)을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 사하구 다대동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/21/2553821_image2_1.jpg",
+    "address": "부산광역시 사하구 다대동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3492041",
+    "source": "tourapi",
+    "contentId": "3492041",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산 1부두 문전성시 페스타",
+    "description": "부산 지역에서 부산 1부두 문전성시 페스타을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 중앙동4가 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/40/3492040_image2_1.jpg",
+    "address": "부산광역시 중구 중앙동4가",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3532971",
+    "source": "tourapi",
+    "contentId": "3532971",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산 서구 의료관광축제",
+    "description": "부산 지역에서 부산 서구 의료관광축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 서구 송도해변로 36 (암남동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/55/3532955_image2_1.jpg",
+    "address": "부산광역시 서구 송도해변로 36 (암남동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3556962",
+    "source": "tourapi",
+    "contentId": "3556962",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산 스트릿 페스타 인 광복",
+    "description": "부산 지역에서 부산 스트릿 페스타 인 광복을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 중구 광복로 72-1 (광복동2가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/44/3556944_image2_1.png",
+    "address": "부산광역시 중구 광복로 72-1 (광복동2가)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1399532",
+    "source": "tourapi",
+    "contentId": "1399532",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산고등어축제",
+    "description": "부산 지역에서 부산고등어축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 서구 송도해변로 100 (암남동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/36/3547136_image2_1.jpg",
+    "address": "부산광역시 서구 송도해변로 100 (암남동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3515311",
+    "source": "tourapi",
+    "contentId": "3515311",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산국제AI영화제",
+    "description": "부산 지역에서 부산국제AI영화제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 수영강변대로 120 (우동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/10/3515310_image2_1.jpg",
+    "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3006246",
+    "source": "tourapi",
+    "contentId": "3006246",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산국제공연예술마켓",
+    "description": "부산 지역에서 부산국제공연예술마켓을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 남구 유엔평화로76번길 1 (대연동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/43/3537143_image2_1.jpg",
+    "address": "부산광역시 남구 유엔평화로76번길 1 (대연동)",
+    "tags": [
+      "nature",
+      "art",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2558735",
+    "source": "tourapi",
+    "contentId": "2558735",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산국제공연예술제",
+    "description": "부산 지역에서 부산국제공연예술제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 금정구 장전온천천로 48 (장전동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/24/3534524_image2_1.jpg",
+    "address": "부산광역시 금정구 장전온천천로 48 (장전동)",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3345610",
+    "source": "tourapi",
+    "contentId": "3345610",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산국제아동도서전",
+    "description": "부산 지역에서 부산국제아동도서전을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 APEC로 55 (우동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/25/3536625_image2_1.jpg",
+    "address": "부산광역시 해운대구 APEC로 55 (우동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2873292",
+    "source": "tourapi",
+    "contentId": "2873292",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산글로벌웹툰페스티벌",
+    "description": "부산 지역에서 부산글로벌웹툰페스티벌을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 해운대구 수영강변대로 140 (우동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/04/3531704_image2_1.png",
+    "address": "부산광역시 해운대구 수영강변대로 140 (우동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-142080",
+    "source": "tourapi",
+    "contentId": "142080",
+    "contentTypeId": "15",
+    "region": "부산",
+    "regionScale": "metropolitan",
+    "title": "부산바다축제",
+    "description": "부산 지역에서 부산바다축제을(를) 중심으로 자연 풍경과 산책 문화를 부산광역시 사하구 다대동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/58/3504958_image2_1.jpg",
+    "address": "부산광역시 사하구 다대동",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2783851",
+    "source": "tourapi",
+    "contentId": "2783851",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "경암근린공원",
+    "description": "광주 지역에서 경암근린공원을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 광산구 하남대로54번안길 133 (하남동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/84/3528384_image2_1.jpg",
+    "address": "광주광역시 광산구 하남대로54번안길 133 (하남동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127069",
+    "source": "tourapi",
+    "contentId": "127069",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "관덕정의 각궁",
+    "description": "광주 지역에서 관덕정의 각궁을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 남구 사직길 49 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/46/3350246_image2_1.jpg",
+    "address": "광주광역시 남구 사직길 49",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-128158",
+    "source": "tourapi",
+    "contentId": "128158",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 경찰충혼탑",
+    "description": "광주 지역에서 광주 경찰충혼탑을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 남구 사직길 49 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/37/3366737_image2_1.jpg",
+    "address": "광주광역시 남구 사직길 49",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2605353",
+    "source": "tourapi",
+    "contentId": "2605353",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 송정동 떡갈비 골목",
+    "description": "광주 지역에서 광주 송정동 떡갈비 골목을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 광산구 광산로29번길 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/89/3367489_image2_1.jpg",
+    "address": "광주광역시 광산구 광산로29번길",
+    "tags": [
+      "nature",
+      "food",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2822573",
+    "source": "tourapi",
+    "contentId": "2822573",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 수완호수공원",
+    "description": "광주 지역에서 광주 수완호수공원을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 광산구 장신로82번길 57 공원관리사무소 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/65/2822565_image2_1.jpg",
+    "address": "광주광역시 광산구 장신로82번길 57 공원관리사무소",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2946224",
+    "source": "tourapi",
+    "contentId": "2946224",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 충장로 케이팝 스타의 거리",
+    "description": "광주 지역에서 광주 충장로 케이팝 스타의 거리을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 동구 충장로 94 (충장로2가) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/58/3453358_image2_1.jpg",
+    "address": "광주광역시 동구 충장로 94 (충장로2가)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127325",
+    "source": "tourapi",
+    "contentId": "127325",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 충효동 왕버들 군",
+    "description": "광주 지역에서 광주 충효동 왕버들 군을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 충효샘길 7 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/50/3350350_image2_1.jpg",
+    "address": "광주광역시 북구 충효샘길 7",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2489843",
+    "source": "tourapi",
+    "contentId": "2489843",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 평촌마을",
+    "description": "광주 지역에서 광주 평촌마을을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 평촌길 15 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/88/3367188_image2_1.jpg",
+    "address": "광주광역시 북구 평촌길 15",
+    "tags": [
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127075",
+    "source": "tourapi",
+    "contentId": "127075",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주공원",
+    "description": "광주 지역에서 광주공원을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 남구 중앙로107번길 15 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/41/3344441_image2_1.jpg",
+    "address": "광주광역시 남구 중앙로107번길 15",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127064",
+    "source": "tourapi",
+    "contentId": "127064",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주공원 선정비군",
+    "description": "광주 지역에서 광주공원 선정비군을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 남구 중앙로107번길 15 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/99/3366699_image2_1.jpg",
+    "address": "광주광역시 남구 중앙로107번길 15",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127539",
+    "source": "tourapi",
+    "contentId": "127539",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주패밀리랜드",
+    "description": "광주 지역에서 광주패밀리랜드을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 우치로 677 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/14/3351314_image2_1.jpg",
+    "address": "광주광역시 북구 우치로 677",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2605351",
+    "source": "tourapi",
+    "contentId": "2605351",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주폴리",
+    "description": "광주 지역에서 광주폴리을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 비엔날레로 111 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/94/3367394_image2_1.jpg",
+    "address": "광주광역시 북구 비엔날레로 111",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-126329",
+    "source": "tourapi",
+    "contentId": "126329",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주호",
+    "description": "광주 지역에서 광주호을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 충효샘길 7 (충효동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/04/3368304_image2_1.jpg",
+    "address": "광주광역시 북구 충효샘길 7 (충효동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-126425",
+    "source": "tourapi",
+    "contentId": "126425",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "국립 5·18 민주묘지",
+    "description": "광주 지역에서 국립 5·18 민주묘지을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 민주로 200 (운정동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/81/1587681_image2_1.jpg",
+    "address": "광주광역시 북구 민주로 200 (운정동)",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1621334",
+    "source": "tourapi",
+    "contentId": "1621334",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "금남로",
+    "description": "광주 지역에서 금남로을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 동구 금남로 일대 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/73/3459973_image2_1.jpg",
+    "address": "광주광역시 동구 금남로 일대",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-127356",
+    "source": "tourapi",
+    "contentId": "127356",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "너릿재공원",
+    "description": "광주 지역에서 너릿재공원을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 동구 남문로 48-8 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/10/3366810_image2_1.jpg",
+    "address": "광주광역시 동구 남문로 48-8",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3006671",
+    "source": "tourapi",
+    "contentId": "3006671",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "너릿재옛길",
+    "description": "광주 지역에서 너릿재옛길을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 동구 남문로 1 (선교동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/51/3006651_image2_1.jpg",
+    "address": "광주광역시 동구 남문로 1 (선교동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2470068",
+    "source": "tourapi",
+    "contentId": "2470068",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "녹색에너지체험관 (광주전남지역본부)",
+    "description": "광주 지역에서 녹색에너지체험관 (광주전남지역본부)을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 북구 첨단과기로 123 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/88/3040988_image2_1.jpg",
+    "address": "광주광역시 북구 첨단과기로 123",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2614773",
+    "source": "tourapi",
+    "contentId": "2614773",
+    "contentTypeId": "12",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "덕산너덜 (무등산권 국가지질공원)",
+    "description": "광주 지역에서 덕산너덜 (무등산권 국가지질공원)을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 북구 무등로 1550 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/17/2917917_image2_1.jpg",
+    "address": "광주광역시 북구 무등로 1550",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1621168",
+    "source": "tourapi",
+    "contentId": "1621168",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "고싸움놀이전수교육관",
+    "description": "광주 지역에서 고싸움놀이전수교육관을(를) 통해 전시와 예술 활동을 광주광역시 남구 고싸움로 2 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/87/3367587_image2_1.jpg",
+    "address": "광주광역시 남구 고싸움로 2",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130032",
+    "source": "tourapi",
+    "contentId": "130032",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광산문화원",
+    "description": "광주 지역에서 광산문화원을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 광산구 상무대로 265 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/02/3366502_image2_1.jpg",
+    "address": "광주광역시 광산구 상무대로 265",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130392",
+    "source": "tourapi",
+    "contentId": "130392",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 남구문화원",
+    "description": "광주 지역에서 광주 남구문화원을(를) 통해 전시와 예술 활동을 광주광역시 남구 봉선로 208 (봉선동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/83/3428783_image2_1.jpg",
+    "address": "광주광역시 남구 봉선로 208 (봉선동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130391",
+    "source": "tourapi",
+    "contentId": "130391",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 동구문화원",
+    "description": "광주 지역에서 광주 동구문화원을(를) 통해 전시와 예술 활동을 광주광역시 동구 예술길 18-1 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/81/3367381_image2_1.jpg",
+    "address": "광주광역시 동구 예술길 18-1",
+    "tags": [
+      "art",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130208",
+    "source": "tourapi",
+    "contentId": "130208",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 북구문화원",
+    "description": "광주 지역에서 광주 북구문화원을(를) 통해 전시와 예술 활동을 광주광역시 북구 향토문화로 65 (중흥동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/01/3421301_image2_1.jpg",
+    "address": "광주광역시 북구 향토문화로 65 (중흥동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130808",
+    "source": "tourapi",
+    "contentId": "130808",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 송정다가치문화도서관",
+    "description": "광주 지역에서 광주 송정다가치문화도서관을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 광산구 송정공원로 8-13 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/27/1587327_image2_1.jpg",
+    "address": "광주광역시 광산구 송정공원로 8-13",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130065",
+    "source": "tourapi",
+    "contentId": "130065",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 역사민속박물관",
+    "description": "광주 지역에서 광주 역사민속박물관을(를) 통해 역사적 흔적과 생활권의 맥락을 광주광역시 북구 서하로 48-25 (용봉동) 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/3572456_image2_1.jpg",
+    "address": "광주광역시 북구 서하로 48-25 (용봉동)",
+    "tags": [
+      "history",
+      "tradition"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130497",
+    "source": "tourapi",
+    "contentId": "130497",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 의재미술관",
+    "description": "광주 지역에서 광주 의재미술관을(를) 통해 전시와 예술 활동을 광주광역시 동구 증심사길 155 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/18/3401718_image2_1.jpg",
+    "address": "광주광역시 동구 증심사길 155",
+    "tags": [
+      "art",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2733545",
+    "source": "tourapi",
+    "contentId": "2733545",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 전통문화관",
+    "description": "광주 지역에서 광주 전통문화관을(를) 중심으로 전통 문화와 지역 정체성을 광주광역시 동구 의재로 222 일대에서 느낄 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/46/2733546_image2_1.jpg",
+    "address": "광주광역시 동구 의재로 222",
+    "tags": [
+      "tradition",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130033",
+    "source": "tourapi",
+    "contentId": "130033",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주광역시 서구문화원",
+    "description": "광주 지역에서 광주광역시 서구문화원을(를) 통해 전시와 예술 활동을 광주광역시 서구 풍금로 182 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/51/3367251_image2_1.jpg",
+    "address": "광주광역시 서구 풍금로 182",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130835",
+    "source": "tourapi",
+    "contentId": "130835",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주광역시립 사직도서관",
+    "description": "광주 지역에서 광주광역시립 사직도서관을(를) 통해 전시와 예술 활동을 광주광역시 남구 제중로 56 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/15/3367615_image2_1.jpg",
+    "address": "광주광역시 남구 제중로 56",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130810",
+    "source": "tourapi",
+    "contentId": "130810",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주광역시립무등도서관",
+    "description": "광주 지역에서 광주광역시립무등도서관을(를) 통해 전시와 예술 활동을 광주광역시 북구 면앙로 130 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/04/3367804_image2_1.jpg",
+    "address": "광주광역시 북구 면앙로 130",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2779116",
+    "source": "tourapi",
+    "contentId": "2779116",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주비엔날레전시관",
+    "description": "광주 지역에서 광주비엔날레전시관을(를) 통해 전시와 예술 활동을 광주광역시 북구 비엔날레로 111 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/79/3351379_image2_1.jpg",
+    "address": "광주광역시 북구 비엔날레로 111",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-129761",
+    "source": "tourapi",
+    "contentId": "129761",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주시립미술관",
+    "description": "광주 지역에서 광주시립미술관을(를) 통해 전시와 예술 활동을 광주광역시 북구 하서로 52 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/11/3368411_image2_1.jpg",
+    "address": "광주광역시 북구 하서로 52",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-969963",
+    "source": "tourapi",
+    "contentId": "969963",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주야외음악당",
+    "description": "광주 지역에서 광주야외음악당을(를) 통해 전시와 예술 활동을 광주광역시 서구 내방로 111 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/64/3367264_image2_1.jpg",
+    "address": "광주광역시 서구 내방로 111",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2009775",
+    "source": "tourapi",
+    "contentId": "2009775",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "국립아시아문화전당",
+    "description": "광주 지역에서 국립아시아문화전당을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 동구 문화전당로 38 (광산동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/59/3083359_image2_1.jpg",
+    "address": "광주광역시 동구 문화전당로 38 (광산동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130807",
+    "source": "tourapi",
+    "contentId": "130807",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "금호평생교육관",
+    "description": "광주 지역에서 금호평생교육관을(를) 통해 전시와 예술 활동을 광주광역시 남구 중앙로 15 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/93/3366693_image2_1.jpg",
+    "address": "광주광역시 남구 중앙로 15",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3406745",
+    "source": "tourapi",
+    "contentId": "3406745",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "대인예술시장 한평갤러리",
+    "description": "광주 지역에서 대인예술시장 한평갤러리을(를) 통해 전시와 예술 활동을 광주광역시 동구 제봉로184번길 9-10 (대인동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/20/3405920_image2_1.jpg",
+    "address": "광주광역시 동구 제봉로184번길 9-10 (대인동)",
+    "tags": [
+      "food",
+      "art",
+      "market"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2999840",
+    "source": "tourapi",
+    "contentId": "2999840",
+    "contentTypeId": "14",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "동구인문학당",
+    "description": "광주 지역에서 동구인문학당을(를) 통해 전시와 예술 활동을 광주광역시 동구 동계천로 168-5 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/17/2999817_image2_1.jpg",
+    "address": "광주광역시 동구 동계천로 168-5",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2990881",
+    "source": "tourapi",
+    "contentId": "2990881",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주 버스킹 월드컵",
+    "description": "광주 지역에서 광주 버스킹 월드컵을(를) 중심으로 지역 축제와 행사 문화를 광주광역시 동구 금남로1가 41 금남지하상가 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/76/3410976_image2_1.JPG",
+    "address": "광주광역시 동구 금남로1가 41 금남지하상가",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3382746",
+    "source": "tourapi",
+    "contentId": "3382746",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주국제미술전람회 〈아트광주24〉",
+    "description": "광주 지역에서 광주국제미술전람회 〈아트광주24〉을(를) 통해 전시와 예술 활동을 광주광역시 서구 상무누리로 30 (치평동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3382730_image2_1.jpg",
+    "address": "광주광역시 서구 상무누리로 30 (치평동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2561700",
+    "source": "tourapi",
+    "contentId": "2561700",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주서창억새축제",
+    "description": "광주 지역에서 광주서창억새축제을(를) 중심으로 지역 축제와 행사 문화를 광주광역시 서구 서창둑길 377 (벽진동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/22/3546722_image2_1.jpg",
+    "address": "광주광역시 서구 서창둑길 377 (벽진동)",
+    "tags": [
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3460731",
+    "source": "tourapi",
+    "contentId": "3460731",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "광주여성영화제",
+    "description": "광주 지역에서 광주여성영화제을(를) 중심으로 지역 생활 문화와 분위기를 광주광역시 동구 중앙로160번길 16-7 (불로동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/26/3460726_image2_1.jpg",
+    "address": "광주광역시 동구 중앙로160번길 16-7 (불로동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3333757",
+    "source": "tourapi",
+    "contentId": "3333757",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "남도달밤야시장",
+    "description": "광주 지역에서 남도달밤야시장을(를) 통해 시장과 장터 문화를 광주광역시 동구 제봉로194번길 10 (대인동) 일대에서 탐험할 수 있는 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/79/3401079_image2_1.jpg",
+    "address": "광주광역시 동구 제봉로194번길 10 (대인동)",
+    "tags": [
+      "food",
+      "market",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3553639",
+    "source": "tourapi",
+    "contentId": "3553639",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "동명커피산책",
+    "description": "광주 지역에서 동명커피산책을(를) 중심으로 자연 풍경과 산책 문화를 광주광역시 동구 제봉로110번길 4 (장동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/09/3553609_image2_1.jpg",
+    "address": "광주광역시 동구 제봉로110번길 4 (장동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3371258",
+    "source": "tourapi",
+    "contentId": "3371258",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "렛츠플로피(Let's FLOPPY 3.0)",
+    "description": "광주 지역에서 렛츠플로피(Let's FLOPPY 3.0)을(를) 중심으로 지역 축제와 행사 문화를 광주광역시 서구 상무누리로 30 (치평동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/62/3492562_image2_1.jpg",
+    "address": "광주광역시 서구 상무누리로 30 (치평동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2598791",
+    "source": "tourapi",
+    "contentId": "2598791",
+    "contentTypeId": "15",
+    "region": "광주",
+    "regionScale": "metropolitan",
+    "title": "비어페스트 광주",
+    "description": "광주 지역에서 비어페스트 광주을(를) 중심으로 지역 축제와 행사 문화를 광주광역시 서구 상무누리로 30 (치평동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/09/3523409_image2_1.JPG",
+    "address": "광주광역시 서구 상무누리로 30 (치평동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1623750",
+    "source": "tourapi",
+    "contentId": "1623750",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "갑천",
+    "description": "대전 지역에서 갑천을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 구성동 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/38/3564738_image2_1.jpg",
+    "address": "대전광역시 유성구 구성동",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2758282",
+    "source": "tourapi",
+    "contentId": "2758282",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "광수사",
+    "description": "대전 지역에서 광수사을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 유성구 학하서로63번길 26 (계산동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/62/3564962_image2_1.jpg",
+    "address": "대전광역시 유성구 학하서로63번길 26 (계산동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-126003",
+    "source": "tourapi",
+    "contentId": "126003",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "국립대전현충원 보훈둘레길",
+    "description": "대전 지역에서 국립대전현충원 보훈둘레길을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 현충원로 251 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/63/3512563_image2_1.jpg",
+    "address": "대전광역시 유성구 현충원로 251",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2790930",
+    "source": "tourapi",
+    "contentId": "2790930",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "금강로하스 대청공원 (암석식물원)",
+    "description": "대전 지역에서 금강로하스 대청공원 (암석식물원)을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 대덕구 미호동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/06/3336206_image2_1.jpg",
+    "address": "대전광역시 대덕구 미호동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2407303",
+    "source": "tourapi",
+    "contentId": "2407303",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "금강로하스대청공원",
+    "description": "대전 지역에서 금강로하스대청공원을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 대덕구 미호동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/50/3542250_image2_1.jpg",
+    "address": "대전광역시 대덕구 미호동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2913032",
+    "source": "tourapi",
+    "contentId": "2913032",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "금강로하스산호빛공원",
+    "description": "대전 지역에서 금강로하스산호빛공원을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 대덕구 석봉동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/25/2913025_image2_1.jpg",
+    "address": "대전광역시 대덕구 석봉동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1622646",
+    "source": "tourapi",
+    "contentId": "1622646",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "길치문화공원",
+    "description": "대전 지역에서 길치문화공원을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 대덕구 신상로 65-100 (비래동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/54/3565054_image2_1.jpg",
+    "address": "대전광역시 대덕구 신상로 65-100 (비래동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1126556",
+    "source": "tourapi",
+    "contentId": "1126556",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "김정선생묘소일원",
+    "description": "대전 지역에서 김정선생묘소일원을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 동구 회남로 117 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/46/3033446_image2_1.JPG",
+    "address": "대전광역시 동구 회남로 117",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3454325",
+    "source": "tourapi",
+    "contentId": "3454325",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "꿀잼도시 대전홍보관",
+    "description": "대전 지역에서 꿀잼도시 대전홍보관을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 엑스포로 1 (도룡동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/96/3452996_image2_1.jpg",
+    "address": "대전광역시 유성구 엑스포로 1 (도룡동)",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1955668",
+    "source": "tourapi",
+    "contentId": "1955668",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "남간정사",
+    "description": "대전 지역에서 남간정사을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 동구 충정로 53 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/40/3565240_image2_1.jpg",
+    "address": "대전광역시 동구 충정로 53",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2758252",
+    "source": "tourapi",
+    "contentId": "2758252",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "남선공원",
+    "description": "대전 지역에서 남선공원을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 서구 남선로 66 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/24/3565624_image2_1.jpg",
+    "address": "대전광역시 서구 남선로 66",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-298208",
+    "source": "tourapi",
+    "contentId": "298208",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "내원사(대전)",
+    "description": "대전 지역에서 내원사(대전)을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 서구 배재로197번길 200 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/79/3034979_image2_1.JPG",
+    "address": "대전광역시 서구 배재로197번길 200",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2786012",
+    "source": "tourapi",
+    "contentId": "2786012",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "노고산",
+    "description": "대전 지역에서 노고산을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 동구 직동 산31-1 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/60/3346960_image2_1.jpg",
+    "address": "대전광역시 동구 직동 산31-1",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2752861",
+    "source": "tourapi",
+    "contentId": "2752861",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대동벽화마을",
+    "description": "대전 지역에서 대동벽화마을을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 동구 백룡로48번길 일대 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/64/3565164_image2_1.jpg",
+    "address": "대전광역시 동구 백룡로48번길 일대",
+    "tags": [
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2766959",
+    "source": "tourapi",
+    "contentId": "2766959",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 신흥사",
+    "description": "대전 지역에서 대전 신흥사을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 동서대로735번길 24-9 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/35/2767235_image2_1.jpg",
+    "address": "대전광역시 유성구 동서대로735번길 24-9",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2782788",
+    "source": "tourapi",
+    "contentId": "2782788",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 엑스포 아쿠아리움",
+    "description": "대전 지역에서 대전 엑스포 아쿠아리움을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 엑스포로 1 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/47/3371547_image2_1.jpg",
+    "address": "대전광역시 유성구 엑스포로 1",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2743325",
+    "source": "tourapi",
+    "contentId": "2743325",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전광역시청 시민잔디광장",
+    "description": "대전 지역에서 대전광역시청 시민잔디광장을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 서구 둔산로 100 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/86/3565586_image2_1.jpg",
+    "address": "대전광역시 서구 둔산로 100",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1089992",
+    "source": "tourapi",
+    "contentId": "1089992",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전교통문화연수원",
+    "description": "대전 지역에서 대전교통문화연수원을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 대덕대로 480 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/29/3564729_image2_1.jpg",
+    "address": "대전광역시 유성구 대덕대로 480",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-741957",
+    "source": "tourapi",
+    "contentId": "741957",
+    "contentTypeId": "12",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전솔로몬로파크",
+    "description": "대전 지역에서 대전솔로몬로파크을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 유성구 엑스포로 219-39 (원촌동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/09/3035209_image2_1.JPG",
+    "address": "대전광역시 유성구 엑스포로 219-39 (원촌동)",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3337734",
+    "source": "tourapi",
+    "contentId": "3337734",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "꿈돌이 하우스",
+    "description": "대전 지역에서 꿈돌이 하우스을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 동구 중앙로203번길 3 (중동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/3430156_image2_1.jpg",
+    "address": "대전광역시 동구 중앙로203번길 3 (중동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1747497",
+    "source": "tourapi",
+    "contentId": "1747497",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대덕문예회관",
+    "description": "대전 지역에서 대덕문예회관을(를) 통해 전시와 예술 활동을 대전광역시 대덕구 대전로 1348 (읍내동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/32/3033032_image2_1.JPG",
+    "address": "대전광역시 대덕구 대전로 1348 (읍내동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130201",
+    "source": "tourapi",
+    "contentId": "130201",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대덕문화원",
+    "description": "대전 지역에서 대덕문화원을(를) 통해 전시와 예술 활동을 대전광역시 대덕구 대전로 1348 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/03/1944903_image2_1.jpg",
+    "address": "대전광역시 대덕구 대전로 1348",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130802",
+    "source": "tourapi",
+    "contentId": "130802",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 가수원도서관",
+    "description": "대전 지역에서 대전 가수원도서관을(를) 통해 전시와 예술 활동을 대전광역시 서구 가수원로 91-11 (가수원동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/58/3033558_image2_1.JPG",
+    "address": "대전광역시 서구 가수원로 91-11 (가수원동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-129973",
+    "source": "tourapi",
+    "contentId": "129973",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 중구문화원",
+    "description": "대전 지역에서 대전 중구문화원을(를) 통해 전시와 예술 활동을 대전광역시 중구 대흥로 109 (대흥동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/04/3063104_image2_1.JPG",
+    "address": "대전광역시 중구 대흥로 109 (대흥동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3008952",
+    "source": "tourapi",
+    "contentId": "3008952",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전대학교30주년기념관",
+    "description": "대전 지역에서 대전대학교30주년기념관을(를) 통해 전시와 예술 활동을 대전광역시 동구 대학로 62 (용운동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/47/3008947_image2_1.JPG",
+    "address": "대전광역시 동구 대학로 62 (용운동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-129836",
+    "source": "tourapi",
+    "contentId": "129836",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전대학교박물관",
+    "description": "대전 지역에서 대전대학교박물관을(를) 통해 역사적 흔적과 생활권의 맥락을 대전광역시 동구 대학로 62 대전대학교 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/3033412_image2_1.JPG",
+    "address": "대전광역시 동구 대학로 62 대전대학교",
+    "tags": [
+      "history"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2733533",
+    "source": "tourapi",
+    "contentId": "2733533",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전무형유산전수교육관",
+    "description": "대전 지역에서 대전무형유산전수교육관을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 대덕구 동춘당로94번길 50 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/95/3565095_image2_1.jpg",
+    "address": "대전광역시 대덕구 동춘당로94번길 50",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130197",
+    "source": "tourapi",
+    "contentId": "130197",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전서구문화원",
+    "description": "대전 지역에서 대전서구문화원을(를) 중심으로 지역 생활 문화와 분위기를 대전광역시 서구 계룡로553번길 38 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/43/3585043_image2_1.jpg",
+    "address": "대전광역시 서구 계룡로553번길 38",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1066804",
+    "source": "tourapi",
+    "contentId": "1066804",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전선사박물관",
+    "description": "대전 지역에서 대전선사박물관을(를) 통해 역사적 흔적과 생활권의 맥락을 대전광역시 유성구 노은동로 126 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/06/3032106_image2_1.JPG",
+    "address": "대전광역시 유성구 노은동로 126",
+    "tags": [
+      "history"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1907589",
+    "source": "tourapi",
+    "contentId": "1907589",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전시립박물관",
+    "description": "대전 지역에서 대전시립박물관을(를) 통해 역사적 흔적과 생활권의 맥락을 대전광역시 유성구 도안대로 398 (상대동) 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/39/3031739_image2_1.JPG",
+    "address": "대전광역시 유성구 도안대로 398 (상대동)",
+    "tags": [
+      "history",
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1125312",
+    "source": "tourapi",
+    "contentId": "1125312",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전어린이회관",
+    "description": "대전 지역에서 대전어린이회관을(를) 통해 전시와 예술 활동을 대전광역시 유성구 월드컵대로 32 대전월드컵경기장 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/66/3031966_image2_1.JPG",
+    "address": "대전광역시 유성구 월드컵대로 32 대전월드컵경기장",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2605913",
+    "source": "tourapi",
+    "contentId": "2605913",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전전통나래관",
+    "description": "대전 지역에서 대전전통나래관을(를) 중심으로 전통 문화와 지역 정체성을 대전광역시 동구 철갑2길 2 (소제동) 일대에서 느낄 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/83/3071283_image2_1.JPG",
+    "address": "대전광역시 동구 철갑2길 2 (소제동)",
+    "tags": [
+      "tradition",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-644085",
+    "source": "tourapi",
+    "contentId": "644085",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전컨벤션센터(DCC)",
+    "description": "대전 지역에서 대전컨벤션센터(DCC)을(를) 통해 전시와 예술 활동을 대전광역시 유성구 엑스포로 107 대전컨벤션센터 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/90/3031790_image2_1.JPG",
+    "address": "대전광역시 유성구 엑스포로 107 대전컨벤션센터",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-130760",
+    "source": "tourapi",
+    "contentId": "130760",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전한밭도서관",
+    "description": "대전 지역에서 대전한밭도서관을(를) 통해 전시와 예술 활동을 대전광역시 중구 서문로 10 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/23/3063023_image2_1.JPG",
+    "address": "대전광역시 중구 서문로 10",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-736422",
+    "source": "tourapi",
+    "contentId": "736422",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대청호자연생태관",
+    "description": "대전 지역에서 대청호자연생태관을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 동구 천개동로 41 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/01/2605601_image2_1.jpg",
+    "address": "대전광역시 동구 천개동로 41",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-1623844",
+    "source": "tourapi",
+    "contentId": "1623844",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "서대전공원 야외음악당",
+    "description": "대전 지역에서 서대전공원 야외음악당을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 중구 계백로1716번길 23 (문화동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/36/3063036_image2_1.JPG",
+    "address": "대전광역시 중구 계백로1716번길 23 (문화동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3079882",
+    "source": "tourapi",
+    "contentId": "3079882",
+    "contentTypeId": "14",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "아트브릿지(대전)",
+    "description": "대전 지역에서 아트브릿지(대전)을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 서구 둔산대로117번길 22 (만년동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/74/3079874_image2_1.JPG",
+    "address": "대전광역시 서구 둔산대로117번길 22 (만년동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2994352",
+    "source": "tourapi",
+    "contentId": "2994352",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "내인생의 한방축제",
+    "description": "대전 지역에서 내인생의 한방축제을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 동구 태전로 1 (중동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/10/3518010_image2_1.jpg",
+    "address": "대전광역시 동구 태전로 1 (중동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3363436",
+    "source": "tourapi",
+    "contentId": "3363436",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대덕힐링콘서트",
+    "description": "대전 지역에서 대덕힐링콘서트을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 대덕구 동춘당로 80 (송촌동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/85/3546985_image2_1.png",
+    "address": "대전광역시 대덕구 동춘당로 80 (송촌동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2990597",
+    "source": "tourapi",
+    "contentId": "2990597",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 0시 축제",
+    "description": "대전 지역에서 대전 0시 축제을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 중구 중앙로 148 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/27/3489027_image2_1.jpg",
+    "address": "대전광역시 중구 중앙로 148",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3113001",
+    "source": "tourapi",
+    "contentId": "3113001",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전 동구동락 축제",
+    "description": "대전 지역에서 대전 동구동락 축제을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 동구 철갑2길 2 (소제동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/14/3532414_image2_1.jpg",
+    "address": "대전광역시 동구 철갑2길 2 (소제동)",
+    "tags": [
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2618730",
+    "source": "tourapi",
+    "contentId": "2618730",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전ART마임페스티벌",
+    "description": "대전 지역에서 대전ART마임페스티벌을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 중구 중앙로 101 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/17/3349617_image2_1.jpg",
+    "address": "대전광역시 중구 중앙로 101",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3373075",
+    "source": "tourapi",
+    "contentId": "3373075",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "대전무악연희축제",
+    "description": "대전 지역에서 대전무악연희축제을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 서구 둔산대로 181 (만년동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/3502912_image2_1.jpg",
+    "address": "대전광역시 서구 둔산대로 181 (만년동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2561795",
+    "source": "tourapi",
+    "contentId": "2561795",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "유성국화축제",
+    "description": "대전 지역에서 유성국화축제을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 어은로 27 (봉명동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/05/3546705_image2_1.jpg",
+    "address": "대전광역시 유성구 어은로 27 (봉명동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3544873",
+    "source": "tourapi",
+    "contentId": "3544873",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "유성독서대전",
+    "description": "대전 지역에서 유성독서대전을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 어은로 27 (봉명동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/72/3544872_image2_1.png",
+    "address": "대전광역시 유성구 어은로 27 (봉명동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2833003",
+    "source": "tourapi",
+    "contentId": "2833003",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "유성재즈&맥주페스타",
+    "description": "대전 지역에서 유성재즈&맥주페스타을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 어은로 27 (봉명동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/23/3338823_image2_1.jpg",
+    "address": "대전광역시 유성구 어은로 27 (봉명동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3510577",
+    "source": "tourapi",
+    "contentId": "3510577",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "한여름밤의 유성뮤직페스타",
+    "description": "대전 지역에서 한여름밤의 유성뮤직페스타을(를) 중심으로 자연 풍경과 산책 문화를 대전광역시 유성구 테크노중앙로 123 (용산동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/75/3510575_image2_1.jpg",
+    "address": "대전광역시 유성구 테크노중앙로 123 (용산동)",
+    "tags": [
+      "nature",
+      "night"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3553823",
+    "source": "tourapi",
+    "contentId": "3553823",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "2025 대전 소통공감행사 \"청끌夜\"",
+    "description": "대전 지역에서 2025 대전 소통공감행사 \"청끌夜\"을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 중구 대종로 373 (부사동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/22/3553822_image2_1.png",
+    "address": "대전광역시 중구 대종로 373 (부사동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3532372",
+    "source": "tourapi",
+    "contentId": "3532372",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "2025 대전 중구 북페스티벌",
+    "description": "대전 지역에서 2025 대전 중구 북페스티벌을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 중구 중앙로138번길 30 (대흥동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/71/3532371_image2_1.png",
+    "address": "대전광역시 중구 중앙로138번길 30 (대흥동)",
+    "tags": [
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2915307",
+    "source": "tourapi",
+    "contentId": "2915307",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "2025 유성온천 크리스마스 축제",
+    "description": "대전 지역에서 2025 유성온천 크리스마스 축제을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 어은로 27 (봉명동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/43/3574143_image2_1.jpg",
+    "address": "대전광역시 유성구 어은로 27 (봉명동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3551562",
+    "source": "tourapi",
+    "contentId": "3551562",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "2025년 제20회 인문주간",
+    "description": "대전 지역에서 2025년 제20회 인문주간을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 가정로 201 (가정동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/28/3551428_image2_1.jpg",
+    "address": "대전광역시 유성구 가정로 201 (가정동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-3420072",
+    "source": "tourapi",
+    "contentId": "3420072",
+    "contentTypeId": "15",
+    "region": "대전",
+    "regionScale": "metropolitan",
+    "title": "2026 선양 맨몸마라톤",
+    "description": "대전 지역에서 2026 선양 맨몸마라톤을(를) 중심으로 지역 축제와 행사 문화를 대전광역시 유성구 대덕대로 480 (도룡동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/57/3572757_image2_1.png",
+    "address": "대전광역시 유성구 대덕대로 480 (도룡동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 1
+  },
+  {
+    "id": "tour-2774063",
+    "source": "tourapi",
+    "contentId": "2774063",
+    "contentTypeId": "12",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "객사길",
+    "description": "전주 지역에서 객사길을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 중앙동2가 10-1 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/59/3351559_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 중앙동2가 10-1",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-147656",
+    "source": "tourapi",
+    "contentId": "147656",
+    "contentTypeId": "12",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "경기전",
+    "description": "전주 지역에서 경기전을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 태조로 44 (풍남동3가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/74/3422574_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 태조로 44 (풍남동3가)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-129786",
+    "source": "tourapi",
+    "contentId": "129786",
+    "contentTypeId": "14",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "국립전주박물관",
+    "description": "전주 지역에서 국립전주박물관을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 쑥고개로 249 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3442230_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 쑥고개로 249",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3569496",
+    "source": "tourapi",
+    "contentId": "3569496",
+    "contentTypeId": "15",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "담그랑께 나누랑께",
+    "description": "전주 지역에서 담그랑께 나누랑께을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/95/3569495_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3495394",
+    "source": "tourapi",
+    "contentId": "3495394",
+    "contentTypeId": "15",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "독립출판 북페어 전주책쾌",
+    "description": "전주 지역에서 독립출판 북페어 전주책쾌을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 전주천동로 118 (전동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/92/3495392_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 전주천동로 118 (전동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2838316",
+    "source": "tourapi",
+    "contentId": "2838316",
+    "contentTypeId": "15",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "무형유산원 나들이",
+    "description": "전주 지역에서 무형유산원 나들이을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 서학로 95 (동서학동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/57/3533457_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 서학로 95 (동서학동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3468240",
+    "source": "tourapi",
+    "contentId": "3468240",
+    "contentTypeId": "15",
+    "region": "전주",
+    "regionScale": "city",
+    "title": "전라관찰사의 탄생",
+    "description": "전주 지역에서 전라관찰사의 탄생을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/08/3546908_image2_1.jpg",
+    "address": "전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-125769",
+    "source": "tourapi",
+    "contentId": "125769",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 굴산사지",
+    "description": "강릉 지역에서 강릉 굴산사지을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 구정면 학산리 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/22/3025022_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 구정면 학산리",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-128359",
+    "source": "tourapi",
+    "contentId": "128359",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 복사꽃마을",
+    "description": "강릉 지역에서 강릉 복사꽃마을을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 신리천로 527-3 복사꽃정보마을센타 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/42/3383742_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 신리천로 527-3 복사꽃정보마을센타",
+    "tags": [
+      "nature",
+      "local-life"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2702581",
+    "source": "tourapi",
+    "contentId": "2702581",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 오금집",
+    "description": "강릉 지역에서 강릉 오금집을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 강릉대로210번길 23-9 (임당동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/31/3378331_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 강릉대로210번길 23-9 (임당동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-128360",
+    "source": "tourapi",
+    "contentId": "128360",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 한울타리마을",
+    "description": "강릉 지역에서 강릉 한울타리마을을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 옥계면 북동용소길 137 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/99/3378399_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 옥계면 북동용소길 137",
+    "tags": [
+      "nature",
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-129337",
+    "source": "tourapi",
+    "contentId": "129337",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 해살이마을",
+    "description": "강릉 지역에서 강릉 해살이마을을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 사천면 중앙서로 557-1 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/60/3383760_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 사천면 중앙서로 557-1",
+    "tags": [
+      "nature",
+      "local-life"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2774698",
+    "source": "tourapi",
+    "contentId": "2774698",
+    "contentTypeId": "12",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉아트센터",
+    "description": "강릉 지역에서 강릉아트센터을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 종합운동장길 84 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/95/3531895_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 종합운동장길 84",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1722228",
+    "source": "tourapi",
+    "contentId": "1722228",
+    "contentTypeId": "14",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉단오제전수교육관",
+    "description": "강릉 지역에서 강릉단오제전수교육관을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 단오장길 1 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/67/3047867_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 단오장길 1",
+    "tags": [
+      "nature",
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2706817",
+    "source": "tourapi",
+    "contentId": "2706817",
+    "contentTypeId": "14",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉시립미술관 교동",
+    "description": "강릉 지역에서 강릉시립미술관 교동을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 화부산로40번길 46 (교동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/31/3577531_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 화부산로40번길 46 (교동)",
+    "tags": [
+      "nature",
+      "art",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2551386",
+    "source": "tourapi",
+    "contentId": "2551386",
+    "contentTypeId": "14",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉원주대학교 박물관",
+    "description": "강릉 지역에서 강릉원주대학교 박물관을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 죽헌길 7 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/40/3383840_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 죽헌길 7",
+    "tags": [
+      "nature",
+      "history",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2774692",
+    "source": "tourapi",
+    "contentId": "2774692",
+    "contentTypeId": "14",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉자동차극장",
+    "description": "강릉 지역에서 강릉자동차극장을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 구정면 칠성로 13-8 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/45/3393445_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 구정면 칠성로 13-8",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2782914",
+    "source": "tourapi",
+    "contentId": "2782914",
+    "contentTypeId": "14",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "고래책방",
+    "description": "강릉 지역에서 고래책방을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 율곡로 2848 (옥천동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/46/2793046_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 율곡로 2848 (옥천동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2541883",
+    "source": "tourapi",
+    "contentId": "2541883",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉 국가유산 야행",
+    "description": "강릉 지역에서 강릉 국가유산 야행을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 임영로131번길 6 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/77/3317777_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 임영로131번길 6",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2930716",
+    "source": "tourapi",
+    "contentId": "2930716",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉누들축제",
+    "description": "강릉 지역에서 강릉누들축제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 경강로 2111 (임당동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/11/3556811_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 경강로 2111 (임당동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2607445",
+    "source": "tourapi",
+    "contentId": "2607445",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉비치비어페스티벌",
+    "description": "강릉 지역에서 강릉비치비어페스티벌을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 강문동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/43/2607443_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 강문동",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-825295",
+    "source": "tourapi",
+    "contentId": "825295",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "강릉커피축제",
+    "description": "강릉 지역에서 강릉커피축제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 창해로14번길 20-1 (견소동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/24/3546224_image2_1.JPG",
+    "address": "강원특별자치도 강릉시 창해로14번길 20-1 (견소동)",
+    "tags": [
+      "nature",
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2543724",
+    "source": "tourapi",
+    "contentId": "2543724",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "명주인형극제",
+    "description": "강릉 지역에서 명주인형극제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 경강로2021번길 9-1 (명주동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/50/3505650_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 경강로2021번길 9-1 (명주동)",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-674023",
+    "source": "tourapi",
+    "contentId": "674023",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "병오년 해맞이 행사",
+    "description": "강릉 지역에서 병오년 해맞이 행사을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 경포로 515 (안현동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/40/3588540_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 경포로 515 (안현동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3021124",
+    "source": "tourapi",
+    "contentId": "3021124",
+    "contentTypeId": "15",
+    "region": "강릉",
+    "regionScale": "city",
+    "title": "보현사 산사천년문화제",
+    "description": "강릉 지역에서 보현사 산사천년문화제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 강릉시 성산면 보현길 396 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/75/3529875_image2_1.jpg",
+    "address": "강원특별자치도 강릉시 성산면 보현길 396",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-130919",
+    "source": "tourapi",
+    "contentId": "130919",
+    "contentTypeId": "14",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기대학교소성박물관",
+    "description": "수원 지역에서 경기대학교소성박물관을(를) 중심으로 자연 풍경과 산책 문화를 경기도 수원시 영통구 광교산로 154-42 (이의동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/63/3072563_image2_1.jpg",
+    "address": "경기도 수원시 영통구 광교산로 154-42 (이의동)",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-130831",
+    "source": "tourapi",
+    "contentId": "130831",
+    "contentTypeId": "14",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기도교육청중앙도서관",
+    "description": "수원 지역에서 경기도교육청중앙도서관을(를) 통해 전시와 예술 활동을 경기도 수원시 장안구 조원로 18 (조원동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/13/3475913_image2_1.JPG",
+    "address": "경기도 수원시 장안구 조원로 18 (조원동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3427294",
+    "source": "tourapi",
+    "contentId": "3427294",
+    "contentTypeId": "14",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기도행정역사관",
+    "description": "수원 지역에서 경기도행정역사관을(를) 통해 역사적 흔적과 생활권의 맥락을 경기도 수원시 장안구 경수대로 1150 (파장동) 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/91/3427291_image2_1.jpg",
+    "address": "경기도 수원시 장안구 경수대로 1150 (파장동)",
+    "tags": [
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-130489",
+    "source": "tourapi",
+    "contentId": "130489",
+    "contentTypeId": "14",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기아트센터",
+    "description": "수원 지역에서 경기아트센터을(를) 중심으로 지역 생활 문화와 분위기를 경기도 수원시 팔달구 효원로307번길 20 (인계동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/50/3055250_image2_1.JPG",
+    "address": "경기도 수원시 팔달구 효원로307번길 20 (인계동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3553728",
+    "source": "tourapi",
+    "contentId": "3553728",
+    "contentTypeId": "15",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기 김치페스타",
+    "description": "수원 지역에서 경기 김치페스타을(를) 중심으로 지역 축제와 행사 문화를 경기도 수원시 영통구 광교중앙로 140 (하동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/26/3553726_image2_1.jpg",
+    "address": "경기도 수원시 영통구 광교중앙로 140 (하동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3368470",
+    "source": "tourapi",
+    "contentId": "3368470",
+    "contentTypeId": "15",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "경기미디저트페스타",
+    "description": "수원 지역에서 경기미디저트페스타을(를) 중심으로 지역 축제와 행사 문화를 경기도 수원시 영통구 광교중앙로 140 (하동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/35/3531335_image2_1.jpg",
+    "address": "경기도 수원시 영통구 광교중앙로 140 (하동)",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3008671",
+    "source": "tourapi",
+    "contentId": "3008671",
+    "contentTypeId": "15",
+    "region": "수원",
+    "regionScale": "city",
+    "title": "국립농업박물관 문화제 '쉼(休), 머무르다'",
+    "description": "수원 지역에서 국립농업박물관 문화제 '쉼(休), 머무르다'을(를) 통해 역사적 흔적과 생활권의 맥락을 경기도 수원시 권선구 수인로 154 (서둔동) 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/28/3561428_image2_1.jpg",
+    "address": "경기도 수원시 권선구 수인로 154 (서둔동)",
+    "tags": [
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2769571",
+    "source": "tourapi",
+    "contentId": "2769571",
+    "contentTypeId": "12",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "거꾸로천문대",
+    "description": "청주 지역에서 거꾸로천문대을(를) 중심으로 전통 문화와 지역 정체성을 충청북도 청주시 서원구 남이면 대림로 259 일대에서 느낄 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/2769612_image2_1.jpg",
+    "address": "충청북도 청주시 서원구 남이면 대림로 259",
+    "tags": [
+      "tradition"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1955985",
+    "source": "tourapi",
+    "contentId": "1955985",
+    "contentTypeId": "12",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "검암서원",
+    "description": "청주 지역에서 검암서원을(를) 중심으로 전통 문화와 지역 정체성을 충청북도 청주시 상당구 가덕면 병암리 215-2 일대에서 느낄 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3373830_image2_1.jpg",
+    "address": "충청북도 청주시 상당구 가덕면 병암리 215-2",
+    "tags": [
+      "tradition"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-130143",
+    "source": "tourapi",
+    "contentId": "130143",
+    "contentTypeId": "14",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "국립청주박물관 어린이박물관",
+    "description": "청주 지역에서 국립청주박물관 어린이박물관을(를) 통해 역사적 흔적과 생활권의 맥락을 충청북도 청주시 상당구 명암로 143 일대에서 살펴볼 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/11/3504411_image2_1.jpg",
+    "address": "충청북도 청주시 상당구 명암로 143",
+    "tags": [
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2598367",
+    "source": "tourapi",
+    "contentId": "2598367",
+    "contentTypeId": "14",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "국립현대미술관 청주",
+    "description": "청주 지역에서 국립현대미술관 청주을(를) 통해 전시와 예술 활동을 충청북도 청주시 청원구 상당로 314 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/79/3352579_image2_1.jpg",
+    "address": "충청북도 청주시 청원구 상당로 314",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1749228",
+    "source": "tourapi",
+    "contentId": "1749228",
+    "contentTypeId": "15",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "청남대 가을축제",
+    "description": "청주 지역에서 청남대 가을축제을(를) 중심으로 지역 축제와 행사 문화를 충청북도 청주시 상당구 문의면 청남대길 646 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/3552356_image2_1.JPG",
+    "address": "충청북도 청주시 상당구 문의면 청남대길 646",
+    "tags": [
+      "walk",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-613316",
+    "source": "tourapi",
+    "contentId": "613316",
+    "contentTypeId": "15",
+    "region": "청주",
+    "regionScale": "city",
+    "title": "청원생명축제",
+    "description": "청주 지역에서 청원생명축제을(를) 중심으로 지역 축제와 행사 문화를 충청북도 청주시 청원구 오창읍 미래지로 99 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/14/3549714_image2_1.jpg",
+    "address": "충청북도 청주시 청원구 오창읍 미래지로 99",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2605528",
+    "source": "tourapi",
+    "contentId": "2605528",
+    "contentTypeId": "12",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "경암동 철길마을",
+    "description": "군산 지역에서 경암동 철길마을을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 경촌4길 14 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/50/3080250_image2_1.JPG",
+    "address": "전북특별자치도 군산시 경촌4길 14",
+    "tags": [
+      "nature",
+      "walk",
+      "local-life"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-131279",
+    "source": "tourapi",
+    "contentId": "131279",
+    "contentTypeId": "12",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "고군산군도",
+    "description": "군산 지역에서 고군산군도을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 옥도면 대장도리 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/89/3588689_image2_1.jpg",
+    "address": "전북특별자치도 군산시 옥도면 대장도리",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2703743",
+    "source": "tourapi",
+    "contentId": "2703743",
+    "contentTypeId": "12",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "고군산대교",
+    "description": "군산 지역에서 고군산대교을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 옥도면 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/36/3426836_image2_1.jpg",
+    "address": "전북특별자치도 군산시 옥도면",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-130356",
+    "source": "tourapi",
+    "contentId": "130356",
+    "contentTypeId": "14",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "국립군산대학교 박물관",
+    "description": "군산 지역에서 국립군산대학교 박물관을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 대학로 558 (미룡동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/23/3560923_image2_1.jpg",
+    "address": "전북특별자치도 군산시 대학로 558 (미룡동)",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1684836",
+    "source": "tourapi",
+    "contentId": "1684836",
+    "contentTypeId": "14",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "군산근대역사박물관",
+    "description": "군산 지역에서 군산근대역사박물관을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 해망로 240 군산근대역사박물관 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/14/3304814_image2_1.jpg",
+    "address": "전북특별자치도 군산시 해망로 240 군산근대역사박물관",
+    "tags": [
+      "nature",
+      "history"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2605928",
+    "source": "tourapi",
+    "contentId": "2605928",
+    "contentTypeId": "14",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "군산평화박물관",
+    "description": "군산 지역에서 군산평화박물관을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 동국사길 3 (월명동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/89/3573289_image2_1.jpg",
+    "address": "전북특별자치도 군산시 동국사길 3 (월명동)",
+    "tags": [
+      "nature",
+      "history",
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1846797",
+    "source": "tourapi",
+    "contentId": "1846797",
+    "contentTypeId": "15",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "군산시간여행축제",
+    "description": "군산 지역에서 군산시간여행축제을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 중앙로1가 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/48/3561448_image2_1.jpg",
+    "address": "전북특별자치도 군산시 중앙로1가",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3364857",
+    "source": "tourapi",
+    "contentId": "3364857",
+    "contentTypeId": "15",
+    "region": "군산",
+    "regionScale": "small-city",
+    "title": "군산짬뽕페스티벌",
+    "description": "군산 지역에서 군산짬뽕페스티벌을(를) 중심으로 자연 풍경과 산책 문화를 전북특별자치도 군산시 해망로 214 (장미동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/05/3568605_image2_1.jpg",
+    "address": "전북특별자치도 군산시 해망로 214 (장미동)",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-129896",
+    "source": "tourapi",
+    "contentId": "129896",
+    "contentTypeId": "14",
+    "region": "목포",
+    "regionScale": "small-city",
+    "title": "국립해양유산연구소",
+    "description": "목포 지역에서 국립해양유산연구소을(를) 중심으로 자연 풍경과 산책 문화를 전라남도 목포시 남농로 136 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/10/3533710_image2_1.jpg",
+    "address": "전라남도 목포시 남농로 136",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1994953",
+    "source": "tourapi",
+    "contentId": "1994953",
+    "contentTypeId": "14",
+    "region": "목포",
+    "regionScale": "small-city",
+    "title": "김대중 노벨평화상 기념관",
+    "description": "목포 지역에서 김대중 노벨평화상 기념관을(를) 중심으로 지역 생활 문화와 분위기를 전라남도 목포시 삼학로92번길 68 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/73/3534373_image2_1.jpg",
+    "address": "전라남도 목포시 삼학로92번길 68",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3544888",
+    "source": "tourapi",
+    "contentId": "3544888",
+    "contentTypeId": "15",
+    "region": "목포",
+    "regionScale": "small-city",
+    "title": "남도국제미식산업박람회",
+    "description": "목포 지역에서 남도국제미식산업박람회을(를) 중심으로 자연 풍경과 산책 문화를 전라남도 목포시 남농로 102 (용해동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/74/3544874_image2_1.jpg",
+    "address": "전라남도 목포시 남농로 102 (용해동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2559006",
+    "source": "tourapi",
+    "contentId": "2559006",
+    "contentTypeId": "15",
+    "region": "목포",
+    "regionScale": "small-city",
+    "title": "목포 문화유산 야행",
+    "description": "목포 지역에서 목포 문화유산 야행을(를) 중심으로 자연 풍경과 산책 문화를 전라남도 목포시 번화로 18 (중앙동2가) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/16/3546816_image2_1.jpeg",
+    "address": "전라남도 목포시 번화로 18 (중앙동2가)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2863978",
+    "source": "tourapi",
+    "contentId": "2863978",
+    "contentTypeId": "12",
+    "region": "안산",
+    "regionScale": "small-city",
+    "title": "각골공원",
+    "description": "안산 지역에서 각골공원을(를) 중심으로 자연 풍경과 산책 문화를 경기도 안산시 상록구 본오동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/69/2863969_image2_1.JPG",
+    "address": "경기도 안산시 상록구 본오동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-631278",
+    "source": "tourapi",
+    "contentId": "631278",
+    "contentTypeId": "14",
+    "region": "안산",
+    "regionScale": "small-city",
+    "title": "경기도미술관",
+    "description": "안산 지역에서 경기도미술관을(를) 중심으로 자연 풍경과 산책 문화를 경기도 안산시 단원구 동산로 268 (초지동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/36/3020536_image2_1.jpg",
+    "address": "경기도 안산시 단원구 동산로 268 (초지동)",
+    "tags": [
+      "nature",
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-125885",
+    "source": "tourapi",
+    "contentId": "125885",
+    "contentTypeId": "12",
+    "region": "천안",
+    "regionScale": "small-city",
+    "title": "각원사",
+    "description": "천안 지역에서 각원사을(를) 중심으로 지역 생활 문화와 분위기를 충청남도 천안시 동남구 각원사길 245 (안서동) 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3535030_image2_1.jpg",
+    "address": "충청남도 천안시 동남구 각원사길 245 (안서동)",
+    "tags": [
+      "walk"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-128677",
+    "source": "tourapi",
+    "contentId": "128677",
+    "contentTypeId": "12",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "감포항",
+    "description": "경주 지역에서 감포항을(를) 중심으로 지역 생활 문화와 분위기를 경상북도 경주시 감포읍 감포로 일대에서 탐험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/78/3537978_image2_1.jpg",
+    "address": "경상북도 경주시 감포읍 감포로",
+    "tags": [
+      "local-life"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2044527",
+    "source": "tourapi",
+    "contentId": "2044527",
+    "contentTypeId": "12",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "강동 워터파크",
+    "description": "경주 지역에서 강동 워터파크을(를) 중심으로 자연 풍경과 산책 문화를 경상북도 경주시 보불로 391 (천군동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/71/3326671_image2_1.jpg",
+    "address": "경상북도 경주시 보불로 391 (천군동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2756802",
+    "source": "tourapi",
+    "contentId": "2756802",
+    "contentTypeId": "12",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "강동리조트 프라이빗콘도",
+    "description": "경주 지역에서 강동리조트 프라이빗콘도을(를) 중심으로 자연 풍경과 산책 문화를 경상북도 경주시 보불로 391 (천군동) 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/2756956_image2_1.jpg",
+    "address": "경상북도 경주시 보불로 391 (천군동)",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3006834",
+    "source": "tourapi",
+    "contentId": "3006834",
+    "contentTypeId": "14",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "경주문화관 1918",
+    "description": "경주 지역에서 경주문화관 1918을(를) 통해 전시와 예술 활동을 경상북도 경주시 원화로 266 경주역 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/13/3006813_image2_1.jpg",
+    "address": "경상북도 경주시 원화로 266 경주역",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-3453492",
+    "source": "tourapi",
+    "contentId": "3453492",
+    "contentTypeId": "14",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "경주중앙도서관",
+    "description": "경주 지역에서 경주중앙도서관을(를) 통해 전시와 예술 활동을 경상북도 경주시 금성로 236 (사정동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/71/3453271_image2_1.JPG",
+    "address": "경상북도 경주시 금성로 236 (사정동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2707934",
+    "source": "tourapi",
+    "contentId": "2707934",
+    "contentTypeId": "14",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "경주화백컨벤션센터",
+    "description": "경주 지역에서 경주화백컨벤션센터을(를) 통해 전시와 예술 활동을 경상북도 경주시 보문로 507 (신평동) 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/95/3405895_image2_1.jpg",
+    "address": "경상북도 경주시 보문로 507 (신평동)",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-2614760",
+    "source": "tourapi",
+    "contentId": "2614760",
+    "contentTypeId": "15",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "경주국가유산야행",
+    "description": "경주 지역에서 경주국가유산야행을(를) 중심으로 자연 풍경과 산책 문화를 경상북도 경주시 교동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/05/3529605_image2_1.JPG",
+    "address": "경상북도 경주시 교동",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-1718137",
+    "source": "tourapi",
+    "contentId": "1718137",
+    "contentTypeId": "15",
+    "region": "경주",
+    "regionScale": "small-city",
+    "title": "신라문화제",
+    "description": "경주 지역에서 신라문화제을(를) 중심으로 지역 축제와 행사 문화를 경상북도 경주시 노동동 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/24/3512724_image2_1.jpg",
+    "address": "경상북도 경주시 노동동",
+    "tags": [
+      "festival"
+    ],
+    "diversityWeight": 2
+  },
+  {
+    "id": "tour-127423",
+    "source": "tourapi",
+    "contentId": "127423",
+    "contentTypeId": "12",
+    "region": "담양",
+    "regionScale": "town",
+    "title": "가마골계곡",
+    "description": "담양 지역에서 가마골계곡을(를) 중심으로 자연 풍경과 산책 문화를 전라남도 담양군 용면 용소길 261 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/35/3027135_image2_1.jpg",
+    "address": "전라남도 담양군 용면 용소길 261",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-3506515",
+    "source": "tourapi",
+    "contentId": "3506515",
+    "contentTypeId": "15",
+    "region": "담양",
+    "regionScale": "town",
+    "title": "담양 다미담주 페스티벌 쓰담쓰담 야시장",
+    "description": "담양 지역에서 담양 다미담주 페스티벌 쓰담쓰담 야시장을(를) 통해 시장과 장터 문화를 전라남도 담양군 담양읍 담주4길 24-46 일대에서 탐험할 수 있는 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/17/3559417_image2_1.jpg",
+    "address": "전라남도 담양군 담양읍 담주4길 24-46",
+    "tags": [
+      "food",
+      "market",
+      "walk"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-127508",
+    "source": "tourapi",
+    "contentId": "127508",
+    "contentTypeId": "12",
+    "region": "정선",
+    "regionScale": "town",
+    "title": "가리왕산",
+    "description": "정선 지역에서 가리왕산을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 정선군 정선읍 가리왕산로 707 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/68/2987668_image2_1.png",
+    "address": "강원특별자치도 정선군 정선읍 가리왕산로 707",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-3068424",
+    "source": "tourapi",
+    "contentId": "3068424",
+    "contentTypeId": "12",
+    "region": "정선",
+    "regionScale": "town",
+    "title": "가리왕산케이블카",
+    "description": "정선 지역에서 가리왕산케이블카을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 정선군 북평면 중봉길 41-35 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/30/3533330_image2_1.jpg",
+    "address": "강원특별자치도 정선군 북평면 중봉길 41-35",
+    "tags": [
+      "nature",
+      "walk"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-141252",
+    "source": "tourapi",
+    "contentId": "141252",
+    "contentTypeId": "15",
+    "region": "영월",
+    "regionScale": "town",
+    "title": "김삿갓 문화제",
+    "description": "영월 지역에서 김삿갓 문화제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 영월군 김삿갓면 김삿갓로 216-22 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/56/3541356_image2_1.JPG",
+    "address": "강원특별자치도 영월군 김삿갓면 김삿갓로 216-22",
+    "tags": [
+      "nature"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-581063",
+    "source": "tourapi",
+    "contentId": "581063",
+    "contentTypeId": "15",
+    "region": "영월",
+    "regionScale": "town",
+    "title": "동강뗏목축제",
+    "description": "영월 지역에서 동강뗏목축제을(를) 중심으로 자연 풍경과 산책 문화를 강원특별자치도 영월군 영월읍 하송리 일대에서 경험할 수 있는 장소입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/12/3513812_image2_1.jpg",
+    "address": "강원특별자치도 영월군 영월읍 하송리",
+    "tags": [
+      "nature",
+      "festival"
+    ],
+    "diversityWeight": 3
+  },
+  {
+    "id": "tour-2761465",
+    "source": "tourapi",
+    "contentId": "2761465",
+    "contentTypeId": "14",
+    "region": "남해",
+    "regionScale": "town",
+    "title": "거북선전시관",
+    "description": "남해 지역에서 거북선전시관을(를) 통해 전시와 예술 활동을 경상남도 남해군 설천면 노량리 일대에서 만날 수 있는 문화 공간입니다.",
+    "imageUrl": "http://tong.visitkorea.or.kr/cms/resource/99/3561899_image2_1.jpg",
+    "address": "경상남도 남해군 설천면 노량리",
+    "tags": [
+      "art"
+    ],
+    "diversityWeight": 3
+  }
+]
