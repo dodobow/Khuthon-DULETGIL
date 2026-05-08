@@ -29,7 +29,6 @@ export default function BattleResult({
           <p className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-4 text-sm leading-6 text-white/80">
             이 선택은 순위 경쟁이 아니라 문화 탐험의 출발점입니다.
           </p>
-          <p className="text-sm leading-6 text-white/70">{battle.matchReason}</p>
         </div>
 
         <DiscoveryReason
