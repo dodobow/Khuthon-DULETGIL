@@ -1,4 +1,4 @@
-import type { Battle, RelayCard } from '@/types'
+import type { Battle } from '@/types'
 import {
   generatedBattles,
   getWeightedRandomBattle as getGeneratedBattle,
@@ -338,64 +338,6 @@ export const battles: Battle[] = [
     ],
   },
 ]
-
-export const routeCandidates: {
-  nearbyCandidates: RelayCard[]
-  similarTasteCandidates: RelayCard[]
-} = {
-  nearbyCandidates: [
-    {
-      id: 'route-nearby-gunsan-rail',
-      region: '군산',
-      title: '철길마을 산책',
-      description: '낡은 철길과 생활 골목이 이어지는 원도심 문화 루트입니다.',
-      tags: ['골목', '사진', '거리'],
-      category: '거리',
-    },
-    {
-      id: 'route-nearby-mokpo-port',
-      region: '목포',
-      title: '항구 원도심',
-      description: '항구와 오래된 상권이 맞닿아 있는 목포의 생활 문화 흐름입니다.',
-      tags: ['항구', '원도심', '거리'],
-      category: '거리',
-    },
-    {
-      id: 'route-nearby-jeonju-market',
-      region: '전주',
-      title: '남부시장 청년몰',
-      description: '시장 안에서 지역 음식과 청년 창작 문화가 만나는 공간입니다.',
-      tags: ['시장', '음식', '청년문화'],
-      category: '음식',
-    },
-  ],
-  similarTasteCandidates: [
-    {
-      id: 'route-similar-damyang-bamboo',
-      region: '담양',
-      title: '죽녹원 대나무숲',
-      description: '조용한 숲길과 바람 소리로 이어지는 자연 감성 루트입니다.',
-      tags: ['자연', '숲길', '산책'],
-      category: '자연',
-    },
-    {
-      id: 'route-similar-boseong-tea',
-      region: '보성',
-      title: '녹차밭 능선',
-      description: '초록빛 풍경과 차 문화가 함께 이어지는 취향 기반 루트입니다.',
-      tags: ['자연', '풍경', '전통'],
-      category: '자연',
-    },
-    {
-      id: 'route-similar-jeongseon-arirang',
-      region: '정선',
-      title: '정선아리랑 장터',
-      description: '지역의 소리와 장터 문화가 만나는 전통 문화 루트입니다.',
-      tags: ['전통', '공연', '장터'],
-      category: '전통',
-    },
-  ],
-}
 
 // generatedBattles가 있으면 우선 사용, 없으면 mock battles로 fallback
 export function getWeightedRandomBattle(excludeId?: string): Battle {
