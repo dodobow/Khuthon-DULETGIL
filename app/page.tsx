@@ -17,6 +17,43 @@ type ExplorationLog = {
   summary: string
 }
 
+type ExplorationMission = {
+  id: string
+  title: string
+  description: string
+  reward: number
+}
+
+const explorationMissions: ExplorationMission[] = [
+  {
+    id: 'mission-town',
+    title: '소멸위기 지역 탐험하기',
+    description: '잘 알려지지 않은 town 규모 지역이 포함된 배틀을 끝까지 탐험해 보세요.',
+    reward: 5,
+  },
+  {
+    id: 'mission-new-region',
+    title: '처음 보는 지역 발견하기',
+    description: '아직 기록에 없는 새로운 지역 문화를 발견해 보세요.',
+    reward: 5,
+  },
+  {
+    id: 'mission-relay',
+    title: '릴레이 콘텐츠 끝까지 확인하기',
+    description: '투표 이후 릴레이와 지역 서사까지 이어서 탐험해 보세요.',
+    reward: 5,
+  },
+  {
+    id: 'mission-non-metro',
+    title: '광역시 외 지역 탐험하기',
+    description: '대도시 밖의 소도시와 마을 문화에 시선을 넓혀 보세요.',
+    reward: 5,
+  },
+]
+
+const getRandomMission = () =>
+  explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
+
 export default function Home() {
   // 현재 단계 (0~5)
   const [phase, setPhase] = useState<0 | 1 | 2 | 3 | 4 | 5>(0)
@@ -36,11 +73,20 @@ export default function Home() {
   // 완료한 문화 탐험 기록
   const [explorationLogs, setExplorationLogs] = useState<ExplorationLog[]>([])
 
+  // 현재 탐험 미션
+  const [currentMission, setCurrentMission] =
+    useState<ExplorationMission | null>(null)
+
+  // 방금 완료한 탐험 미션
+  const [completedMission, setCompletedMission] =
+    useState<ExplorationMission | null>(null)
+
   useEffect(() => {
     const battle = getWeightedRandomBattle()
     // 요구사항에 따라 최초 마운트 시 배틀을 선택하고 즉시 1단계로 전환한다.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setCurrentBattle(battle)
+    setCurrentMission(getRandomMission())
     setPhase(1)
   }, [])
 
@@ -55,8 +101,6 @@ export default function Home() {
     if (!currentBattle) return
     if (!votedSide) return
 
-    setExplorerScore(prev => prev + 10)
-
     const newRegions = [
       currentBattle.leftCulture.region,
       currentBattle.rightCulture.region,
@@ -65,8 +109,26 @@ export default function Home() {
       votedSide === 'left'
         ? currentBattle.leftCulture.region
         : currentBattle.rightCulture.region
+    const hasDiversityWeightThree =
+      currentBattle.leftCulture.diversityWeight === 3 ||
+      currentBattle.rightCulture.diversityWeight === 3
+    const hasNewRegion = newRegions.some(
+      region => !discoveredRegions.includes(region)
+    )
+    const hasSmallRegion =
+      currentBattle.leftCulture.regionScale === 'small-city' ||
+      currentBattle.leftCulture.regionScale === 'town' ||
+      currentBattle.rightCulture.regionScale === 'small-city' ||
+      currentBattle.rightCulture.regionScale === 'town'
+    const clearedMission =
+      currentMission && (hasDiversityWeightThree || hasNewRegion || hasSmallRegion)
+        ? currentMission
+        : null
+    const missionReward = clearedMission ? clearedMission.reward : 0
 
+    setExplorerScore(prev => prev + 10 + missionReward)
     setDiscoveredRegions(prev => [...new Set([...prev, ...newRegions])])
+    setCompletedMission(clearedMission)
     setExplorationLogs(prev => [
       {
         id: `${currentBattle.id}-${Date.now()}`,
@@ -84,6 +146,8 @@ export default function Home() {
   const handleNextBattle = () => {
     const next = getWeightedRandomBattle(currentBattle?.id)
     setCurrentBattle(next)
+    setCurrentMission(getRandomMission())
+    setCompletedMission(null)
     setVotedSide(null)
     setPhase(1)
   }
@@ -140,6 +204,7 @@ export default function Home() {
             <BattleResult
               battle={currentBattle}
               votedSide={votedSide}
+              mission={currentMission}
               onNext={() => setPhase(3)}
             />
           </div>
@@ -169,6 +234,7 @@ export default function Home() {
               score={explorerScore}
               discoveredRegions={discoveredRegions}
               explorationLogs={explorationLogs}
+              completedMission={completedMission}
               onNext={handleNextBattle}
             />
           </div>

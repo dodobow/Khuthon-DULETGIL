@@ -1,10 +1,18 @@
+import ExplorationMission from '@/components/ExplorationMission'
 import ExplorationLogList from '@/components/ExplorationLog'
 import type { ExplorationLog } from '@/components/ExplorationLog'
+
+interface Mission {
+  title: string
+  description: string
+  reward: number
+}
 
 interface ExplorerScoreProps {
   score: number
   discoveredRegions: string[]
   explorationLogs: ExplorationLog[]
+  completedMission: Mission | null
   onNext: () => void
 }
 
@@ -12,6 +20,7 @@ export default function ExplorerScore({
   score,
   discoveredRegions,
   explorationLogs,
+  completedMission,
   onNext,
 }: ExplorerScoreProps) {
   const badges = [
@@ -63,6 +72,15 @@ export default function ExplorerScore({
               ))}
             </div>
           </div>
+        )}
+
+        {completedMission && (
+          <ExplorationMission
+            title={completedMission.title}
+            description={completedMission.description}
+            reward={completedMission.reward}
+            completed
+          />
         )}
 
         <ExplorationLogList logs={explorationLogs} />

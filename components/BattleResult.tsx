@@ -1,15 +1,24 @@
 import DiscoveryReason from '@/components/DiscoveryReason'
+import ExplorationMission from '@/components/ExplorationMission'
 import type { Battle } from '@/types'
+
+interface Mission {
+  title: string
+  description: string
+  reward: number
+}
 
 interface BattleResultProps {
   battle: Battle
   votedSide: 'left' | 'right'
+  mission: Mission | null
   onNext: () => void
 }
 
 export default function BattleResult({
   battle,
   votedSide,
+  mission,
   onNext,
 }: BattleResultProps) {
   const leftPercent = votedSide === 'left' ? 58 : 44
@@ -55,6 +64,14 @@ export default function BattleResult({
           leftWeight={battle.leftCulture.diversityWeight}
           rightWeight={battle.rightCulture.diversityWeight}
         />
+
+        {mission && (
+          <ExplorationMission
+            title={mission.title}
+            description={mission.description}
+            reward={mission.reward}
+          />
+        )}
 
         <button
           type="button"
