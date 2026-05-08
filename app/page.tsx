@@ -78,10 +78,10 @@ const computeConnectionReasons = (
   path.map((card, i) => {
     const prevTags = i === 0 ? startTags : path[i - 1].tags
     const overlap = prevTags.filter(t => card.tags.includes(t))
-    if (overlap.length >= 2) return `'${overlap[0]}', '${overlap[1]}' 태그가 겹쳐요`
-    if (overlap.length === 1) return `'${overlap[0]}' 태그가 겹쳐요`
-    if (i > 0 && path[i - 1].region === card.region) return `${card.region} 지역 문화 이어가기`
-    return '지역 문화 흐름이에요'
+    if (overlap.length >= 2) return `${overlap[0]} · ${overlap[1]}`
+    if (overlap.length === 1) return overlap[0]
+    if (i > 0 && path[i - 1].region === card.region) return `${card.region}`
+    return '지역 흐름'
   })
 
 // region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
