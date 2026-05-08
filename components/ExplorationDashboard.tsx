@@ -64,9 +64,9 @@ export default function ExplorationDashboard({
 
         <div className="grid grid-cols-3 gap-3">
           <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-4 text-center">
-            <p className="text-xs text-white/50">총 점수</p>
+            <p className="text-xs text-white/50">문화 다양성 점수</p>
             <p className="text-2xl font-black text-cyan-200">{score}</p>
-            <p className="text-xs text-white/40">EXP</p>
+            <p className="text-xs text-white/40">Diversity</p>
           </div>
           <div className="rounded-2xl border border-violet-400/30 bg-violet-400/10 p-4 text-center">
             <p className="text-xs text-white/50">발견 지역</p>
