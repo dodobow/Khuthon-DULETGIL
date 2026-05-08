@@ -1,12 +1,17 @@
+import ExplorationLogList from '@/components/ExplorationLog'
+import type { ExplorationLog } from '@/components/ExplorationLog'
+
 interface ExplorerScoreProps {
   score: number
   discoveredRegions: string[]
+  explorationLogs: ExplorationLog[]
   onNext: () => void
 }
 
 export default function ExplorerScore({
   score,
   discoveredRegions,
+  explorationLogs,
   onNext,
 }: ExplorerScoreProps) {
   const badges = [
@@ -16,9 +21,9 @@ export default function ExplorerScore({
   ].filter(badge => discoveredRegions.length >= badge.min)
 
   return (
-    <section className="w-full rounded-2xl border border-white/20 bg-white/10 p-6 text-center backdrop-blur-md">
+    <section className="w-full rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md">
       <div className="space-y-6">
-        <div className="space-y-3">
+        <div className="space-y-3 text-center">
           <h2 className="text-3xl font-bold text-white">탐험 완료! 🎉</h2>
           <div className="relative inline-flex items-center justify-center">
             <p className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-6xl font-black text-transparent">
@@ -59,6 +64,8 @@ export default function ExplorerScore({
             </div>
           </div>
         )}
+
+        <ExplorationLogList logs={explorationLogs} />
 
         <button
           type="button"

@@ -9,6 +9,14 @@ import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle } from '@/data/mockData'
 import type { Battle } from '@/types'
 
+type ExplorationLog = {
+  id: string
+  battleTitle: string
+  selectedRegion: string
+  discoveredRegions: string[]
+  summary: string
+}
+
 export default function Home() {
   // 현재 단계 (0~5)
   const [phase, setPhase] = useState<0 | 1 | 2 | 3 | 4 | 5>(0)
@@ -24,6 +32,9 @@ export default function Home() {
 
   // 발견한 지역 목록 (중복 제거)
   const [discoveredRegions, setDiscoveredRegions] = useState<string[]>([])
+
+  // 완료한 문화 탐험 기록
+  const [explorationLogs, setExplorationLogs] = useState<ExplorationLog[]>([])
 
   useEffect(() => {
     const battle = getWeightedRandomBattle()
@@ -42,6 +53,7 @@ export default function Home() {
   const handleExploreComplete = () => {
     // currentBattle이 null이면 즉시 return (타입 가드)
     if (!currentBattle) return
+    if (!votedSide) return
 
     setExplorerScore(prev => prev + 10)
 
@@ -49,8 +61,22 @@ export default function Home() {
       currentBattle.leftCulture.region,
       currentBattle.rightCulture.region,
     ]
+    const selectedRegion =
+      votedSide === 'left'
+        ? currentBattle.leftCulture.region
+        : currentBattle.rightCulture.region
 
     setDiscoveredRegions(prev => [...new Set([...prev, ...newRegions])])
+    setExplorationLogs(prev => [
+      {
+        id: `${currentBattle.id}-${Date.now()}`,
+        battleTitle: `${currentBattle.leftCulture.region} vs ${currentBattle.rightCulture.region} 문화 배틀`,
+        selectedRegion,
+        discoveredRegions: newRegions,
+        summary: `${currentBattle.leftCulture.region}과 ${currentBattle.rightCulture.region}의 문화 콘텐츠를 비교하고, 릴레이와 지역 서사를 탐험했어요.`,
+      },
+      ...prev,
+    ])
     setPhase(5)
   }
 
@@ -142,6 +168,7 @@ export default function Home() {
             <ExplorerScore
               score={explorerScore}
               discoveredRegions={discoveredRegions}
+              explorationLogs={explorationLogs}
               onNext={handleNextBattle}
             />
           </div>
