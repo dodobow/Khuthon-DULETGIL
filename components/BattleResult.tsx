@@ -1,3 +1,4 @@
+import DiscoveryReason from '@/components/DiscoveryReason'
 import type { Battle } from '@/types'
 
 interface BattleResultProps {
@@ -48,11 +49,12 @@ export default function BattleResult({
           </div>
         </div>
 
-        {battle.diversityNote && (
-          <p className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm leading-6 text-amber-300">
-            ⚖️ {battle.diversityNote}
-          </p>
-        )}
+        <DiscoveryReason
+          matchReason={battle.matchReason}
+          diversityNote={battle.diversityNote}
+          leftWeight={battle.leftCulture.diversityWeight}
+          rightWeight={battle.rightCulture.diversityWeight}
+        />
 
         <button
           type="button"
