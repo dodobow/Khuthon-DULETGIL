@@ -1,7 +1,7 @@
 import CultureRoute from '@/components/CultureRoute'
 import ExplorationMission from '@/components/ExplorationMission'
 import ExplorationLogList from '@/components/ExplorationLog'
-import type { ExplorationLog, ExplorationMission as Mission } from '@/types'
+import type { ExplorationLog, ExplorationMission as Mission, RelayCard } from '@/types'
 
 interface ExplorerScoreProps {
   score: number
@@ -9,6 +9,7 @@ interface ExplorerScoreProps {
   explorationLogs: ExplorationLog[]
   completedMission: Mission | null
   lastEarnedScore: number
+  routePath: RelayCard[]
   onNext: () => void
 }
 
@@ -18,6 +19,7 @@ export default function ExplorerScore({
   explorationLogs,
   completedMission,
   lastEarnedScore,
+  routePath,
   onNext,
 }: ExplorerScoreProps) {
   const badges = [
@@ -76,8 +78,7 @@ export default function ExplorerScore({
         {latestLog && (
           <CultureRoute
             selectedRegion={latestLog.selectedRegion}
-            selectedRelayRegion={latestLog.selectedRelayRegion}
-            selectedRelayTitle={latestLog.selectedRelayTitle}
+            routePath={routePath.length > 0 ? routePath : latestLog.routePath}
           />
         )}
         <ExplorationLogList logs={explorationLogs} />

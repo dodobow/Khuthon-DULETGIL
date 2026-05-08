@@ -33,6 +33,10 @@ export default function ExplorationLog({ logs }: ExplorationLogProps) {
                 <p className="text-xs text-white/60">
                   이어간 문화: {log.selectedRelayRegion} · {log.selectedRelayTitle}
                 </p>
+                <p className="text-xs text-cyan-200">
+                  루트: {log.selectedRegion} →{' '}
+                  {log.routePath.map(card => card.region).join(' → ')}
+                </p>
               </div>
 
               <p className="text-sm leading-6 text-white/70">{log.summary}</p>

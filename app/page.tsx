@@ -7,7 +7,7 @@ import ExplorationDashboard from '@/components/ExplorationDashboard'
 import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
-import { getWeightedRandomBattle } from '@/data/mockData'
+import { getWeightedRandomBattle, routeCandidates } from '@/data/mockData'
 import type { Battle, ExplorationLog, ExplorationMission, RelayCard } from '@/types'
 
 type ViewMode = 'battle' | 'dashboard'
@@ -108,6 +108,12 @@ export default function Home() {
   const [selectedRelayCard, setSelectedRelayCard] =
     useState<RelayCard | null>(null)
 
+  // 사용자가 현재까지 연결한 문화 탐험 루트
+  const [routePath, setRoutePath] = useState<RelayCard[]>([])
+
+  // 현재 문화 연결 단계
+  const [routeStep, setRouteStep] = useState(0)
+
   useEffect(() => {
     const timer = window.setTimeout(() => {
       const battle = getWeightedRandomBattle()
@@ -124,16 +130,33 @@ export default function Home() {
     setPhase(2)
   }
 
+  const handleSelectRouteCandidate = (card: RelayCard) => {
+    if (routePath.some(route => route.id === card.id)) {
+      const nextPath = routePath.filter(route => route.id !== card.id)
+      setRoutePath(nextPath)
+      setRouteStep(nextPath.length)
+      setSelectedRelayCard(nextPath[nextPath.length - 1] ?? null)
+      return
+    }
+
+    if (routePath.length >= 5) return
+    setSelectedRelayCard(card)
+    setRoutePath(prev => [...prev, card])
+    setRouteStep(prev => Math.min(prev + 1, 5))
+  }
+
   // 탐험 완료 처리: 점수 추가 + 지역 추가 + 단계 전환
   const handleExploreComplete = () => {
     // currentBattle이 null이면 즉시 return (타입 가드)
     if (!currentBattle) return
     if (!votedSide) return
     if (!selectedRelayCard) return
+    if (routePath.length === 0) return
 
     const newRegions = [
       currentBattle.leftCulture.region,
       currentBattle.rightCulture.region,
+      ...routePath.map(card => card.region),
     ]
     const selectedRegion =
       votedSide === 'left'
@@ -163,9 +186,10 @@ export default function Home() {
         selectedRegion,
         selectedRelayTitle: selectedRelayCard.title,
         selectedRelayRegion: selectedRelayCard.region,
-        selectedRelayTags: selectedRelayCard.tags,
+        selectedRelayTags: routePath.flatMap(card => card.tags),
+        routePath,
         discoveredRegions: newRegions,
-        summary: `${selectedRegion}을 선택한 뒤, ${selectedRelayCard.region} ${selectedRelayCard.title}로 문화 연결을 이어갔어요.`,
+        summary: `${selectedRegion}에서 출발해 ${routePath.map(card => card.region).join(' → ')}로 문화 탐험 루트를 만들었어요.`,
       },
       ...prev,
     ])
@@ -180,6 +204,8 @@ export default function Home() {
     setCompletedMission(null)
     setSelectedRelayCard(null)
     setLastEarnedScore(0)
+    setRoutePath([])
+    setRouteStep(0)
     setVotedSide(null)
     setPhase(1)
   }
@@ -292,9 +318,19 @@ export default function Home() {
             {phase === 3 && currentBattle && (
               <div className="mx-auto max-w-xl">
                 <RelaySection
-                  relayCards={currentBattle.relayCards}
-                  selectedRelayCard={selectedRelayCard}
-                  onSelectRelay={setSelectedRelayCard}
+                  startRegion={
+                    votedSide === 'left'
+                      ? currentBattle.leftCulture.region
+                      : currentBattle.rightCulture.region
+                  }
+                  routePath={routePath}
+                  routeStep={routeStep}
+                  nearbyCandidates={[
+                    ...currentBattle.relayCards,
+                    ...routeCandidates.nearbyCandidates,
+                  ]}
+                  similarTasteCandidates={routeCandidates.similarTasteCandidates}
+                  onSelectRelay={handleSelectRouteCandidate}
                   onNext={() => setPhase(4)}
                 />
               </div>
@@ -317,6 +353,7 @@ export default function Home() {
                   explorationLogs={explorationLogs}
                   completedMission={completedMission}
                   lastEarnedScore={lastEarnedScore}
+                  routePath={routePath}
                   onNext={handleNextBattle}
                 />
               </div>

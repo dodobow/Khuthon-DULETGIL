@@ -63,6 +63,7 @@ export interface ExplorationLog {
   selectedRelayTitle: string
   selectedRelayRegion: string
   selectedRelayTags: string[]
+  routePath: RelayCard[]
   discoveredRegions: string[]
   summary: string
 }
