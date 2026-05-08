@@ -1,4 +1,4 @@
-import type { Battle } from '@/types'
+import type { Battle, StoryCard } from '@/types'
 
 export const generatedBattles: Battle[] = [
   // ── metropolitan ──────────────────────────────────────────────
@@ -966,3 +966,20 @@ export function getWeightedRandomBattle(excludeId?: string): Battle {
 
   return candidates[0]
 }
+
+// 배틀에 포함되지 않아 storyCards가 없는 지역을 위한 보조 스토리 카드
+export const extraStoryCards: StoryCard[] = [
+  {
+    id: 'extra-cheonan-gakwonsa',
+    region: '천안',
+    content: '각원사 청동 아미타불은 가까이 올려다보면 크기 감각이 흐트러져요. 산사보다 더 넓고 고요해서 오래 앉아 있게 되는 곳이에요.',
+    contributor: '천안 방문자',
+  },
+  {
+    id: 'extra-cheonan-crossroads',
+    region: '천안',
+    content: '천안은 어디로든 갈 수 있는 길목에 있는 도시예요. 지나치는 곳처럼 보이지만, 멈추면 볼 게 생기는 편이에요.',
+    year: '2022년경',
+    contributor: '천안 거주자',
+  },
+]

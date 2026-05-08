@@ -8,7 +8,7 @@ import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle } from '@/data/mockData'
-import { generatedBattles } from '@/data/generatedTourData'
+import { generatedBattles, extraStoryCards } from '@/data/generatedTourData'
 import { cultureTagLabels } from '@/types'
 import type { Battle, ExplorationLog, ExplorationMission, RelayCard, StoryCard } from '@/types'
 
@@ -57,11 +57,13 @@ const getExplorationStoryCards = (
   const uniqueRegions = [...new Set(exploredRegions)]
 
   const storyByRegion = new Map<string, StoryCard>()
-  for (const b of generatedBattles) {
-    for (const story of b.storyCards) {
-      if (!storyByRegion.has(story.region) && uniqueRegions.includes(story.region)) {
-        storyByRegion.set(story.region, story)
-      }
+  const allStories = [
+    ...generatedBattles.flatMap(b => b.storyCards),
+    ...extraStoryCards,
+  ]
+  for (const story of allStories) {
+    if (!storyByRegion.has(story.region) && uniqueRegions.includes(story.region)) {
+      storyByRegion.set(story.region, story)
     }
   }
 
