@@ -153,15 +153,15 @@ export default function Home() {
     if (!selectedRelayCard) return
     if (routePath.length === 0) return
 
-    const newRegions = [
-      currentBattle.leftCulture.region,
-      currentBattle.rightCulture.region,
-      ...routePath.map(card => card.region),
-    ]
     const selectedRegion =
       votedSide === 'left'
         ? currentBattle.leftCulture.region
         : currentBattle.rightCulture.region
+    const selectedTitle =
+      votedSide === 'left'
+        ? currentBattle.leftCulture.title
+        : currentBattle.rightCulture.title
+    const newRegions = [selectedRegion, ...routePath.map(card => card.region)]
     const clearedMission =
       isMissionCleared(
         currentMission,
@@ -189,7 +189,7 @@ export default function Home() {
         selectedRelayTags: routePath.flatMap(card => card.tags),
         routePath,
         discoveredRegions: newRegions,
-        summary: `${selectedRegion}에서 출발해 ${routePath.map(card => card.region).join(' → ')}로 문화 탐험 루트를 만들었어요.`,
+        summary: `${selectedRegion} ${selectedTitle}에서 출발해 ${routePath.map(card => card.region).join(' → ')}로 문화 탐험 루트를 만들었어요.`,
       },
       ...prev,
     ])
@@ -322,6 +322,11 @@ export default function Home() {
                     votedSide === 'left'
                       ? currentBattle.leftCulture.region
                       : currentBattle.rightCulture.region
+                  }
+                  startTitle={
+                    votedSide === 'left'
+                      ? currentBattle.leftCulture.title
+                      : currentBattle.rightCulture.title
                   }
                   routePath={routePath}
                   routeStep={routeStep}

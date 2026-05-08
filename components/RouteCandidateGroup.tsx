@@ -47,11 +47,6 @@ export default function RouteCandidateGroup({
                   <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
                     {card.category}
                   </span>
-                  {isSelected && (
-                    <span className="rounded-full bg-cyan-400/15 px-3 py-1 text-xs font-bold text-cyan-200">
-                      다시 클릭하면 취소
-                    </span>
-                  )}
                 </div>
                 <div>
                   <p className="font-bold text-white">{card.title}</p>
