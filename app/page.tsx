@@ -44,21 +44,25 @@ const explorationMissions: ExplorationMission[] = [
 const getRandomMission = () =>
   explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
 
+// region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
+const cardKey = (card: RelayCard) => `${card.region}|${card.title}`
+
 // 현재 배틀과 같은 regionScale의 다른 배틀 relay card를 근처 후보로 수집
 const getNearbyCandiates = (
   battle: Battle,
-  excludeIds: Set<string>
+  excludeKeys: Set<string>
 ): RelayCard[] => {
   const scale = battle.leftCulture.regionScale
-  const seen = new Set<string>()
+  const seen = new Set<string>(excludeKeys)
   const result: RelayCard[] = []
 
   for (const b of generatedBattles) {
     if (b.id === battle.id) continue
     if (b.leftCulture.regionScale !== scale) continue
     for (const card of b.relayCards) {
-      if (excludeIds.has(card.id) || seen.has(card.id)) continue
-      seen.add(card.id)
+      const key = cardKey(card)
+      if (seen.has(key)) continue
+      seen.add(key)
       result.push(card)
     }
     if (result.length >= 6) break
@@ -68,10 +72,9 @@ const getNearbyCandiates = (
 }
 
 // 현재 배틀 태그 기반으로 유사 취향 relay card 수집
-// nearbyCandidates와 중복되지 않도록 제외 처리
 const getSimilarTasteCandidates = (
   battle: Battle,
-  excludeIds: Set<string>
+  excludeKeys: Set<string>
 ): RelayCard[] => {
   const battleTagLabels: Set<string> = new Set(
     [...battle.leftCulture.tags, ...battle.rightCulture.tags].map(
@@ -79,15 +82,16 @@ const getSimilarTasteCandidates = (
     )
   )
 
-  const seen = new Set<string>()
+  const seen = new Set<string>(excludeKeys)
   const result: RelayCard[] = []
 
   for (const b of generatedBattles) {
     if (b.id === battle.id) continue
     for (const card of b.relayCards) {
-      if (excludeIds.has(card.id) || seen.has(card.id)) continue
+      const key = cardKey(card)
+      if (seen.has(key)) continue
       if (card.tags.some(tag => battleTagLabels.has(tag))) {
-        seen.add(card.id)
+        seen.add(key)
         result.push(card)
       }
     }
@@ -389,12 +393,12 @@ export default function Home() {
                     ...currentBattle.relayCards,
                     ...getNearbyCandiates(
                       currentBattle,
-                      new Set(currentBattle.relayCards.map(c => c.id))
+                      new Set(currentBattle.relayCards.map(cardKey))
                     ),
-                  ]}
+                  ].slice(0, 6)}
                   similarTasteCandidates={getSimilarTasteCandidates(
                     currentBattle,
-                    new Set(currentBattle.relayCards.map(c => c.id))
+                    new Set(currentBattle.relayCards.map(cardKey))
                   )}
                   onSelectRelay={handleSelectRouteCandidate}
                   onNext={() => setPhase(4)}
