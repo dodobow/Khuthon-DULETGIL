@@ -63,71 +63,88 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0f0f1a] text-white">
-      <div className="mx-auto max-w-sm px-4 py-8">
+    <main className="min-h-screen bg-[#0f0f1a] bg-[linear-gradient(180deg,#17172a_0%,#0f0f1a_42%,#080812_100%)] text-white">
+      <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
         {currentBattle === null && (
-          <p className="text-center text-white/70">배틀을 불러오는 중...</p>
+          <div className="flex min-h-[70vh] items-center justify-center">
+            <p className="text-center text-white/70">배틀을 불러오는 중...</p>
+          </div>
         )}
 
         {phase === 1 && currentBattle && (
-          <div className="w-full space-y-6">
-            <header className="space-y-2 text-center">
-              <h1 className="text-3xl font-black text-white">
+          <div className="w-full space-y-8">
+            <header className="mx-auto max-w-2xl space-y-3 text-center">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-300">
+                Local Culture Battle
+              </p>
+              <h1 className="text-4xl font-black text-white sm:text-5xl">
                 문화 배틀 🗺️
               </h1>
-              <p className="text-sm text-white/50">
-                마음이 가는 지역 문화에 투표해 보세요
+              <p className="text-sm leading-6 text-white/60 sm:text-base">
+                두 지역의 문화 콘텐츠를 비교하고, 오늘 더 끌리는 여행지를 골라보세요.
               </p>
             </header>
 
-            <BattleCard
-              culture={currentBattle.leftCulture}
-              side="left"
-              onVote={handleVote}
-              disabled={votedSide !== null}
-            />
+            <div className="grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-6">
+              <BattleCard
+                culture={currentBattle.leftCulture}
+                side="left"
+                onVote={handleVote}
+                disabled={votedSide !== null}
+              />
 
-            <p className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-center text-2xl font-black text-transparent">
-              VS
-            </p>
+              <div className="flex items-center justify-center">
+                <p className="flex size-16 items-center justify-center rounded-full border border-white/20 bg-white/10 bg-gradient-to-br from-violet-400/25 to-cyan-400/25 text-xl font-black text-white shadow-2xl shadow-cyan-500/10 backdrop-blur-md md:size-20 md:text-2xl">
+                  VS
+                </p>
+              </div>
 
-            <BattleCard
-              culture={currentBattle.rightCulture}
-              side="right"
-              onVote={handleVote}
-              disabled={votedSide !== null}
-            />
+              <BattleCard
+                culture={currentBattle.rightCulture}
+                side="right"
+                onVote={handleVote}
+                disabled={votedSide !== null}
+              />
+            </div>
           </div>
         )}
 
         {phase === 2 && currentBattle && votedSide !== null && (
-          <BattleResult
-            battle={currentBattle}
-            votedSide={votedSide}
-            onNext={() => setPhase(3)}
-          />
+          <div className="mx-auto max-w-xl">
+            <BattleResult
+              battle={currentBattle}
+              votedSide={votedSide}
+              onNext={() => setPhase(3)}
+            />
+          </div>
         )}
 
         {phase === 3 && currentBattle && (
-          <RelaySection
-            relayCards={currentBattle.relayCards}
-            onNext={() => setPhase(4)}
-          />
+          <div className="mx-auto max-w-xl">
+            <RelaySection
+              relayCards={currentBattle.relayCards}
+              onNext={() => setPhase(4)}
+            />
+          </div>
         )}
 
         {phase === 4 && currentBattle && (
-          <StorySection
-            storyCards={currentBattle.storyCards}
-            onNext={handleExploreComplete}
-          />
+          <div className="mx-auto max-w-xl">
+            <StorySection
+              storyCards={currentBattle.storyCards}
+              onNext={handleExploreComplete}
+            />
+          </div>
         )}
 
         {phase === 5 && (
-          <ExplorerScore
-            score={explorerScore}
-            discoveredRegions={discoveredRegions}
-            onNext={handleNextBattle}
-          />
+          <div className="mx-auto max-w-xl">
+            <ExplorerScore
+              score={explorerScore}
+              discoveredRegions={discoveredRegions}
+              onNext={handleNextBattle}
+            />
+          </div>
         )}
       </div>
     </main>
