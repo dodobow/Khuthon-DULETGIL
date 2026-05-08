@@ -22,7 +22,7 @@ export default function StorySection({
             Phase 04 · local notes
           </p>
           <h2 className="max-w-lg font-serif text-3xl tracking-tight text-[#111111] sm:text-4xl">
-            지역의 분위기를 남긴 짧은 메모
+            내가 만든 루트에 남은 지역 메모
           </h2>
           <p className="max-w-xl text-sm leading-[1.7] text-[#787774]">
             안내 문구보다 사람들의 말이 오래 남는 경우가 있습니다.

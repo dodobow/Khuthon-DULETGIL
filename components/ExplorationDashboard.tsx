@@ -67,10 +67,10 @@ export default function ExplorationDashboard({
                 first page
               </p>
               <h3 className="font-serif text-2xl tracking-tight text-[#111111]">
-                아직 기록된 답사가 없습니다
+                첫 답사를 시작하면 이곳에 기록이 쌓입니다
               </h3>
               <p className="max-w-[34rem] text-sm leading-[1.7] text-[#625C53]">
-                배틀에 참여해 지역을 고르고, 다음 장소까지 이어 보시면 이곳에 기록이 차곡차곡 쌓입니다.
+                지역을 고르고 루트를 이어가면, 당신만의 답사 아카이브가 여기에 차곡차곡 기록됩니다.
               </p>
               {onStartExplore && (
                 <button
