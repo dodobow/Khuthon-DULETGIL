@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import BattleCard from '@/components/BattleCard'
 import BattleResult from '@/components/BattleResult'
+import ExplorationDashboard from '@/components/ExplorationDashboard'
 import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
@@ -26,6 +27,8 @@ type ExplorationMission = {
   description: string
   reward: number
 }
+
+type ViewMode = 'battle' | 'dashboard'
 
 const explorationMissions: ExplorationMission[] = [
   {
@@ -58,6 +61,9 @@ const getRandomMission = () =>
   explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
 
 export default function Home() {
+  // 상위 화면 모드
+  const [viewMode, setViewMode] = useState<ViewMode>('battle')
+
   // 현재 단계 (0~5)
   const [phase, setPhase] = useState<0 | 1 | 2 | 3 | 4 | 5>(0)
 
@@ -167,91 +173,131 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0f0f1a] bg-[linear-gradient(180deg,#17172a_0%,#0f0f1a_42%,#080812_100%)] text-white">
       <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
-        {currentBattle === null && (
-          <div className="flex min-h-[70vh] items-center justify-center">
-            <p className="text-center text-white/70">배틀을 불러오는 중...</p>
-          </div>
-        )}
+        <div className="mx-auto mb-8 flex w-full max-w-sm rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-md">
+          <button
+            type="button"
+            onClick={() => setViewMode('battle')}
+            className={`min-h-12 flex-1 rounded-full px-4 text-sm font-bold transition ${
+              viewMode === 'battle'
+                ? 'bg-gradient-to-r from-violet-400 to-cyan-400 text-white shadow-lg shadow-cyan-500/20'
+                : 'text-white/60'
+            }`}
+          >
+            배틀 탐험
+          </button>
+          <button
+            type="button"
+            onClick={() => setViewMode('dashboard')}
+            className={`min-h-12 flex-1 rounded-full px-4 text-sm font-bold transition ${
+              viewMode === 'dashboard'
+                ? 'bg-gradient-to-r from-violet-400 to-cyan-400 text-white shadow-lg shadow-cyan-500/20'
+                : 'text-white/60'
+            }`}
+          >
+            내 탐험
+          </button>
+        </div>
 
-        {phase === 1 && currentBattle && (
-          <div className="w-full space-y-8">
-            <header className="mx-auto max-w-2xl space-y-3 text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-300">
-                Local Culture Battle
-              </p>
-              <h1 className="text-4xl font-black text-white sm:text-5xl">
-                문화 배틀 🗺️
-              </h1>
-              <p className="text-sm leading-6 text-white/60 sm:text-base">
-                두 지역의 문화 콘텐츠를 비교하고, 오늘 더 끌리는 여행지를 골라보세요.
-              </p>
-            </header>
-
-            <div className="grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-6">
-              <BattleCard
-                culture={currentBattle.leftCulture}
-                side="left"
-                onVote={handleVote}
-                disabled={votedSide !== null}
-              />
-
-              <div className="flex items-center justify-center">
-                <p className="flex size-16 items-center justify-center rounded-full border border-white/20 bg-white/10 bg-gradient-to-br from-violet-400/25 to-cyan-400/25 text-xl font-black text-white shadow-2xl shadow-cyan-500/10 backdrop-blur-md md:size-20 md:text-2xl">
-                  VS
-                </p>
-              </div>
-
-              <BattleCard
-                culture={currentBattle.rightCulture}
-                side="right"
-                onVote={handleVote}
-                disabled={votedSide !== null}
-              />
-            </div>
-          </div>
-        )}
-
-        {phase === 2 && currentBattle && votedSide !== null && (
+        {viewMode === 'dashboard' && (
           <div className="mx-auto max-w-xl">
-            <BattleResult
-              battle={currentBattle}
-              votedSide={votedSide}
-              mission={currentMission}
-              onNext={() => setPhase(3)}
-            />
-          </div>
-        )}
-
-        {phase === 3 && currentBattle && (
-          <div className="mx-auto max-w-xl">
-            <RelaySection
-              relayCards={currentBattle.relayCards}
-              selectedRelayCard={selectedRelayCard}
-              onSelectRelay={setSelectedRelayCard}
-              onNext={() => setPhase(4)}
-            />
-          </div>
-        )}
-
-        {phase === 4 && currentBattle && (
-          <div className="mx-auto max-w-xl">
-            <StorySection
-              storyCards={currentBattle.storyCards}
-              onNext={handleExploreComplete}
-            />
-          </div>
-        )}
-
-        {phase === 5 && (
-          <div className="mx-auto max-w-xl">
-            <ExplorerScore
+            <ExplorationDashboard
               score={explorerScore}
               discoveredRegions={discoveredRegions}
               explorationLogs={explorationLogs}
-              completedMission={completedMission}
-              onNext={handleNextBattle}
+              onStartExplore={() => setViewMode('battle')}
             />
           </div>
+        )}
+
+        {viewMode === 'battle' && (
+          <>
+            {currentBattle === null && (
+              <div className="flex min-h-[70vh] items-center justify-center">
+                <p className="text-center text-white/70">배틀을 불러오는 중...</p>
+              </div>
+            )}
+
+            {phase === 1 && currentBattle && (
+              <div className="w-full space-y-8">
+                <header className="mx-auto max-w-2xl space-y-3 text-center">
+                  <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-300">
+                    Local Culture Battle
+                  </p>
+                  <h1 className="text-4xl font-black text-white sm:text-5xl">
+                    문화 배틀 🗺️
+                  </h1>
+                  <p className="text-sm leading-6 text-white/60 sm:text-base">
+                    두 지역의 문화 콘텐츠를 비교하고, 오늘 더 끌리는 여행지를 골라보세요.
+                  </p>
+                </header>
+
+                <div className="grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-6">
+                  <BattleCard
+                    culture={currentBattle.leftCulture}
+                    side="left"
+                    onVote={handleVote}
+                    disabled={votedSide !== null}
+                  />
+
+                  <div className="flex items-center justify-center">
+                    <p className="flex size-16 items-center justify-center rounded-full border border-white/20 bg-white/10 bg-gradient-to-br from-violet-400/25 to-cyan-400/25 text-xl font-black text-white shadow-2xl shadow-cyan-500/10 backdrop-blur-md md:size-20 md:text-2xl">
+                      VS
+                    </p>
+                  </div>
+
+                  <BattleCard
+                    culture={currentBattle.rightCulture}
+                    side="right"
+                    onVote={handleVote}
+                    disabled={votedSide !== null}
+                  />
+                </div>
+              </div>
+            )}
+
+            {phase === 2 && currentBattle && votedSide !== null && (
+              <div className="mx-auto max-w-xl">
+                <BattleResult
+                  battle={currentBattle}
+                  votedSide={votedSide}
+                  mission={currentMission}
+                  onNext={() => setPhase(3)}
+                />
+              </div>
+            )}
+
+            {phase === 3 && currentBattle && (
+              <div className="mx-auto max-w-xl">
+                <RelaySection
+                  relayCards={currentBattle.relayCards}
+                  selectedRelayCard={selectedRelayCard}
+                  onSelectRelay={setSelectedRelayCard}
+                  onNext={() => setPhase(4)}
+                />
+              </div>
+            )}
+
+            {phase === 4 && currentBattle && (
+              <div className="mx-auto max-w-xl">
+                <StorySection
+                  storyCards={currentBattle.storyCards}
+                  onNext={handleExploreComplete}
+                />
+              </div>
+            )}
+
+            {phase === 5 && (
+              <div className="mx-auto max-w-xl">
+                <ExplorerScore
+                  score={explorerScore}
+                  discoveredRegions={discoveredRegions}
+                  explorationLogs={explorationLogs}
+                  completedMission={completedMission}
+                  onNext={handleNextBattle}
+                />
+              </div>
+            )}
+          </>
         )}
       </div>
     </main>
