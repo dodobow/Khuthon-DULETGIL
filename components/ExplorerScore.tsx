@@ -1,4 +1,5 @@
 import CultureRoute from '@/components/CultureRoute'
+import ExplorationDashboard from '@/components/ExplorationDashboard'
 import ExplorationMission from '@/components/ExplorationMission'
 import ExplorationLogList from '@/components/ExplorationLog'
 import type { ExplorationLog } from '@/components/ExplorationLog'
@@ -82,12 +83,13 @@ export default function ExplorerScore({
             selectedRelayTitle={latestLog.selectedRelayTitle}
           />
         )}
+        <ExplorationDashboard
+          score={score}
+          discoveredRegions={discoveredRegions}
+          explorationLogs={explorationLogs}
+        />
         <ExplorationLogList logs={explorationLogs} />
-        <button
-          type="button"
-          onClick={onNext}
-          className="min-h-14 w-full rounded-2xl bg-gradient-to-r from-violet-400 to-cyan-400 px-5 py-4 font-bold text-white shadow-lg shadow-violet-500/20"
-        >
+        <button type="button" onClick={onNext} className="min-h-14 w-full rounded-2xl bg-gradient-to-r from-violet-400 to-cyan-400 px-5 py-4 font-bold text-white shadow-lg shadow-violet-500/20">
           다음 배틀 탐험하기
         </button>
       </div>

@@ -15,6 +15,7 @@ type ExplorationLog = {
   selectedRegion: string
   selectedRelayTitle: string
   selectedRelayRegion: string
+  selectedRelayTags: string[]
   discoveredRegions: string[]
   summary: string
 }
@@ -143,6 +144,7 @@ export default function Home() {
         selectedRegion,
         selectedRelayTitle: selectedRelayCard.title,
         selectedRelayRegion: selectedRelayCard.region,
+        selectedRelayTags: selectedRelayCard.tags,
         discoveredRegions: newRegions,
         summary: `${selectedRegion}을 선택한 뒤, ${selectedRelayCard.region} ${selectedRelayCard.title}로 문화 연결을 이어갔어요.`,
       },

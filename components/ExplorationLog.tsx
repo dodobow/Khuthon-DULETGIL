@@ -4,6 +4,7 @@ export type ExplorationLog = {
   selectedRegion: string
   selectedRelayTitle: string
   selectedRelayRegion: string
+  selectedRelayTags: string[]
   discoveredRegions: string[]
   summary: string
 }
