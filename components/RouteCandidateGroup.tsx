@@ -20,12 +20,22 @@ export default function RouteCandidateGroup({
   source,
   onSelect,
 }: RouteCandidateGroupProps) {
+  const isNearby = source === 'nearby'
+  const groupTagColor = isNearby
+    ? 'bg-[#EDF3EC] text-[#346538]'
+    : 'bg-[#E1F3FE] text-[#1F6C9F]'
+
   return (
-    <div className="space-y-3">
-      <div className="space-y-1">
-        <h3 className="text-lg font-bold text-white">{title}</h3>
-        <p className="text-sm text-white/50">{description}</p>
-      </div>
+    <div className="space-y-4">
+      <header className="space-y-1 border-b border-[#EAEAEA] pb-3">
+        <div className="flex items-center gap-2">
+          <span className={`rounded-sm px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide ${groupTagColor}`}>
+            {source}
+          </span>
+          <h3 className="font-sans text-sm font-semibold tracking-wide text-[#111111]">{title}</h3>
+        </div>
+        <p className="text-xs leading-[1.6] text-[#787774]">{description}</p>
+      </header>
 
       <div className="space-y-2">
         {candidates.map(card => {
@@ -38,15 +48,14 @@ export default function RouteCandidateGroup({
               type="button"
               onClick={() => onSelect(card, source)}
               disabled={isDisabled}
-              className={`w-full rounded-2xl border text-left transition ${
+              className={`group w-full overflow-hidden rounded-md border text-left transition-all ${
                 isSelected
-                  ? 'border-cyan-300 bg-cyan-400/10 shadow-lg shadow-cyan-500/20'
-                  : 'border-white/20 bg-white/10 hover:border-cyan-300/50'
-              } disabled:cursor-not-allowed disabled:opacity-60`}
+                  ? 'border-[#111111] bg-[#FBFBFA] shadow-[0_2px_8px_rgba(0,0,0,0.04)] ring-1 ring-[#111111]'
+                  : 'border-[#EAEAEA] bg-white hover:border-[#A09F9C] hover:bg-[#FBFBFA]'
+              } disabled:cursor-not-allowed disabled:opacity-50`}
             >
               <div className="flex items-stretch">
-                {/* 지역 대표 이미지 */}
-                <div className="relative h-auto w-28 shrink-0 overflow-hidden rounded-l-2xl">
+                <div className="relative h-auto w-24 shrink-0 overflow-hidden border-r border-[#EAEAEA] bg-[#F7F6F3]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={card.imageUrl ?? fallbackImg(card.region)}
@@ -54,25 +63,24 @@ export default function RouteCandidateGroup({
                     className="h-full w-full object-cover"
                   />
                   {isSelected && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-cyan-400/30">
-                      <span className="text-xl">✓</span>
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#111111]/40 backdrop-blur-[2px]">
+                      <span className="font-mono text-sm font-medium text-white">[x]</span>
                     </div>
                   )}
                 </div>
 
-                {/* 텍스트 영역 */}
                 <div className="flex flex-1 flex-col justify-center gap-2 p-4">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-cyan-200">
+                    <span className="rounded border border-[#EAEAEA] bg-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide text-[#111111]">
                       {card.region}
                     </span>
-                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">
+                    <span className="text-xs text-[#787774]">
                       {card.category}
                     </span>
                   </div>
                   <div>
-                    <p className="font-bold text-white">{card.title}</p>
-                    <p className="mt-1 text-sm leading-6 text-white/70">
+                    <p className="text-sm font-semibold text-[#111111]">{card.title}</p>
+                    <p className="mt-1 line-clamp-2 text-xs leading-[1.5] text-[#787774]">
                       {card.description}
                     </p>
                   </div>

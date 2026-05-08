@@ -16,17 +16,17 @@ export default function BattleResult({
     votedSide === 'left' ? battle.leftCulture : battle.rightCulture
 
   return (
-    <section className="w-full rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-md">
-      <div className="space-y-6">
-        <div className="space-y-3">
-          <p className="text-sm font-semibold text-cyan-300">선택 완료</p>
-          <h2 className="text-2xl font-bold text-white">
+    <article className="w-full rounded-xl border border-[#EAEAEA] bg-white p-8 shadow-sm sm:p-10">
+      <div className="space-y-8">
+        <header className="space-y-3 border-b border-[#EAEAEA] pb-6">
+          <p className="font-mono text-xs uppercase tracking-widest text-[#787774]">Selection Complete</p>
+          <h2 className="font-serif text-3xl tracking-tight text-[#111111] sm:text-4xl">
             당신은 {selectedCulture.region}을 선택했어요
           </h2>
-          <p className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-4 text-sm leading-6 text-white/80">
+          <p className="rounded-lg border border-[#EAEAEA] bg-[#F7F6F3] p-5 text-sm leading-[1.6] text-[#2F3437]">
             이 선택은 순위 경쟁이 아니라 문화 탐험의 출발점입니다.
           </p>
-        </div>
+        </header>
 
         <DiscoveryReason
           matchReason={battle.matchReason}
@@ -38,11 +38,11 @@ export default function BattleResult({
         <button
           type="button"
           onClick={onNext}
-          className="min-h-14 w-full rounded-2xl bg-gradient-to-r from-violet-400 to-cyan-400 px-5 py-4 font-bold text-white shadow-lg shadow-cyan-500/20"
+          className="mt-8 flex min-h-[56px] w-full items-center justify-center rounded-md bg-[#111111] px-5 py-4 text-sm font-medium text-white transition-all hover:bg-[#2F3437] active:scale-[0.98]"
         >
-          문화 탐험 계속하기
+          답사 이어가기
         </button>
       </div>
-    </section>
+    </article>
   )
 }

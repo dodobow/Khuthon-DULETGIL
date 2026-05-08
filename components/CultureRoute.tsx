@@ -12,20 +12,43 @@ export default function CultureRoute({
   connectionReasons,
 }: CultureRouteProps) {
   return (
-    <section className="rounded-2xl border border-cyan-400/30 bg-white/10 p-4">
-      <div className="space-y-3">
-        <p className="text-center text-sm font-bold text-cyan-300">내가 만든 문화 탐험 루트</p>
-        <div className="space-y-1">
-          <p className="text-base font-black text-white">{selectedRegion}</p>
+    <section className="rounded-lg border border-[#EAEAEA] bg-[#FBFBFA] p-5">
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-3 border-b border-[#EAEAEA] pb-3">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#787774]">
+            route ledger
+          </p>
+          <span className="font-mono text-xs text-[#111111]">
+            {routePath.length + 1} stops
+          </span>
+        </div>
+
+        <div className="space-y-3">
+          <div className="rounded-md border border-[#EAEAEA] bg-white px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#787774]">
+              start
+            </p>
+            <p className="mt-1 font-medium text-[#111111]">{selectedRegion}</p>
+          </div>
+
           {routePath.map((card, i) => (
-            <div key={card.id} className="space-y-0.5 pl-3">
-              <p className="text-xs text-white/45">
-                ↓ {connectionReasons?.[i] ?? '지역 문화 흐름이에요'}
-              </p>
-              <p className="text-base font-black text-white">
-                {card.region}
-                <span className="ml-2 text-sm font-normal text-white/60">{card.title}</span>
-              </p>
+            <div key={card.id} className="flex gap-3">
+              <div className="flex w-10 shrink-0 flex-col items-center pt-1">
+                <span className="font-mono text-[10px] text-[#A09F9C]">0{i + 1}</span>
+                <span className="mt-1 h-full w-px bg-[#EAEAEA]" />
+              </div>
+
+              <article className="flex-1 rounded-md border border-[#EAEAEA] bg-white px-4 py-3">
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#787774]">
+                  {connectionReasons?.[i] ?? 'route'}
+                </p>
+                <p className="mt-1 font-medium text-[#111111]">
+                  {card.region}
+                  <span className="ml-2 text-sm font-normal text-[#787774]">
+                    {card.title}
+                  </span>
+                </p>
+              </article>
             </div>
           ))}
         </div>

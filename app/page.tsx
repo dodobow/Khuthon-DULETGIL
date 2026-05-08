@@ -321,35 +321,35 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0f0f1a] bg-[linear-gradient(180deg,#17172a_0%,#0f0f1a_42%,#080812_100%)] text-white">
-      <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
-        <div className="mx-auto mb-8 flex w-full max-w-sm rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-md">
+    <main className="min-h-dvh bg-[#F7F6F3] text-[#111111] font-sans selection:bg-[#111111] selection:text-white pb-24">
+      <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 sm:py-16">
+        <div className="mx-auto mb-16 flex w-full max-w-[240px] rounded-lg border border-[#EAEAEA] bg-white p-1 shadow-sm">
           <button
             type="button"
             onClick={() => setViewMode('battle')}
-            className={`min-h-12 flex-1 rounded-full px-4 text-sm font-bold transition ${
+            className={`min-h-[40px] flex-1 rounded-md text-sm transition-all ${
               viewMode === 'battle'
-                ? 'bg-gradient-to-r from-violet-400 to-cyan-400 text-white shadow-lg shadow-cyan-500/20'
-                : 'text-white/60'
+                ? 'bg-[#111111] text-white font-medium shadow'
+                : 'text-[#787774] hover:text-[#111111]'
             }`}
           >
-            배틀 탐험
+            답사 시작
           </button>
           <button
             type="button"
             onClick={() => setViewMode('dashboard')}
-            className={`min-h-12 flex-1 rounded-full px-4 text-sm font-bold transition ${
+            className={`min-h-[40px] flex-1 rounded-md text-sm transition-all ${
               viewMode === 'dashboard'
-                ? 'bg-gradient-to-r from-violet-400 to-cyan-400 text-white shadow-lg shadow-cyan-500/20'
-                : 'text-white/60'
+                ? 'bg-[#111111] text-white font-medium shadow'
+                : 'text-[#787774] hover:text-[#111111]'
             }`}
           >
-            내 탐험
+            내 기록
           </button>
         </div>
 
         {viewMode === 'dashboard' && (
-          <div className="mx-auto max-w-xl">
+          <div className="mx-auto max-w-2xl">
             <ExplorationDashboard
               score={explorerScore}
               discoveredRegions={discoveredRegions}
@@ -364,34 +364,34 @@ export default function Home() {
           <>
             {currentBattle === null && (
               <div className="flex min-h-[70vh] items-center justify-center">
-                <p className="text-center text-white/70">배틀을 불러오는 중...</p>
+                <p className="text-center font-mono text-sm tracking-widest text-[#787774]">LOADING ARCHIVE...</p>
               </div>
             )}
 
             {phase === 1 && currentBattle && (
-              <div className="w-full space-y-8">
-                <header className="mx-auto max-w-2xl space-y-3 text-center">
-                  <p className="text-xs font-bold uppercase tracking-[0.24em] text-cyan-300">
-                    Local Culture Battle
+              <div className="w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <header className="mx-auto max-w-2xl space-y-4 text-center mb-16">
+                  <p className="text-xs font-mono uppercase tracking-[0.2em] text-[#787774]">
+                    Local Culture Archive
                   </p>
-                  <h1 className="text-4xl font-black text-white sm:text-5xl">
-                    문화 배틀 🗺️
+                  <h1 className="text-4xl sm:text-5xl font-serif tracking-tight text-[#111111]">
+                    지역 문화 답사
                   </h1>
-                  <p className="text-sm leading-6 text-white/60 sm:text-base">
-                    두 지역의 문화 콘텐츠를 비교하고, 오늘 더 끌리는 여행지를 골라보세요.
+                  <p className="text-sm leading-[1.6] text-[#787774] sm:text-base max-w-lg mx-auto">
+                    두 지역의 고유한 문화를 대조하며, 오늘 더 깊이 탐구하고 싶은 곳을 골라보세요.
                   </p>
                 </header>
 
-                <div className="mx-auto max-w-xl rounded-2xl border border-white/20 bg-white/10 p-4 text-center backdrop-blur-md">
-                  <p className="text-sm font-bold text-cyan-300">
-                    왜 이 두 지역이 만났을까요?
+                <div className="mx-auto mb-12 max-w-2xl border-y border-[#EAEAEA] py-8 text-center">
+                  <p className="text-xs font-mono uppercase tracking-widest text-[#787774] mb-3">
+                    Algorithmic Match
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-white/70">
+                  <p className="text-base font-medium leading-[1.6] text-[#2F3437]">
                     {currentBattle.matchReason}
                   </p>
                 </div>
 
-                <div className="grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-6">
+                <div className="grid items-stretch gap-6 md:grid-cols-[1fr_auto_1fr] md:gap-8">
                   <BattleCard
                     culture={currentBattle.leftCulture}
                     side="left"
@@ -400,9 +400,9 @@ export default function Home() {
                   />
 
                   <div className="flex items-center justify-center">
-                    <p className="flex size-16 items-center justify-center rounded-full border border-white/20 bg-white/10 bg-gradient-to-br from-violet-400/25 to-cyan-400/25 text-xl font-black text-white shadow-2xl shadow-cyan-500/10 backdrop-blur-md md:size-20 md:text-2xl">
+                    <span className="flex size-12 items-center justify-center rounded-full border border-[#EAEAEA] bg-[#FBFBFA] text-xs font-mono text-[#787774]">
                       VS
-                    </p>
+                    </span>
                   </div>
 
                   <BattleCard
@@ -416,7 +416,7 @@ export default function Home() {
             )}
 
             {phase === 2 && currentBattle && votedSide !== null && (
-              <div className="mx-auto max-w-xl">
+              <div className="mx-auto max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <BattleResult
                   battle={currentBattle}
                   votedSide={votedSide}
@@ -426,7 +426,7 @@ export default function Home() {
             )}
 
             {phase === 3 && currentBattle && (
-              <div className="w-full">
+              <div className="w-full rounded-2xl bg-[#0f0f1a] p-6 text-white shadow-xl [color-scheme:dark] sm:p-10">
                 <RelaySection
                   startRegion={
                     votedSide === 'left'
@@ -458,7 +458,7 @@ export default function Home() {
             )}
 
             {phase === 4 && currentBattle && votedSide !== null && (
-              <div className="mx-auto max-w-xl">
+              <div className="mx-auto max-w-2xl">
                 <StorySection
                   storyCards={getExplorationStoryCards(currentBattle, votedSide, routePath)}
                   onNext={handleExploreComplete}
@@ -467,7 +467,7 @@ export default function Home() {
             )}
 
             {phase === 5 && (
-              <div className="mx-auto max-w-xl">
+              <div className="mx-auto max-w-2xl">
                 <ExplorerScore
                   score={explorerScore}
                   discoveredRegions={discoveredRegions}

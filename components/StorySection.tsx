@@ -5,51 +5,60 @@ interface StorySectionProps {
   onNext: () => void
 }
 
+const noteTones = [
+  'bg-[#FBFBFA]',
+  'bg-[#F7F6F3]',
+]
+
 export default function StorySection({
   storyCards,
   onNext,
 }: StorySectionProps) {
   return (
-    <section className="w-full space-y-5">
-      <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-white">지역의 이야기 📖</h2>
-        <p className="text-sm text-white/70">
-          여행지 뒤에 남아 있는 로컬 히스토리
-        </p>
-      </div>
+    <section className="w-full rounded-xl border border-[#EAEAEA] bg-white p-8 shadow-sm sm:p-10">
+      <div className="space-y-8">
+        <header className="space-y-3 border-b border-[#EAEAEA] pb-6">
+          <p className="font-mono text-xs uppercase tracking-[0.24em] text-[#787774]">
+            Phase 04 · local notes
+          </p>
+          <h2 className="max-w-lg font-serif text-3xl tracking-tight text-[#111111] sm:text-4xl">
+            지역의 분위기를 남긴 짧은 메모
+          </h2>
+          <p className="max-w-xl text-sm leading-[1.7] text-[#787774]">
+            안내 문구보다 사람들의 말이 오래 남는 경우가 있습니다.
+            지금 고른 지역을 어떤 장면으로 기억하는지 차분히 읽어보세요.
+          </p>
+        </header>
 
-      <div className="space-y-3">
-        {storyCards.map(card => (
-          <article
-            key={card.id}
-            className="w-full rounded-2xl border border-white/20 border-l-4 border-l-violet-400 bg-white/10 p-5 backdrop-blur-md"
-          >
-            <div className="space-y-4">
-              <p className="text-lg leading-8 text-white">
-                “{card.content}”
-              </p>
-              <div className="flex flex-wrap items-center gap-2 text-sm">
-                {card.year && (
-                  <span className="rounded-full bg-white/10 px-3 py-1 text-white/80">
-                    {card.year}
-                  </span>
-                )}
-                <span className="text-white/50">{card.region}</span>
-                <span className="text-white/50">·</span>
-                <span className="text-white/70">{card.contributor}</span>
+        <div className="space-y-4">
+          {storyCards.map((card, index) => (
+            <article
+              key={card.id}
+              className={`rounded-lg border border-[#EAEAEA] p-5 sm:p-6 ${noteTones[index % noteTones.length]}`}
+            >
+              <div className="space-y-4">
+                <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[#787774]">
+                  <span>{card.region}</span>
+                  {card.year && <span>{card.year}</span>}
+                  <span>{card.contributor}</span>
+                </div>
+
+                <p className="max-w-[34rem] font-serif text-xl leading-[1.6] tracking-[-0.01em] text-[#111111]">
+                  “{card.content}”
+                </p>
               </div>
-            </div>
-          </article>
-        ))}
-      </div>
+            </article>
+          ))}
+        </div>
 
-      <button
-        type="button"
-        onClick={onNext}
-        className="min-h-14 w-full rounded-2xl bg-gradient-to-r from-violet-400 to-cyan-400 px-5 py-4 font-bold text-white shadow-lg shadow-cyan-500/20"
-      >
-        탐험 완료
-      </button>
+        <button
+          type="button"
+          onClick={onNext}
+          className="flex min-h-[56px] w-full items-center justify-center rounded-md bg-[#111111] px-5 py-4 text-sm font-medium text-white transition-all hover:bg-[#2F3437] active:scale-[0.98]"
+        >
+          기록 정리하기
+        </button>
+      </div>
     </section>
   )
 }

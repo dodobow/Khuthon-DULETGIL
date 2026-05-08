@@ -10,49 +10,38 @@ export default function ExplorationLog({ logs }: ExplorationLogProps) {
   if (recentLogs.length === 0) return null
 
   return (
-    <div className="space-y-3 text-left">
-      <div className="space-y-1 text-center">
-        <h3 className="text-xl font-bold text-white">나의 문화 탐험 기록</h3>
-        <p className="text-sm text-white/50">최근 탐험한 지역 문화 여정</p>
-      </div>
+    <section className="space-y-4">
+      <header className="space-y-1">
+        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[#8A8378]">
+          recent entries
+        </p>
+        <h3 className="font-serif text-2xl tracking-tight text-[#111111]">
+          최근에 남긴 기록
+        </h3>
+      </header>
 
       <div className="space-y-3">
         {recentLogs.map(log => (
           <article
             key={log.id}
-            className="rounded-2xl border border-white/20 bg-white/10 p-4"
+            className="rounded-lg border border-[#E3DED6] bg-[#FCFBF8] p-5"
           >
             <div className="space-y-3">
-              <div className="space-y-1">
-                <p className="text-sm font-bold text-cyan-300">
-                  {log.battleTitle}
-                </p>
-                <p className="text-xs text-white/50">
-                  선택한 지역: {log.selectedRegion}
-                </p>
-                <p className="text-xs text-white/60">
-                  이어간 문화: {log.selectedRelayRegion} · {log.selectedRelayTitle}
-                </p>
-                <div className="text-xs text-cyan-200">
-                  <span className="font-bold">{log.selectedRegion}</span>
-                  {log.routePath.map((card, i) => (
-                    <span key={card.id}>
-                      <span className="mx-1 text-white/40">
-                        → {log.routeConnectionReasons?.[i] ? `[${log.routeConnectionReasons[i]}]` : '→'}
-                      </span>
-                      <span className="font-bold">{card.region}</span>
-                    </span>
-                  ))}
-                </div>
+              <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[#8A8378]">
+                <span>{log.battleTitle}</span>
+                <span>{log.selectedRegion}</span>
+                <span>{log.selectedRelayRegion}</span>
               </div>
 
-              <p className="text-sm leading-6 text-white/70">{log.summary}</p>
+              <p className="max-w-[36rem] text-sm leading-[1.7] text-[#4F4A43]">
+                {log.summary}
+              </p>
 
               <div className="flex flex-wrap gap-2">
                 {log.discoveredRegions.map(region => (
                   <span
                     key={`${log.id}-${region}`}
-                    className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/80"
+                    className="rounded-md border border-[#DDD8CF] bg-white px-2.5 py-1 text-xs text-[#625C53]"
                   >
                     {region}
                   </span>
@@ -62,6 +51,6 @@ export default function ExplorationLog({ logs }: ExplorationLogProps) {
           </article>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

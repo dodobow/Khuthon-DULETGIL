@@ -28,37 +28,37 @@ export default function DiscoveryReason({
   const isWeighted = highestWeight >= 2
 
   return (
-    <section className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-md">
-      <div className="space-y-3">
-        <div className="flex items-center gap-2">
-          <span className="flex size-8 items-center justify-center rounded-full bg-cyan-400/15 text-sm">
-            ⚖️
-          </span>
-          <h3 className="text-base font-bold text-white">
+    <section className="rounded-xl border border-[#EAEAEA] bg-[#FBFBFA] p-6">
+      <div className="mb-4 flex items-center gap-3">
+        <span className="flex size-6 items-center justify-center rounded border border-[#EAEAEA] bg-white font-mono text-xs font-bold text-[#111111]">
+          i
+        </span>
+        <h3 className="text-sm font-bold text-[#111111]">
             왜 이 배틀이 추천됐을까요?
           </h3>
         </div>
 
-        <p className="text-sm leading-6 text-white/70">{matchReason}</p>
+      <div className="space-y-4">
+        <p className="text-sm leading-[1.6] text-[#2F3437]">{matchReason}</p>
 
         {diversityNote && (
-          <p className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-3 text-sm leading-6 text-amber-300">
-            {diversityNote}
-          </p>
+          <div className="rounded-md border border-[#FDEBEC] bg-[#FDEBEC]/30 p-4">
+            <p className="text-sm leading-[1.6] text-[#9F2F2D]">{diversityNote}</p>
+          </div>
         )}
 
         {!diversityNote && (
           <p
-            className={`text-sm font-semibold leading-6 ${
-              isWeighted ? 'text-cyan-300' : 'text-white/60'
+            className={`text-sm font-medium leading-[1.6] ${
+              isWeighted ? 'text-[#1F6C9F]' : 'text-[#787774]'
             }`}
           >
             {weightMessage}
           </p>
         )}
 
-        <p className="text-xs leading-5 text-white/50">
-          승패보다 새로운 지역 발견을 더 중요하게 보기 때문에, 이 배틀은 단순 인기순으로 고른 것이 아닙니다.
+        <p className="border-t border-[#EAEAEA] pt-4 text-xs leading-[1.6] text-[#787774]">
+          * 승패보다 새로운 지역 발견을 더 중요하게 보기 때문에, 단순 인기순 추천이 아닙니다.
         </p>
       </div>
     </section>

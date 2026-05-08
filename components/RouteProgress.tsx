@@ -12,25 +12,29 @@ export default function RouteProgress({
   routePath,
 }: RouteProgressProps) {
   return (
-    <section className="rounded-2xl border border-white/20 bg-white/10 p-4">
-      <div className="space-y-3">
-        <div className="flex items-center justify-between gap-3">
-          <p className="text-sm font-bold text-cyan-300">현재 문화 탐험 루트</p>
-          <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-bold text-cyan-200">
-            {routePath.length} / 5
+    <section className="rounded-xl border border-[#EAEAEA] bg-[#FBFBFA] p-5 sm:p-6 shadow-sm">
+      <div className="space-y-5">
+        <div className="flex items-center justify-between border-b border-[#EAEAEA] pb-3">
+          <p className="font-mono text-[11px] uppercase tracking-widest text-[#787774]">Itinerary Ledger</p>
+          <span className="font-mono text-xs font-medium text-[#111111]">
+            {routePath.length} / 5 STOPS
           </span>
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="shrink-0 rounded-full bg-cyan-400/10 px-3 py-1 text-sm font-bold text-cyan-200">
-            {startRegion} · {startTitle}
-          </span>
-          {routePath.map(card => (
-            <div key={card.id} className="flex items-center gap-2">
-              <span className="font-bold text-cyan-300">→</span>
-              <span className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">
-                {card.region} · {card.title}
-              </span>
+        <div className="flex flex-wrap items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 rounded-md border border-[#EAEAEA] bg-white px-3 py-2 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+            <span className="font-mono text-[10px] text-[#787774]">START</span>
+            <span className="font-medium text-[#111111]">{startRegion}</span>
+            <span className="text-[#787774]">· {startTitle}</span>
+          </div>
+          {routePath.map((card, idx) => (
+            <div key={card.id} className="flex items-center gap-2 animate-in fade-in slide-in-from-left-2 duration-300">
+              <span className="font-mono text-[10px] text-[#A09F9C]">→</span>
+              <div className="flex items-center gap-2 rounded-md border border-[#111111] bg-[#111111] px-3 py-2 text-white shadow-sm">
+                <span className="font-mono text-[10px] text-[#A09F9C]">0{idx + 1}</span>
+                <span className="font-medium">{card.region}</span>
+                <span className="text-[#A09F9C]">· {card.title}</span>
+              </div>
             </div>
           ))}
         </div>
