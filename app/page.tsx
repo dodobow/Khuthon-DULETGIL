@@ -227,6 +227,10 @@ export default function Home() {
     return () => window.clearTimeout(timer)
   }, [])
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [phase, viewMode])
+
   const handleVote = (side: 'left' | 'right') => {
     setVotedSide(side)
     setPhase(2)
