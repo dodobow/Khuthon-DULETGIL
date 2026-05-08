@@ -7,12 +7,14 @@ import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle } from '@/data/mockData'
-import type { Battle } from '@/types'
+import type { Battle, RelayCard } from '@/types'
 
 type ExplorationLog = {
   id: string
   battleTitle: string
   selectedRegion: string
+  selectedRelayTitle: string
+  selectedRelayRegion: string
   discoveredRegions: string[]
   summary: string
 }
@@ -81,6 +83,10 @@ export default function Home() {
   const [completedMission, setCompletedMission] =
     useState<ExplorationMission | null>(null)
 
+  // 사용자가 직접 선택한 문화 연결
+  const [selectedRelayCard, setSelectedRelayCard] =
+    useState<RelayCard | null>(null)
+
   useEffect(() => {
     const battle = getWeightedRandomBattle()
     // 요구사항에 따라 최초 마운트 시 배틀을 선택하고 즉시 1단계로 전환한다.
@@ -100,6 +106,7 @@ export default function Home() {
     // currentBattle이 null이면 즉시 return (타입 가드)
     if (!currentBattle) return
     if (!votedSide) return
+    if (!selectedRelayCard) return
 
     const newRegions = [
       currentBattle.leftCulture.region,
@@ -134,8 +141,10 @@ export default function Home() {
         id: `${currentBattle.id}-${Date.now()}`,
         battleTitle: `${currentBattle.leftCulture.region} vs ${currentBattle.rightCulture.region} 문화 배틀`,
         selectedRegion,
+        selectedRelayTitle: selectedRelayCard.title,
+        selectedRelayRegion: selectedRelayCard.region,
         discoveredRegions: newRegions,
-        summary: `${currentBattle.leftCulture.region}과 ${currentBattle.rightCulture.region}의 문화 콘텐츠를 비교하고, 릴레이와 지역 서사를 탐험했어요.`,
+        summary: `${selectedRegion}을 선택한 뒤, ${selectedRelayCard.region} ${selectedRelayCard.title}로 문화 연결을 이어갔어요.`,
       },
       ...prev,
     ])
@@ -148,6 +157,7 @@ export default function Home() {
     setCurrentBattle(next)
     setCurrentMission(getRandomMission())
     setCompletedMission(null)
+    setSelectedRelayCard(null)
     setVotedSide(null)
     setPhase(1)
   }
@@ -214,6 +224,8 @@ export default function Home() {
           <div className="mx-auto max-w-xl">
             <RelaySection
               relayCards={currentBattle.relayCards}
+              selectedRelayCard={selectedRelayCard}
+              onSelectRelay={setSelectedRelayCard}
               onNext={() => setPhase(4)}
             />
           </div>

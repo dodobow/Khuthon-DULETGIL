@@ -1,3 +1,4 @@
+import CultureRoute from '@/components/CultureRoute'
 import ExplorationMission from '@/components/ExplorationMission'
 import ExplorationLogList from '@/components/ExplorationLog'
 import type { ExplorationLog } from '@/components/ExplorationLog'
@@ -28,6 +29,7 @@ export default function ExplorerScore({
     { min: 3, label: '🔍 탐험가' },
     { min: 5, label: '⭐ 문화 발견자' },
   ].filter(badge => discoveredRegions.length >= badge.min)
+  const latestLog = explorationLogs[0]
 
   return (
     <section className="w-full rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md">
@@ -46,34 +48,25 @@ export default function ExplorerScore({
             {discoveredRegions.length}개 지역 발견
           </p>
         </div>
-
         <div className="flex flex-wrap justify-center gap-2">
           {discoveredRegions.map(region => (
-            <span
-              key={region}
-              className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80"
-            >
+            <span key={region} className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">
               {region}
             </span>
           ))}
         </div>
-
         {badges.length > 0 && (
           <div className="space-y-3">
             <p className="text-sm font-semibold text-white/70">획득 배지</p>
             <div className="flex flex-wrap justify-center gap-2">
               {badges.map(badge => (
-                <span
-                  key={badge.label}
-                  className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-bold text-cyan-200"
-                >
+                <span key={badge.label} className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-bold text-cyan-200">
                   {badge.label}
                 </span>
               ))}
             </div>
           </div>
         )}
-
         {completedMission && (
           <ExplorationMission
             title={completedMission.title}
@@ -82,9 +75,14 @@ export default function ExplorerScore({
             completed
           />
         )}
-
+        {latestLog && (
+          <CultureRoute
+            selectedRegion={latestLog.selectedRegion}
+            selectedRelayRegion={latestLog.selectedRelayRegion}
+            selectedRelayTitle={latestLog.selectedRelayTitle}
+          />
+        )}
         <ExplorationLogList logs={explorationLogs} />
-
         <button
           type="button"
           onClick={onNext}

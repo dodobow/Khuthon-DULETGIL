@@ -2,6 +2,8 @@ export type ExplorationLog = {
   id: string
   battleTitle: string
   selectedRegion: string
+  selectedRelayTitle: string
+  selectedRelayRegion: string
   discoveredRegions: string[]
   summary: string
 }
@@ -35,6 +37,9 @@ export default function ExplorationLog({ logs }: ExplorationLogProps) {
                 </p>
                 <p className="text-xs text-white/50">
                   선택한 지역: {log.selectedRegion}
+                </p>
+                <p className="text-xs text-white/60">
+                  이어간 문화: {log.selectedRelayRegion} · {log.selectedRelayTitle}
                 </p>
               </div>
 
