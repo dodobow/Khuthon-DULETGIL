@@ -10,7 +10,7 @@ import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle } from '@/data/mockData'
 import { generatedBattles } from '@/data/generatedTourData'
 import { cultureTagLabels } from '@/types'
-import type { Battle, ExplorationLog, ExplorationMission, RelayCard } from '@/types'
+import type { Battle, ExplorationLog, ExplorationMission, RelayCard, StoryCard } from '@/types'
 
 type ViewMode = 'battle' | 'dashboard'
 
@@ -43,6 +43,32 @@ const explorationMissions: ExplorationMission[] = [
 
 const getRandomMission = () =>
   explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
+
+// 탐험 경로의 고유 지역 순서대로 스토리 카드를 수집 (지역당 1개)
+const getExplorationStoryCards = (
+  battle: Battle,
+  votedSide: 'left' | 'right',
+  path: RelayCard[]
+): StoryCard[] => {
+  const exploredRegions = [
+    votedSide === 'left' ? battle.leftCulture.region : battle.rightCulture.region,
+    ...path.map(c => c.region),
+  ]
+  const uniqueRegions = [...new Set(exploredRegions)]
+
+  const storyByRegion = new Map<string, StoryCard>()
+  for (const b of generatedBattles) {
+    for (const story of b.storyCards) {
+      if (!storyByRegion.has(story.region) && uniqueRegions.includes(story.region)) {
+        storyByRegion.set(story.region, story)
+      }
+    }
+  }
+
+  return uniqueRegions
+    .map(region => storyByRegion.get(region))
+    .filter((s): s is StoryCard => s !== undefined)
+}
 
 // region|title 조합 키 생성 — id가 달라도 같은 콘텐츠를 중복으로 취급
 const cardKey = (card: RelayCard) => `${card.region}|${card.title}`
@@ -406,10 +432,10 @@ export default function Home() {
               </div>
             )}
 
-            {phase === 4 && currentBattle && (
+            {phase === 4 && currentBattle && votedSide !== null && (
               <div className="mx-auto max-w-xl">
                 <StorySection
-                  storyCards={currentBattle.storyCards}
+                  storyCards={getExplorationStoryCards(currentBattle, votedSide, routePath)}
                   onNext={handleExploreComplete}
                 />
               </div>
