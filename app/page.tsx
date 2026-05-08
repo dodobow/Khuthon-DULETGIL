@@ -377,6 +377,9 @@ export default function Home() {
                   <h1 className="text-4xl sm:text-5xl font-serif tracking-tight text-[#111111]">
                     지역 문화 답사
                   </h1>
+                  <p className="text-xs font-mono tracking-wide text-[#A0A09E]">
+                    인기순이 아닌 발견의 순서로 지역 문화를 이어간다
+                  </p>
                   <p className="text-sm leading-[1.6] text-[#787774] sm:text-base max-w-lg mx-auto">
                     두 지역의 고유한 문화를 대조하며, 오늘 더 깊이 탐구하고 싶은 곳을 골라보세요.
                   </p>
