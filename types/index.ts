@@ -42,3 +42,27 @@ export interface Battle {
   relayCards: RelayCard[]
   storyCards: StoryCard[]
 }
+
+export type ExplorationMissionId =
+  | 'mission-town'
+  | 'mission-new-region'
+  | 'mission-relay'
+  | 'mission-non-metro'
+
+export interface ExplorationMission {
+  id: ExplorationMissionId
+  title: string
+  description: string
+  reward: number
+}
+
+export interface ExplorationLog {
+  id: string
+  battleTitle: string
+  selectedRegion: string
+  selectedRelayTitle: string
+  selectedRelayRegion: string
+  selectedRelayTags: string[]
+  discoveredRegions: string[]
+  summary: string
+}

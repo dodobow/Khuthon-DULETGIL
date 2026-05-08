@@ -338,9 +338,13 @@ export const battles: Battle[] = [
 // 다양성 가중치 기반 랜덤 배틀 선택
 // diversityWeight가 높을수록 선택 확률이 높다
 export function getWeightedRandomBattle(excludeId?: string): Battle {
-  const filtered = battles.filter(b => b.id !== excludeId)
-  // 후보가 없으면 전체에서 선택 (데이터가 1개뿐인 엣지케이스 대응)
-  const candidates = filtered.length > 0 ? filtered : battles
+  const validBattles = battles.filter(
+    b => b.leftCulture.regionScale === b.rightCulture.regionScale
+  )
+  const source = validBattles.length > 0 ? validBattles : battles
+  const filtered = source.filter(b => b.id !== excludeId)
+  // 후보가 없으면 동일 규모 검증을 통과한 전체 후보에서 선택
+  const candidates = filtered.length > 0 ? filtered : source
 
   const weights = candidates.map(b =>
     Math.max(b.leftCulture.diversityWeight, b.rightCulture.diversityWeight)

@@ -1,12 +1,6 @@
 import DiscoveryReason from '@/components/DiscoveryReason'
 import ExplorationMission from '@/components/ExplorationMission'
-import type { Battle } from '@/types'
-
-interface Mission {
-  title: string
-  description: string
-  reward: number
-}
+import type { Battle, ExplorationMission as Mission } from '@/types'
 
 interface BattleResultProps {
   battle: Battle
@@ -21,41 +15,21 @@ export default function BattleResult({
   mission,
   onNext,
 }: BattleResultProps) {
-  const leftPercent = votedSide === 'left' ? 58 : 44
-  const rightPercent = votedSide === 'left' ? 42 : 56
-  const leadingCulture =
-    leftPercent > rightPercent ? battle.leftCulture : battle.rightCulture
+  const selectedCulture =
+    votedSide === 'left' ? battle.leftCulture : battle.rightCulture
 
   return (
     <section className="w-full rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-md">
       <div className="space-y-6">
         <div className="space-y-3">
-          <p className="text-sm font-semibold text-cyan-300">
-            투표 결과
-          </p>
+          <p className="text-sm font-semibold text-cyan-300">선택 완료</p>
           <h2 className="text-2xl font-bold text-white">
-            현재 {leadingCulture.region}이 앞서고 있어요!
+            당신은 {selectedCulture.region}을 선택했어요
           </h2>
-          <p className="text-sm leading-6 text-white/70">
-            {battle.matchReason}
+          <p className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-4 text-sm leading-6 text-white/80">
+            이 선택은 순위 경쟁이 아니라 문화 탐험의 출발점입니다.
           </p>
-        </div>
-
-        <div className="space-y-3">
-          <div className="flex justify-between text-sm font-semibold text-white">
-            <span>{battle.leftCulture.region} {leftPercent}%</span>
-            <span>{battle.rightCulture.region} {rightPercent}%</span>
-          </div>
-          <div className="flex h-5 overflow-hidden rounded-full bg-white/10">
-            <div
-              className="bg-gradient-to-r from-violet-400 to-fuchsia-400"
-              style={{ width: `${leftPercent}%` }}
-            />
-            <div
-              className="bg-gradient-to-r from-cyan-400 to-sky-400"
-              style={{ width: `${rightPercent}%` }}
-            />
-          </div>
+          <p className="text-sm leading-6 text-white/70">{battle.matchReason}</p>
         </div>
 
         <DiscoveryReason

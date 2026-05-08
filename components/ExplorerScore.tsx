@@ -1,19 +1,14 @@
 import CultureRoute from '@/components/CultureRoute'
 import ExplorationMission from '@/components/ExplorationMission'
 import ExplorationLogList from '@/components/ExplorationLog'
-import type { ExplorationLog } from '@/components/ExplorationLog'
-
-interface Mission {
-  title: string
-  description: string
-  reward: number
-}
+import type { ExplorationLog, ExplorationMission as Mission } from '@/types'
 
 interface ExplorerScoreProps {
   score: number
   discoveredRegions: string[]
   explorationLogs: ExplorationLog[]
   completedMission: Mission | null
+  lastEarnedScore: number
   onNext: () => void
 }
 
@@ -22,6 +17,7 @@ export default function ExplorerScore({
   discoveredRegions,
   explorationLogs,
   completedMission,
+  lastEarnedScore,
   onNext,
 }: ExplorerScoreProps) {
   const badges = [
@@ -40,9 +36,11 @@ export default function ExplorerScore({
             <p className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-6xl font-black text-transparent">
               {score}
             </p>
-            <span className="absolute -right-12 -top-3 animate-bounce text-2xl font-black text-cyan-300">
-              +10
-            </span>
+            {lastEarnedScore > 0 && (
+              <span className="absolute -right-12 -top-3 animate-bounce text-2xl font-black text-cyan-300">
+                +{lastEarnedScore}
+              </span>
+            )}
           </div>
           <p className="text-sm text-white/70">
             {discoveredRegions.length}개 지역 발견

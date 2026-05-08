@@ -1,4 +1,4 @@
-import type { ExplorationLog } from '@/components/ExplorationLog'
+import type { ExplorationLog } from '@/types'
 
 interface ExplorationDashboardProps {
   score: number

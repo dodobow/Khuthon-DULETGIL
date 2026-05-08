@@ -1,13 +1,4 @@
-export type ExplorationLog = {
-  id: string
-  battleTitle: string
-  selectedRegion: string
-  selectedRelayTitle: string
-  selectedRelayRegion: string
-  selectedRelayTags: string[]
-  discoveredRegions: string[]
-  summary: string
-}
+import type { ExplorationLog } from '@/types'
 
 interface ExplorationLogProps {
   logs: ExplorationLog[]

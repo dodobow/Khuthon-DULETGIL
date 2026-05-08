@@ -8,25 +8,7 @@ import ExplorerScore from '@/components/ExplorerScore'
 import RelaySection from '@/components/RelaySection'
 import StorySection from '@/components/StorySection'
 import { getWeightedRandomBattle } from '@/data/mockData'
-import type { Battle, RelayCard } from '@/types'
-
-type ExplorationLog = {
-  id: string
-  battleTitle: string
-  selectedRegion: string
-  selectedRelayTitle: string
-  selectedRelayRegion: string
-  selectedRelayTags: string[]
-  discoveredRegions: string[]
-  summary: string
-}
-
-type ExplorationMission = {
-  id: string
-  title: string
-  description: string
-  reward: number
-}
+import type { Battle, ExplorationLog, ExplorationMission, RelayCard } from '@/types'
 
 type ViewMode = 'battle' | 'dashboard'
 
@@ -60,6 +42,35 @@ const explorationMissions: ExplorationMission[] = [
 const getRandomMission = () =>
   explorationMissions[Math.floor(Math.random() * explorationMissions.length)]
 
+const isMissionCleared = (
+  mission: ExplorationMission | null,
+  battle: Battle,
+  selectedRelayCard: RelayCard,
+  previousRegions: string[]
+): boolean => {
+  if (!mission) return false
+
+  const regions = [battle.leftCulture.region, battle.rightCulture.region]
+  const hasNewRegion = regions.some(region => !previousRegions.includes(region))
+  const hasTown =
+    battle.leftCulture.regionScale === 'town' ||
+    battle.rightCulture.regionScale === 'town'
+  const hasNonMetro =
+    battle.leftCulture.regionScale !== 'metropolitan' ||
+    battle.rightCulture.regionScale !== 'metropolitan'
+
+  switch (mission.id) {
+    case 'mission-town':
+      return hasTown
+    case 'mission-new-region':
+      return hasNewRegion
+    case 'mission-relay':
+      return Boolean(selectedRelayCard)
+    case 'mission-non-metro':
+      return hasNonMetro
+  }
+}
+
 export default function Home() {
   // 상위 화면 모드
   const [viewMode, setViewMode] = useState<ViewMode>('battle')
@@ -75,6 +86,9 @@ export default function Home() {
 
   // 탐험 점수
   const [explorerScore, setExplorerScore] = useState(0)
+
+  // 마지막 탐험에서 획득한 점수
+  const [lastEarnedScore, setLastEarnedScore] = useState(0)
 
   // 발견한 지역 목록 (중복 제거)
   const [discoveredRegions, setDiscoveredRegions] = useState<string[]>([])
@@ -95,12 +109,14 @@ export default function Home() {
     useState<RelayCard | null>(null)
 
   useEffect(() => {
-    const battle = getWeightedRandomBattle()
-    // 요구사항에 따라 최초 마운트 시 배틀을 선택하고 즉시 1단계로 전환한다.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setCurrentBattle(battle)
-    setCurrentMission(getRandomMission())
-    setPhase(1)
+    const timer = window.setTimeout(() => {
+      const battle = getWeightedRandomBattle()
+      setCurrentBattle(battle)
+      setCurrentMission(getRandomMission())
+      setPhase(1)
+    }, 0)
+
+    return () => window.clearTimeout(timer)
   }, [])
 
   const handleVote = (side: 'left' | 'right') => {
@@ -123,24 +139,21 @@ export default function Home() {
       votedSide === 'left'
         ? currentBattle.leftCulture.region
         : currentBattle.rightCulture.region
-    const hasDiversityWeightThree =
-      currentBattle.leftCulture.diversityWeight === 3 ||
-      currentBattle.rightCulture.diversityWeight === 3
-    const hasNewRegion = newRegions.some(
-      region => !discoveredRegions.includes(region)
-    )
-    const hasSmallRegion =
-      currentBattle.leftCulture.regionScale === 'small-city' ||
-      currentBattle.leftCulture.regionScale === 'town' ||
-      currentBattle.rightCulture.regionScale === 'small-city' ||
-      currentBattle.rightCulture.regionScale === 'town'
     const clearedMission =
-      currentMission && (hasDiversityWeightThree || hasNewRegion || hasSmallRegion)
+      isMissionCleared(
+        currentMission,
+        currentBattle,
+        selectedRelayCard,
+        discoveredRegions
+      )
         ? currentMission
         : null
+    const baseScore = 10
     const missionReward = clearedMission ? clearedMission.reward : 0
+    const earnedScore = baseScore + missionReward
 
-    setExplorerScore(prev => prev + 10 + missionReward)
+    setLastEarnedScore(earnedScore)
+    setExplorerScore(prev => prev + earnedScore)
     setDiscoveredRegions(prev => [...new Set([...prev, ...newRegions])])
     setCompletedMission(clearedMission)
     setExplorationLogs(prev => [
@@ -166,6 +179,7 @@ export default function Home() {
     setCurrentMission(getRandomMission())
     setCompletedMission(null)
     setSelectedRelayCard(null)
+    setLastEarnedScore(0)
     setVotedSide(null)
     setPhase(1)
   }
@@ -231,6 +245,15 @@ export default function Home() {
                   </p>
                 </header>
 
+                <div className="mx-auto max-w-xl rounded-2xl border border-white/20 bg-white/10 p-4 text-center backdrop-blur-md">
+                  <p className="text-sm font-bold text-cyan-300">
+                    왜 이 두 지역이 만났을까요?
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-white/70">
+                    {currentBattle.matchReason}
+                  </p>
+                </div>
+
                 <div className="grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr] md:gap-6">
                   <BattleCard
                     culture={currentBattle.leftCulture}
@@ -293,6 +316,7 @@ export default function Home() {
                   discoveredRegions={discoveredRegions}
                   explorationLogs={explorationLogs}
                   completedMission={completedMission}
+                  lastEarnedScore={lastEarnedScore}
                   onNext={handleNextBattle}
                 />
               </div>
